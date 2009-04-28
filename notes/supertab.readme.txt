@@ -1,0 +1,33 @@
+This is a continuation of vimscript #182 by Gergely Kontra, who has
+asked me to take over support and maintenance.  So if you have any
+questions or suggestions, please direct them to me.  Please read the
+description below as some enhancements have been made as well.
+
+Description:
+  This script allows you to use the tab key to do all your insert
+  completion (:help ins-completion).
+
+  Ex. To complete the word bar or baz
+    foo bar baz
+    b<Tab>
+
+
+  This version of SuperTab supports several configuration options:
+  NOTE: Please see the "Global Variables" fold in the script for more details.
+  - The default completion type (defaults to keyword completion)
+  - The duration that a non-default completion type will be retained before
+    switching back to the default (defaults to retaining the current
+    completion type until you manually kick off a different one).
+  - Disabling of mid-word (word character to the left and right) completion
+    (defaults to mid-word completion enabled).
+  - Ability to change the default mapping to kick off forward or backward
+    completion (defaults to <tab> and <s-tab>).
+  - A discovery list to determine the default completion type to use for any
+    given buffer (defaults to no discovery).
+  - Option to highlight the first entry in the results if your completeopt has
+    'menu' and 'longest'.
+
+  This version also adds a command (:SuperTabHelp) which opens up a buffer
+  listing all various completion types, where you can simply hit <enter> on
+  the completion type you wish to switch to.
+http://www.vim.org/scripts/script.php?script_id=1643

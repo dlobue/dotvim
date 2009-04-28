@@ -1,0 +1,27 @@
+http://www.vim.org/scripts/script.php?script_id=2421
+
+PySmell is an alternative omnicompletion library for Python.
+
+It has two parts: The Python library that does the analyzing, and the Vim script that calls into the library.
+
+It works by analyzing your codebase once, saving information in a TAGS file, and using that to provide context-aware completions.
+
+There is more documentation in the README and in pysmell.vim
+
+The project is hosted at http://code.google.com/p/pysmell
+The code repo is at http://github.com/orestis/pysmell
+Follow news at http://orestis.gr
+ 
+install details
+Uninstall the .tar.gz, cd into it and do:
+
+python setup.py install
+
+To use PySmell omnicompletion from inside Vim, you have to have:
+
+1. Python support in vim (`:echo has('python')`)
+2. The pysmell package in the PYTHONPATH that Vim uses: `python import pysmell` should work.
+3. Drop pysmell.vim in ~/.vim/plugins
+4. `:setlocal omnifunc=pysmell#Complete` Note: If you want to always use pysmell for python, do: `autocmd FileType python setlocal omnifunc=pysmell#Complete`
+5. [OPTIONAL] Select a matcher of your liking - look at pysmell.vim for
+options. Eg: `:let g:pysmell_matcher='camel-case'` 
