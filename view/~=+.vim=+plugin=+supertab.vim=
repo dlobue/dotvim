@@ -62,7 +62,7 @@ setlocal includeexpr=
 setlocal indentexpr=
 setlocal indentkeys=0{,0},:,0#,!^F,o,O,e
 setlocal noinfercase
-setlocal iskeyword=@,48-57,_,192-255
+setlocal iskeyword=@,48-57,_,192-255,.
 setlocal keywordprg=
 setlocal nolinebreak
 setlocal nolisp
@@ -110,26 +110,22 @@ setlocal wrapmargin=0
 normal zo
 15
 normal zo
-52
-normal zo
 61
 normal zo
 180
 normal zo
 218
 normal zo
-251
-normal zo
 262
 normal zo
 416
 normal zo
-let s:l = 257 - ((11 * winheight(0) + 11) / 23)
+let s:l = 461 - ((22 * winheight(0) + 11) / 23)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-257
-normal! 048l
+461
+normal! 0
 let &so = s:so_save | let &siso = s:siso_save
 doautoall SessionLoadPost
 " vim: set ft=vim :
