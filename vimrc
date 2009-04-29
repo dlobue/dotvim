@@ -1,5 +1,10 @@
+" enter spaces when tab is pressed:
+set expandtab
 " do not break lines when line lenght increases
 set textwidth=0
+" user 4 spaces to represent a tab
+set tabstop=4
+set softtabstop=4
 " number of space to use for auto indent
 " you can use >> or << keys to indent current line or selection
 " in normal mode.
@@ -21,7 +26,7 @@ map <silent><A-Left> :tabprevious<CR>
 
 
 " show line and column number
-set ruler
+set number
 
 " toggle line numbers and fold column for easy copying:
 nnoremap <F2> :set nonumber!<CR>:set foldcolmn=0<CR>
