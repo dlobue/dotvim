@@ -62,6 +62,9 @@ let g:miniBufExplMapCTabSwitchWindows = 1
 
 syntax on
 
+" turn on pysmell autocompletion in python files
+autocmd FileType python setlocal omnifunc=pysmell#Complete
+
 au BufRead,BufNewFile *.mako set filetype=mako
 au BufRead,BufNewFile *.ghtml set filetype=genshi
 au BufRead,BufNewFile *.ghr set filetype=ghrml
