@@ -34,9 +34,13 @@ if !exists('g:pysmell_matcher')
 endif
 
 python << eopython
-from pysmell import vimhelper, idehelper
 import vim
 import string
+import os.path
+# get the directory this script is in: the pyflakes python module should be installed there.
+scriptdir = os.path.join(os.path.dirname(vim.eval('expand("<sfile>")')), 'pysmell')
+sys.path.insert(0, scriptdir)
+from pysmell import vimhelper, idehelper
 TRANSLATEQUOTES = string.maketrans("\'\"", "\"\'")
 eopython
 
