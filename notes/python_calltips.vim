@@ -166,7 +166,10 @@ def CT_DspTips():
     if not CT_ExistTipsWin():
         CT_CreateTipsWin()
     tips_buffer[:] = None
-    docs = CT_GetHelpDoc(CT_GetWordUnderCursor())
+    try:
+        docs = CT_GetHelpDoc(CT_GetWordUnderCursor())
+    except AttributeError:
+        return
 
     #print docs
     for line in docs:

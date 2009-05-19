@@ -18,9 +18,9 @@ set autoindent
 " makes backspace key more powerful.
 set backspace=indent,eol,start
 " shows the match while typing
-set incsearch
+" set incsearch
 " case insensitive search
-set ignorecase
+" set ignorecase
 " show some autocomplete options in status bar
 set wildmenu
 
