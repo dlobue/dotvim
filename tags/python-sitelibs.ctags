@@ -1,0 +1,529 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.7	//
+ASSURE_DICT	zope/interface/_zope_interface_coptimizations.c	784;"	d	file:
+BuiltinImplementationSpecifications	zope/interface/_zope_interface_coptimizations.c	/^static PyObject *BuiltinImplementationSpecifications, *str__provides__;$/;"	v	file:
+CLASSIC	zope/interface/_zope_interface_coptimizations.c	20;"	d	file:
+CPBType	zope/interface/_zope_interface_coptimizations.c	/^static PyTypeObject CPBType = {$/;"	v	file:
+CPB_descr_get	zope/interface/_zope_interface_coptimizations.c	/^CPB_descr_get(PyObject *self, PyObject *inst, PyObject *cls)$/;"	f	file:
+DEFINE_STRING	zope/interface/_zope_interface_coptimizations.c	1574;"	d	file:
+DEFINE_STRING	zope/interface/_zope_interface_coptimizations.c	1595;"	d	file:
+G	mercurial/templates/static/excanvas.js	/^if(b.firstChild){b.firstChild.style.width=b.clientWidth+"px";b.firstChild.style.height=b.clientHeight+"px"}}Q.init();var R=[];for(var E=0;E<16;E++){for(var F=0;F<16;F++){R[E*16+F]=E.toString(16)+F.toString(16)}}function J(){return[[1,0,0],[0,1,0],[0,0,1]]}function G(a,b){var c=J();for(var d=0;d<3;d++){for(var e=0;e<3;e++){var g=0;for(var h=0;h<3;h++){g+=a[d][h]*b[h][e]}c[d][e]=g}}return c}function N(a,b){b.fillStyle=a.fillStyle;b.lineCap=a.lineCap;b.lineJoin=a.lineJoin;b.lineWidth=a.lineWidth;b.miterLimit=$/;"	f
+Graph	mercurial/templates/static/graph.js	/^function Graph() {$/;"	c
+Graph.colorPart	mercurial/templates/static/graph.js	/^	function colorPart(num) {$/;"	f
+Graph.render	mercurial/templates/static/graph.js	/^	this.render = function(data) {$/;"	m
+Graph.scale	mercurial/templates/static/graph.js	/^	this.scale = function(height) {$/;"	m
+Graph.setColor	mercurial/templates/static/graph.js	/^	this.setColor = function(color, bg, fg) {$/;"	m
+H	mercurial/templates/static/excanvas.js	/^this.k.push(a);this.m.push(this.a);this.a=G(J(),this.a)};j.restore=function(){N(this.k.pop(),this);this.a=this.m.pop()};j.translate=function(a,b){var c=[[1,0,0],[0,1,0],[a,b,1]];this.a=G(c,this.a)};j.rotate=function(a){var b=M(a),c=L(a),d=[[b,c,0],[-c,b,0],[0,0,1]];this.a=G(d,this.a)};j.scale=function(a,b){this.d*=a;this.e*=b;var c=[[a,0,0],[0,b,0],[0,0,1]];this.a=G(c,this.a)};j.clip=function(){};j.arcTo=function(){};j.createPattern=function(){return new P};function H(a){this.p=a;this.n=0;this.o=$/;"	c
+H.addColorStop	mercurial/templates/static/excanvas.js	/^0;this.h=[];this.i={x:0,y:0}}H.prototype.addColorStop=function(a,b){b=O(b);this.h.push({offset:1-a,color:b})};function P(){}G_vmlCanvasManager=Q;CanvasRenderingContext2D=K;CanvasGradient=H;CanvasPattern=P})()};$/;"	m
+Implements	zope/interface/_zope_interface_coptimizations.c	/^static PyTypeObject *Implements;$/;"	v	file:
+InterfaceBase	zope/interface/_zope_interface_coptimizations.c	/^static PyTypeObject InterfaceBase = {$/;"	v	file:
+J	mercurial/templates/static/excanvas.js	/^if(b.firstChild){b.firstChild.style.width=b.clientWidth+"px";b.firstChild.style.height=b.clientHeight+"px"}}Q.init();var R=[];for(var E=0;E<16;E++){for(var F=0;F<16;F++){R[E*16+F]=E.toString(16)+F.toString(16)}}function J(){return[[1,0,0],[0,1,0],[0,0,1]]}function G(a,b){var c=J();for(var d=0;d<3;d++){for(var e=0;e<3;e++){var g=0;for(var h=0;h<3;h++){g+=a[d][h]*b[h][e]}c[d][e]=g}}return c}function N(a,b){b.fillStyle=a.fillStyle;b.lineCap=a.lineCap;b.lineJoin=a.lineJoin;b.lineWidth=a.lineWidth;b.miterLimit=$/;"	f
+K	mercurial/templates/static/excanvas.js	/^case "square":default:return"square"}}function K(a){this.a=J();this.m=[];this.k=[];this.c=[];this.strokeStyle="#000";this.fillStyle="#000";this.lineWidth=1;this.lineJoin="miter";this.lineCap="butt";this.miterLimit=m*1;this.globalAlpha=1;this.canvas=a;var b=a.ownerDocument.createElement("div");b.style.width=a.clientWidth+"px";b.style.height=a.clientHeight+"px";b.style.overflow="hidden";b.style.position="absolute";a.appendChild(b);this.j=b;this.d=1;this.e=1}var j=K.prototype;j.clearRect=function(){this.j.innerHTML=$/;"	c
+LookupBase	zope/interface/_zope_interface_coptimizations.c	/^static PyTypeObject LookupBase = {$/;"	v	file:
+N	mercurial/templates/static/excanvas.js	/^if(b.firstChild){b.firstChild.style.width=b.clientWidth+"px";b.firstChild.style.height=b.clientHeight+"px"}}Q.init();var R=[];for(var E=0;E<16;E++){for(var F=0;F<16;F++){R[E*16+F]=E.toString(16)+F.toString(16)}}function J(){return[[1,0,0],[0,1,0],[0,0,1]]}function G(a,b){var c=J();for(var d=0;d<3;d++){for(var e=0;e<3;e++){var g=0;for(var h=0;h<3;h++){g+=a[d][h]*b[h][e]}c[d][e]=g}}return c}function N(a,b){b.fillStyle=a.fillStyle;b.lineCap=a.lineCap;b.lineJoin=a.lineJoin;b.lineWidth=a.lineWidth;b.miterLimit=$/;"	f
+NOT_HEXDIGIT	twisted/protocols/_c_urlarg.c	32;"	d	file:
+O	mercurial/templates/static/excanvas.js	/^a.miterLimit;b.shadowBlur=a.shadowBlur;b.shadowColor=a.shadowColor;b.shadowOffsetX=a.shadowOffsetX;b.shadowOffsetY=a.shadowOffsetY;b.strokeStyle=a.strokeStyle;b.d=a.d;b.e=a.e}function O(a){var b,c=1;a=String(a);if(a.substring(0,3)=="rgb"){var d=a.indexOf("(",3),e=a.indexOf(")",d+1),g=a.substring(d+1,e).split(",");b="#";for(var h=0;h<3;h++){b+=R[Number(g[h])]}if(g.length==4&&a.substr(3,1)=="a"){c=g[3]}}else{b=a}return[b,c]}function S(a){switch(a){case "butt":return"flat";case "round":return"round";$/;"	f
+OBJECT	zope/interface/_zope_interface_coptimizations.c	19;"	d	file:
+OSDType	zope/interface/_zope_interface_coptimizations.c	/^static PyTypeObject OSDType = {$/;"	v	file:
+OSD_descr_get	zope/interface/_zope_interface_coptimizations.c	/^OSD_descr_get(PyObject *self, PyObject *inst, PyObject *cls)$/;"	f	file:
+OUTPUTCHAR	twisted/protocols/_c_urlarg.c	26;"	d	file:
+PY_LONG_LONG	twisted/internet/cfsupport/cfsupport.c	6;"	d	file:
+PY_LONG_LONG	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	7;"	d	file:
+PY_LONG_LONG	twisted/python/_epoll.c	7;"	d	file:
+PY_LONG_LONG	twisted/test/raiser.c	6;"	d	file:
+PY_SSIZE_T_CLEAN	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	3;"	d	file:
+PY_SSIZE_T_CLEAN	twisted/python/_epoll.c	3;"	d	file:
+PY_SSIZE_T_MAX	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	11;"	d	file:
+PY_SSIZE_T_MAX	twisted/python/_epoll.c	11;"	d	file:
+PY_SSIZE_T_MIN	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	12;"	d	file:
+PY_SSIZE_T_MIN	twisted/python/_epoll.c	12;"	d	file:
+PyInt_AsSsize_t	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	14;"	d	file:
+PyInt_AsSsize_t	twisted/python/_epoll.c	14;"	d	file:
+PyInt_FromSsize_t	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	13;"	d	file:
+PyInt_FromSsize_t	twisted/python/_epoll.c	13;"	d	file:
+PyMODINIT_FUNC	zope/interface/_zope_interface_coptimizations.c	1567;"	d	file:
+Py_ssize_t	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^  typedef int Py_ssize_t;$/;"	t	file:
+Py_ssize_t	twisted/python/_epoll.c	/^  typedef int Py_ssize_t;$/;"	t	file:
+R	mercurial/templates/static/excanvas.js	/^if(b.firstChild){b.firstChild.style.width=b.clientWidth+"px";b.firstChild.style.height=b.clientHeight+"px"}}Q.init();var R=[];for(var E=0;E<16;E++){for(var F=0;F<16;F++){R[E*16+F]=E.toString(16)+F.toString(16)}}function J(){return[[1,0,0],[0,1,0],[0,0,1]]}function G(a,b){var c=J();for(var d=0;d<3;d++){for(var e=0;e<3;e++){var g=0;for(var h=0;h<3;h++){g+=a[d][h]*b[h][e]}c[d][e]=g}}return c}function N(a,b){b.fillStyle=a.fillStyle;b.lineCap=a.lineCap;b.lineJoin=a.lineJoin;b.lineWidth=a.lineWidth;b.miterLimit=$/;"	v
+S	mercurial/templates/static/excanvas.js	/^a.miterLimit;b.shadowBlur=a.shadowBlur;b.shadowColor=a.shadowColor;b.shadowOffsetX=a.shadowOffsetX;b.shadowOffsetY=a.shadowOffsetY;b.strokeStyle=a.strokeStyle;b.d=a.d;b.e=a.e}function O(a){var b,c=1;a=String(a);if(a.substring(0,3)=="rgb"){var d=a.indexOf("(",3),e=a.indexOf(")",d+1),g=a.substring(d+1,e).split(",");b="#";for(var h=0;h<3;h++){b+=R[Number(g[h])]}if(g.length==4&&a.substr(3,1)=="a"){c=g[3]}}else{b=a}return[b,c]}function S(a){switch(a){case "butt":return"flat";case "round":return"round";$/;"	f
+STATE_HEXDIGIT	twisted/protocols/_c_urlarg.c	30;"	d	file:
+STATE_INITIAL	twisted/protocols/_c_urlarg.c	28;"	d	file:
+STATE_PERCENT	twisted/protocols/_c_urlarg.c	29;"	d	file:
+SpecType	zope/interface/_zope_interface_coptimizations.c	/^static PyTypeObject SpecType = {$/;"	v	file:
+SpecType	zope/interface/_zope_interface_coptimizations.c	/^static PyTypeObject SpecType;   \/* Forward *\/$/;"	v	file:
+Spec_call	zope/interface/_zope_interface_coptimizations.c	/^Spec_call(PyObject *self, PyObject *args, PyObject *kw)$/;"	f	file:
+Spec_extends	zope/interface/_zope_interface_coptimizations.c	/^Spec_extends(PyObject *self, PyObject *other)$/;"	f	file:
+Spec_extends__doc__	zope/interface/_zope_interface_coptimizations.c	/^static char Spec_extends__doc__[] = $/;"	v	file:
+Spec_implementedBy	zope/interface/_zope_interface_coptimizations.c	/^Spec_implementedBy(PyObject *self, PyObject *cls)$/;"	f	file:
+Spec_implementedBy__doc__	zope/interface/_zope_interface_coptimizations.c	/^static char Spec_implementedBy__doc__[] = $/;"	v	file:
+Spec_methods	zope/interface/_zope_interface_coptimizations.c	/^static struct PyMethodDef Spec_methods[] = {$/;"	v	typeref:struct:PyMethodDef	file:
+Spec_providedBy	zope/interface/_zope_interface_coptimizations.c	/^Spec_providedBy(PyObject *self, PyObject *ob)$/;"	f	file:
+Spec_providedBy__doc__	zope/interface/_zope_interface_coptimizations.c	/^static char Spec_providedBy__doc__[] = $/;"	v	file:
+TM_INLINE	twisted/protocols/_c_urlarg.c	19;"	d	file:
+TM_INLINE	twisted/protocols/_c_urlarg.c	21;"	d	file:
+TYPE	zope/interface/_zope_interface_coptimizations.c	18;"	d	file:
+UrlargError	twisted/protocols/_c_urlarg.c	/^static PyObject* UrlargError;$/;"	v	file:
+V	mercurial/templates/static/excanvas.js	/^W);var b=a.attributes;if(b.width&&b.width.specified){a.style.width=b.width.nodeValue+"px"}else{a.width=a.clientWidth}if(b.height&&b.height.specified){a.style.height=b.height.nodeValue+"px"}else{a.height=a.clientHeight}return a}};function V(a){var b=a.srcElement;switch(a.propertyName){case "width":b.style.width=b.attributes.width.nodeValue+"px";b.getContext().clearRect();break;case "height":b.style.height=b.attributes.height.nodeValue+"px";b.getContext().clearRect();break}}function W(a){var b=a.srcElement;$/;"	f
+VerifyingBase	zope/interface/_zope_interface_coptimizations.c	/^static PyTypeObject VerifyingBase = {$/;"	v	file:
+W	mercurial/templates/static/excanvas.js	/^W);var b=a.attributes;if(b.width&&b.width.specified){a.style.width=b.width.nodeValue+"px"}else{a.width=a.clientWidth}if(b.height&&b.height.specified){a.style.height=b.height.nodeValue+"px"}else{a.height=a.clientHeight}return a}};function V(a){var b=a.srcElement;switch(a.propertyName){case "width":b.style.width=b.attributes.width.nodeValue+"px";b.getContext().clearRect();break;case "height":b.style.height=b.attributes.height.nodeValue+"px";b.getContext().clearRect();break}}function W(a){var b=a.srcElement;$/;"	f
+WSAID_ACCEPTEX	twisted/internet/iocpreactor/iocpsupport/winsock_pointers.c	18;"	d	file:
+WSAID_CONNECTEX	twisted/internet/iocpreactor/iocpsupport/winsock_pointers.c	12;"	d	file:
+WSAID_GETACCEPTEXSOCKADDRS	twisted/internet/iocpreactor/iocpsupport/winsock_pointers.c	15;"	d	file:
+__PYX_EXTERN_C	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	25;"	d	file:
+__PYX_EXTERN_C	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	27;"	d	file:
+__PYX_EXTERN_C	twisted/python/_epoll.c	17;"	d	file:
+__PYX_EXTERN_C	twisted/python/_epoll.c	19;"	d	file:
+__PYX_EXTERN_C	twisted/test/raiser.c	11;"	d	file:
+__PYX_EXTERN_C	twisted/test/raiser.c	9;"	d	file:
+__Pyx_AddTraceback	twisted/internet/cfsupport/cfsupport.c	/^static void __Pyx_AddTraceback(char *funcname) {$/;"	f	file:
+__Pyx_AddTraceback	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^static void __Pyx_AddTraceback(char *funcname) {$/;"	f	file:
+__Pyx_AddTraceback	twisted/python/_epoll.c	/^static void __Pyx_AddTraceback(char *funcname) {$/;"	f	file:
+__Pyx_AddTraceback	twisted/test/raiser.c	/^static void __Pyx_AddTraceback(char *funcname) {$/;"	f	file:
+__Pyx_ArgTypeTest	twisted/internet/cfsupport/cfsupport.c	/^static int __Pyx_ArgTypeTest(PyObject *obj, PyTypeObject *type, int none_allowed, char *name) {$/;"	f	file:
+__Pyx_CApiTabEntry	twisted/python/_epoll.c	/^typedef struct {const char *s; const void **p;} __Pyx_CApiTabEntry; \/*proto*\/$/;"	t	typeref:struct:__anon9	file:
+__Pyx_CreateClass	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^static PyObject *__Pyx_CreateClass($/;"	f	file:
+__Pyx_CreateClass	twisted/test/raiser.c	/^static PyObject *__Pyx_CreateClass($/;"	f	file:
+__Pyx_EndUnpack	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^static int __Pyx_EndUnpack(PyObject *iter) {$/;"	f	file:
+__Pyx_GetExcValue	twisted/internet/cfsupport/cfsupport.c	/^static PyObject *__Pyx_GetExcValue(void) {$/;"	f	file:
+__Pyx_GetName	twisted/internet/cfsupport/cfsupport.c	/^static PyObject *__Pyx_GetName(PyObject *dict, PyObject *name) {$/;"	f	file:
+__Pyx_GetName	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^static PyObject *__Pyx_GetName(PyObject *dict, PyObject *name) {$/;"	f	file:
+__Pyx_GetName	twisted/python/_epoll.c	/^static PyObject *__Pyx_GetName(PyObject *dict, PyObject *name) {$/;"	f	file:
+__Pyx_GetName	twisted/test/raiser.c	/^static PyObject *__Pyx_GetName(PyObject *dict, PyObject *name) {$/;"	f	file:
+__Pyx_GetStarArgs	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^static int __Pyx_GetStarArgs($/;"	f	file:
+__Pyx_Import	twisted/internet/cfsupport/cfsupport.c	/^static PyObject *__Pyx_Import(PyObject *name, PyObject *from_list) {$/;"	f	file:
+__Pyx_Import	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^static PyObject *__Pyx_Import(PyObject *name, PyObject *from_list) {$/;"	f	file:
+__Pyx_InitStrings	twisted/internet/cfsupport/cfsupport.c	/^static int __Pyx_InitStrings(__Pyx_StringTabEntry *t) {$/;"	f	file:
+__Pyx_InitStrings	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^static int __Pyx_InitStrings(__Pyx_StringTabEntry *t) {$/;"	f	file:
+__Pyx_InitStrings	twisted/test/raiser.c	/^static int __Pyx_InitStrings(__Pyx_StringTabEntry *t) {$/;"	f	file:
+__Pyx_InternStrings	twisted/internet/cfsupport/cfsupport.c	/^static int __Pyx_InternStrings(__Pyx_InternTabEntry *t) {$/;"	f	file:
+__Pyx_InternStrings	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^static int __Pyx_InternStrings(__Pyx_InternTabEntry *t) {$/;"	f	file:
+__Pyx_InternStrings	twisted/python/_epoll.c	/^static int __Pyx_InternStrings(__Pyx_InternTabEntry *t) {$/;"	f	file:
+__Pyx_InternStrings	twisted/test/raiser.c	/^static int __Pyx_InternStrings(__Pyx_InternTabEntry *t) {$/;"	f	file:
+__Pyx_InternTabEntry	twisted/internet/cfsupport/cfsupport.c	/^typedef struct {PyObject **p; char *s;} __Pyx_InternTabEntry; \/*proto*\/$/;"	t	typeref:struct:__anon5	file:
+__Pyx_InternTabEntry	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^typedef struct {PyObject **p; char *s;} __Pyx_InternTabEntry; \/*proto*\/$/;"	t	typeref:struct:__anon7	file:
+__Pyx_InternTabEntry	twisted/python/_epoll.c	/^typedef struct {PyObject **p; char *s;} __Pyx_InternTabEntry; \/*proto*\/$/;"	t	typeref:struct:__anon10	file:
+__Pyx_InternTabEntry	twisted/test/raiser.c	/^typedef struct {PyObject **p; char *s;} __Pyx_InternTabEntry; \/*proto*\/$/;"	t	typeref:struct:__anon3	file:
+__Pyx_Raise	twisted/internet/cfsupport/cfsupport.c	/^static void __Pyx_Raise(PyObject *type, PyObject *value, PyObject *tb) {$/;"	f	file:
+__Pyx_Raise	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^static void __Pyx_Raise(PyObject *type, PyObject *value, PyObject *tb) {$/;"	f	file:
+__Pyx_Raise	twisted/python/_epoll.c	/^static void __Pyx_Raise(PyObject *type, PyObject *value, PyObject *tb) {$/;"	f	file:
+__Pyx_Raise	twisted/test/raiser.c	/^static void __Pyx_Raise(PyObject *type, PyObject *value, PyObject *tb) {$/;"	f	file:
+__Pyx_ReRaise	twisted/internet/cfsupport/cfsupport.c	/^static void __Pyx_ReRaise(void) {$/;"	f	file:
+__Pyx_StringTabEntry	twisted/internet/cfsupport/cfsupport.c	/^typedef struct {PyObject **p; char *s; long n;} __Pyx_StringTabEntry; \/*proto*\/$/;"	t	typeref:struct:__anon6	file:
+__Pyx_StringTabEntry	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^typedef struct {PyObject **p; char *s; long n;} __Pyx_StringTabEntry; \/*proto*\/$/;"	t	typeref:struct:__anon8	file:
+__Pyx_StringTabEntry	twisted/python/_epoll.c	/^typedef struct {PyObject **p; char *s; long n;} __Pyx_StringTabEntry; \/*proto*\/$/;"	t	typeref:struct:__anon11	file:
+__Pyx_StringTabEntry	twisted/test/raiser.c	/^typedef struct {PyObject **p; char *s; long n;} __Pyx_StringTabEntry; \/*proto*\/$/;"	t	typeref:struct:__anon4	file:
+__Pyx_UnpackError	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^static void __Pyx_UnpackError(void) {$/;"	f	file:
+__Pyx_UnpackItem	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^static PyObject *__Pyx_UnpackItem(PyObject *iter) {$/;"	f	file:
+__Pyx_WriteUnraisable	twisted/internet/cfsupport/cfsupport.c	/^static void __Pyx_WriteUnraisable(char *name) {$/;"	f	file:
+__adapt__	zope/interface/_zope_interface_coptimizations.c	/^__adapt__(PyObject *self, PyObject *obj)$/;"	f	file:
+__cdecl	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	21;"	d	file:
+__pyx_b	twisted/internet/cfsupport/cfsupport.c	/^static PyObject *__pyx_b;$/;"	v	file:
+__pyx_b	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^static PyObject *__pyx_b;$/;"	v	file:
+__pyx_b	twisted/python/_epoll.c	/^static PyObject *__pyx_b;$/;"	v	file:
+__pyx_b	twisted/test/raiser.c	/^static PyObject *__pyx_b;$/;"	v	file:
+__pyx_doc_6_epoll_5epoll__control	twisted/python/_epoll.c	/^static char __pyx_doc_6_epoll_5epoll__control[] = "\\n        Modify the monitored state of a particular file descriptor.\\n        \\n        Wrap epoll_ctl(2).\\n\\n        @type op: C{int}\\n        @param op: One of CTL_ADD, CTL_DEL, or CTL_MOD\\n\\n        @type fd: C{int}\\n        @param fd: File descriptor to modify\\n\\n        @type events: C{int}\\n        @param events: A bit set of IN, OUT, PRI, ERR, HUP, and ET.\\n\\n        @raise IOError: Raised if the underlying epoll_ctl() call fails.\\n        ";$/;"	v	file:
+__pyx_doc_6_epoll_5epoll_close	twisted/python/_epoll.c	/^static char __pyx_doc_6_epoll_5epoll_close[] = "\\n        Close the epoll file descriptor.\\n        ";$/;"	v	file:
+__pyx_doc_6_epoll_5epoll_fileno	twisted/python/_epoll.c	/^static char __pyx_doc_6_epoll_5epoll_fileno[] = "\\n        Return the epoll file descriptor number.\\n        ";$/;"	v	file:
+__pyx_doc_6_epoll_5epoll_wait	twisted/python/_epoll.c	/^static char __pyx_doc_6_epoll_5epoll_wait[] = "\\n        Wait for an I\/O event, wrap epoll_wait(2).\\n\\n        @type maxevents: C{int}\\n        @param maxevents: Maximum number of events returned.\\n\\n        @type timeout: C{int}\\n        @param timeout: Maximum time waiting for events. 0 makes it return\\n            immediately whereas -1 makes it wait indefinitely.\\n        \\n        @raise IOError: Raised if the underlying epoll_wait() call fails.\\n        ";$/;"	v	file:
+__pyx_doc_6raiser_raiseException	twisted/test/raiser.c	/^static char __pyx_doc_6raiser_raiseException[] = "\\n    Raise L{RaiserException}.\\n    ";$/;"	v	file:
+__pyx_f	twisted/internet/cfsupport/cfsupport.c	/^staticforward char **__pyx_f;$/;"	v
+__pyx_f	twisted/internet/cfsupport/cfsupport.c	/^statichere char **__pyx_f = __pyx_filenames;$/;"	v
+__pyx_f	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^static char **__pyx_f;$/;"	v	file:
+__pyx_f	twisted/python/_epoll.c	/^static char **__pyx_f;$/;"	v	file:
+__pyx_f	twisted/test/raiser.c	/^static char **__pyx_f;$/;"	v	file:
+__pyx_f_11iocpsupport_14CompletionPort___del__	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^static PyObject *__pyx_f_11iocpsupport_14CompletionPort___del__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {$/;"	f	file:
+__pyx_f_11iocpsupport_14CompletionPort___init__	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^static int __pyx_f_11iocpsupport_14CompletionPort___init__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {$/;"	f	file:
+__pyx_f_11iocpsupport_14CompletionPort_addHandle	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^static PyObject *__pyx_f_11iocpsupport_14CompletionPort_addHandle(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {$/;"	f	file:
+__pyx_f_11iocpsupport_14CompletionPort_getEvent	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^static PyObject *__pyx_f_11iocpsupport_14CompletionPort_getEvent(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {$/;"	f	file:
+__pyx_f_11iocpsupport_14CompletionPort_postEvent	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^static PyObject *__pyx_f_11iocpsupport_14CompletionPort_postEvent(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {$/;"	f	file:
+__pyx_f_11iocpsupport_5Event___init__	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^static PyObject *__pyx_f_11iocpsupport_5Event___init__(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {$/;"	f	file:
+__pyx_f_11iocpsupport_AllocateReadBuffer	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^static PyObject *__pyx_f_11iocpsupport_AllocateReadBuffer(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {$/;"	f	file:
+__pyx_f_11iocpsupport__makesockaddr	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^static PyObject *__pyx_f_11iocpsupport__makesockaddr(struct sockaddr *__pyx_v_addr,int __pyx_v_len) {$/;"	f	file:
+__pyx_f_11iocpsupport_accept	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^static PyObject *__pyx_f_11iocpsupport_accept(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {$/;"	f	file:
+__pyx_f_11iocpsupport_connect	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^static PyObject *__pyx_f_11iocpsupport_connect(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {$/;"	f	file:
+__pyx_f_11iocpsupport_fillinetaddr	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^static PyObject *__pyx_f_11iocpsupport_fillinetaddr(struct sockaddr_in *__pyx_v_dest,PyObject *__pyx_v_addr) {$/;"	f	file:
+__pyx_f_11iocpsupport_getAddrFamily	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^static int __pyx_f_11iocpsupport_getAddrFamily(__pyx_t_11iocpsupport_SOCKET __pyx_v_s) {$/;"	f	file:
+__pyx_f_11iocpsupport_get_accept_addrs	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^static PyObject *__pyx_f_11iocpsupport_get_accept_addrs(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {$/;"	f	file:
+__pyx_f_11iocpsupport_makeOV	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^static struct __pyx_t_11iocpsupport_myOVERLAPPED *__pyx_f_11iocpsupport_makeOV(void) {$/;"	f	file:
+__pyx_f_11iocpsupport_makesockaddr	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^static PyObject *__pyx_f_11iocpsupport_makesockaddr(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {$/;"	f	file:
+__pyx_f_11iocpsupport_maxAddrLen	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^static PyObject *__pyx_f_11iocpsupport_maxAddrLen(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {$/;"	f	file:
+__pyx_f_11iocpsupport_raise_error	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^static void __pyx_f_11iocpsupport_raise_error(int __pyx_v_err,PyObject *__pyx_v_message) {$/;"	f	file:
+__pyx_f_11iocpsupport_recv	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^static PyObject *__pyx_f_11iocpsupport_recv(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {$/;"	f	file:
+__pyx_f_11iocpsupport_recvfrom	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^static PyObject *__pyx_f_11iocpsupport_recvfrom(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {$/;"	f	file:
+__pyx_f_11iocpsupport_send	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^static PyObject *__pyx_f_11iocpsupport_send(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {$/;"	f	file:
+__pyx_f_6_epoll_5epoll___dealloc__	twisted/python/_epoll.c	/^static void __pyx_f_6_epoll_5epoll___dealloc__(PyObject *__pyx_v_self) {$/;"	f	file:
+__pyx_f_6_epoll_5epoll___init__	twisted/python/_epoll.c	/^static int __pyx_f_6_epoll_5epoll___init__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {$/;"	f	file:
+__pyx_f_6_epoll_5epoll__control	twisted/python/_epoll.c	/^static PyObject *__pyx_f_6_epoll_5epoll__control(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {$/;"	f	file:
+__pyx_f_6_epoll_5epoll_close	twisted/python/_epoll.c	/^static PyObject *__pyx_f_6_epoll_5epoll_close(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {$/;"	f	file:
+__pyx_f_6_epoll_5epoll_fileno	twisted/python/_epoll.c	/^static PyObject *__pyx_f_6_epoll_5epoll_fileno(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {$/;"	f	file:
+__pyx_f_6_epoll_5epoll_wait	twisted/python/_epoll.c	/^static PyObject *__pyx_f_6_epoll_5epoll_wait(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {$/;"	f	file:
+__pyx_f_6raiser_raiseException	twisted/test/raiser.c	/^static PyObject *__pyx_f_6raiser_raiseException(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {$/;"	f	file:
+__pyx_f_9cfsupport_10PyCFSocket___dealloc__	twisted/internet/cfsupport/cfsupport.c	/^static void __pyx_f_9cfsupport_10PyCFSocket___dealloc__(PyObject *__pyx_v_self) {$/;"	f	file:
+__pyx_f_9cfsupport_10PyCFSocket___new__	twisted/internet/cfsupport/cfsupport.c	/^static int __pyx_f_9cfsupport_10PyCFSocket___new__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {$/;"	f	file:
+__pyx_f_9cfsupport_10PyCFSocket_startReading	twisted/internet/cfsupport/cfsupport.c	/^static PyObject *__pyx_f_9cfsupport_10PyCFSocket_startReading(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {$/;"	f	file:
+__pyx_f_9cfsupport_10PyCFSocket_startWriting	twisted/internet/cfsupport/cfsupport.c	/^static PyObject *__pyx_f_9cfsupport_10PyCFSocket_startWriting(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {$/;"	f	file:
+__pyx_f_9cfsupport_10PyCFSocket_stopReading	twisted/internet/cfsupport/cfsupport.c	/^static PyObject *__pyx_f_9cfsupport_10PyCFSocket_stopReading(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {$/;"	f	file:
+__pyx_f_9cfsupport_10PyCFSocket_stopWriting	twisted/internet/cfsupport/cfsupport.c	/^static PyObject *__pyx_f_9cfsupport_10PyCFSocket_stopWriting(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {$/;"	f	file:
+__pyx_f_9cfsupport_10PyCFSocket_update	twisted/internet/cfsupport/cfsupport.c	/^static PyObject *__pyx_f_9cfsupport_10PyCFSocket_update(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {$/;"	f	file:
+__pyx_f_9cfsupport_11PyCFRunLoop___new__	twisted/internet/cfsupport/cfsupport.c	/^static int __pyx_f_9cfsupport_11PyCFRunLoop___new__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {$/;"	f	file:
+__pyx_f_9cfsupport_11PyCFRunLoop_addSocket	twisted/internet/cfsupport/cfsupport.c	/^static PyObject *__pyx_f_9cfsupport_11PyCFRunLoop_addSocket(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {$/;"	f	file:
+__pyx_f_9cfsupport_11PyCFRunLoop_addTimer	twisted/internet/cfsupport/cfsupport.c	/^static PyObject *__pyx_f_9cfsupport_11PyCFRunLoop_addTimer(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {$/;"	f	file:
+__pyx_f_9cfsupport_11PyCFRunLoop_currentMode	twisted/internet/cfsupport/cfsupport.c	/^static PyObject *__pyx_f_9cfsupport_11PyCFRunLoop_currentMode(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {$/;"	f	file:
+__pyx_f_9cfsupport_11PyCFRunLoop_removeSocket	twisted/internet/cfsupport/cfsupport.c	/^static PyObject *__pyx_f_9cfsupport_11PyCFRunLoop_removeSocket(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {$/;"	f	file:
+__pyx_f_9cfsupport_11PyCFRunLoop_removeTimer	twisted/internet/cfsupport/cfsupport.c	/^static PyObject *__pyx_f_9cfsupport_11PyCFRunLoop_removeTimer(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {$/;"	f	file:
+__pyx_f_9cfsupport_11PyCFRunLoop_run	twisted/internet/cfsupport/cfsupport.c	/^static PyObject *__pyx_f_9cfsupport_11PyCFRunLoop_run(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {$/;"	f	file:
+__pyx_f_9cfsupport_11PyCFRunLoop_stop	twisted/internet/cfsupport/cfsupport.c	/^static PyObject *__pyx_f_9cfsupport_11PyCFRunLoop_stop(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {$/;"	f	file:
+__pyx_f_9cfsupport_16PyCFRunLoopTimer___dealloc__	twisted/internet/cfsupport/cfsupport.c	/^static void __pyx_f_9cfsupport_16PyCFRunLoopTimer___dealloc__(PyObject *__pyx_v_self) {$/;"	f	file:
+__pyx_f_9cfsupport_16PyCFRunLoopTimer___new__	twisted/internet/cfsupport/cfsupport.c	/^static int __pyx_f_9cfsupport_16PyCFRunLoopTimer___new__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {$/;"	f	file:
+__pyx_f_9cfsupport_16PyCFRunLoopTimer_getNextFireDate	twisted/internet/cfsupport/cfsupport.c	/^static PyObject *__pyx_f_9cfsupport_16PyCFRunLoopTimer_getNextFireDate(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {$/;"	f	file:
+__pyx_f_9cfsupport_16PyCFRunLoopTimer_invalidate	twisted/internet/cfsupport/cfsupport.c	/^static PyObject *__pyx_f_9cfsupport_16PyCFRunLoopTimer_invalidate(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {$/;"	f	file:
+__pyx_f_9cfsupport_16PyCFRunLoopTimer_setNextFireDate	twisted/internet/cfsupport/cfsupport.c	/^static PyObject *__pyx_f_9cfsupport_16PyCFRunLoopTimer_setNextFireDate(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {$/;"	f	file:
+__pyx_f_9cfsupport_gilRunLoopTimerCallBack	twisted/internet/cfsupport/cfsupport.c	/^static void __pyx_f_9cfsupport_gilRunLoopTimerCallBack(CFRunLoopTimerRef __pyx_v_timer,void (*__pyx_v_info)) {$/;"	f	file:
+__pyx_f_9cfsupport_gilSocketCallBack	twisted/internet/cfsupport/cfsupport.c	/^static void __pyx_f_9cfsupport_gilSocketCallBack(CFSocketRef __pyx_v_s,CFSocketCallBackType __pyx_v__type,CFDataRef __pyx_v_address,void (*__pyx_v_data),void (*__pyx_v_info)) {$/;"	f	file:
+__pyx_f_9cfsupport_now	twisted/internet/cfsupport/cfsupport.c	/^static PyObject *__pyx_f_9cfsupport_now(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {$/;"	f	file:
+__pyx_f_9cfsupport_runLoopTimerCallBack	twisted/internet/cfsupport/cfsupport.c	/^static void __pyx_f_9cfsupport_runLoopTimerCallBack(CFRunLoopTimerRef __pyx_v_timer,void (*__pyx_v_info)) {$/;"	f	file:
+__pyx_f_9cfsupport_socketCallBack	twisted/internet/cfsupport/cfsupport.c	/^static void __pyx_f_9cfsupport_socketCallBack(CFSocketRef __pyx_v_s,CFSocketCallBackType __pyx_v__type,CFDataRef __pyx_v_address,void (*__pyx_v_data),void (*__pyx_v_info)) {$/;"	f	file:
+__pyx_filename	twisted/internet/cfsupport/cfsupport.c	/^static char *__pyx_filename;$/;"	v	file:
+__pyx_filename	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^static char *__pyx_filename;$/;"	v	file:
+__pyx_filename	twisted/python/_epoll.c	/^static char *__pyx_filename;$/;"	v	file:
+__pyx_filename	twisted/test/raiser.c	/^static char *__pyx_filename;$/;"	v	file:
+__pyx_filenames	twisted/internet/cfsupport/cfsupport.c	/^static char *__pyx_filenames[] = {$/;"	v	file:
+__pyx_filenames	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^static char *__pyx_filenames[] = {$/;"	v	file:
+__pyx_filenames	twisted/python/_epoll.c	/^static char *__pyx_filenames[] = {$/;"	v	file:
+__pyx_filenames	twisted/test/raiser.c	/^static char *__pyx_filenames[] = {$/;"	v	file:
+__pyx_init_filenames	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^static void __pyx_init_filenames(void) {$/;"	f	file:
+__pyx_init_filenames	twisted/python/_epoll.c	/^static void __pyx_init_filenames(void) {$/;"	f	file:
+__pyx_init_filenames	twisted/test/raiser.c	/^static void __pyx_init_filenames(void) {$/;"	f	file:
+__pyx_intern_tab	twisted/internet/cfsupport/cfsupport.c	/^static __Pyx_InternTabEntry __pyx_intern_tab[] = {$/;"	v	file:
+__pyx_intern_tab	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^static __Pyx_InternTabEntry __pyx_intern_tab[] = {$/;"	v	file:
+__pyx_intern_tab	twisted/python/_epoll.c	/^static __Pyx_InternTabEntry __pyx_intern_tab[] = {$/;"	v	file:
+__pyx_intern_tab	twisted/test/raiser.c	/^static __Pyx_InternTabEntry __pyx_intern_tab[] = {$/;"	v	file:
+__pyx_k10	twisted/internet/cfsupport/cfsupport.c	/^static char (__pyx_k10[]) = "Invalid Socket";$/;"	v	file:
+__pyx_k10p	twisted/internet/cfsupport/cfsupport.c	/^static PyObject *__pyx_k10p;$/;"	v	file:
+__pyx_k11	twisted/internet/cfsupport/cfsupport.c	/^static char (__pyx_k11[]) = "CFRunLoopReference is invalid";$/;"	v	file:
+__pyx_k11	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^static char __pyx_k11[] = "invalid IP address";$/;"	v	file:
+__pyx_k11p	twisted/internet/cfsupport/cfsupport.c	/^static PyObject *__pyx_k11p;$/;"	v	file:
+__pyx_k11p	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^static PyObject *__pyx_k11p;$/;"	v	file:
+__pyx_k12	twisted/internet/cfsupport/cfsupport.c	/^static char (__pyx_k12[]) = "CFRunLoopReference is invalid";$/;"	v	file:
+__pyx_k12p	twisted/internet/cfsupport/cfsupport.c	/^static PyObject *__pyx_k12p;$/;"	v	file:
+__pyx_k13	twisted/internet/cfsupport/cfsupport.c	/^static char (__pyx_k13[]) = "CFRunLoopReference is invalid";$/;"	v	file:
+__pyx_k13p	twisted/internet/cfsupport/cfsupport.c	/^static PyObject *__pyx_k13p;$/;"	v	file:
+__pyx_k14	twisted/internet/cfsupport/cfsupport.c	/^static char (__pyx_k14[]) = "CFRunLoopReference is invalid";$/;"	v	file:
+__pyx_k14	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^static char __pyx_k14[] = "ConnectEx is not available on this system";$/;"	v	file:
+__pyx_k14p	twisted/internet/cfsupport/cfsupport.c	/^static PyObject *__pyx_k14p;$/;"	v	file:
+__pyx_k14p	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^static PyObject *__pyx_k14p;$/;"	v	file:
+__pyx_k15	twisted/internet/cfsupport/cfsupport.c	/^static char (__pyx_k15[]) = "CFRunLoopReference is invalid";$/;"	v	file:
+__pyx_k15	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^static char __pyx_k15[] = "unsupported address family";$/;"	v	file:
+__pyx_k15p	twisted/internet/cfsupport/cfsupport.c	/^static PyObject *__pyx_k15p;$/;"	v	file:
+__pyx_k15p	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^static PyObject *__pyx_k15p;$/;"	v	file:
+__pyx_k16	twisted/internet/cfsupport/cfsupport.c	/^static char (__pyx_k16[]) = "CFRunLoopReference is invalid";$/;"	v	file:
+__pyx_k16	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^static char __pyx_k16[] = "second argument needs to be a list";$/;"	v	file:
+__pyx_k16p	twisted/internet/cfsupport/cfsupport.c	/^static PyObject *__pyx_k16p;$/;"	v	file:
+__pyx_k2	twisted/internet/cfsupport/cfsupport.c	/^static PyObject *__pyx_k2;$/;"	v	file:
+__pyx_k2	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^static long __pyx_k2;$/;"	v	file:
+__pyx_k2	twisted/test/raiser.c	/^static char (__pyx_k2[]) = "\\n    A speficic exception only used to be identified in tests.\\n    ";$/;"	v	file:
+__pyx_k2p	twisted/test/raiser.c	/^static PyObject *__pyx_k2p;$/;"	v	file:
+__pyx_k3	twisted/internet/cfsupport/cfsupport.c	/^static PyObject *__pyx_k3;$/;"	v	file:
+__pyx_k3	twisted/test/raiser.c	/^static char (__pyx_k3[]) = "This function is intentionally broken";$/;"	v	file:
+__pyx_k3p	twisted/test/raiser.c	/^static PyObject *__pyx_k3p;$/;"	v	file:
+__pyx_k4	twisted/internet/cfsupport/cfsupport.c	/^static PyObject *__pyx_k4;$/;"	v	file:
+__pyx_k4	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^static char __pyx_k4[] = "Failed to initialize Winsock function vectors";$/;"	v	file:
+__pyx_k4p	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^static PyObject *__pyx_k4p;$/;"	v	file:
+__pyx_k5	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^static unsigned long __pyx_k5;$/;"	v	file:
+__pyx_k6	twisted/internet/cfsupport/cfsupport.c	/^static PyObject *__pyx_k6;$/;"	v	file:
+__pyx_k6	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^static unsigned long __pyx_k6;$/;"	v	file:
+__pyx_k7	twisted/internet/cfsupport/cfsupport.c	/^static char (__pyx_k7[]) = "0.4";$/;"	v	file:
+__pyx_k7	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^static unsigned long __pyx_k7;$/;"	v	file:
+__pyx_k7p	twisted/internet/cfsupport/cfsupport.c	/^static PyObject *__pyx_k7p;$/;"	v	file:
+__pyx_k8	twisted/internet/cfsupport/cfsupport.c	/^static char (__pyx_k8[]) = "Invalid Socket";$/;"	v	file:
+__pyx_k8p	twisted/internet/cfsupport/cfsupport.c	/^static PyObject *__pyx_k8p;$/;"	v	file:
+__pyx_k9	twisted/internet/cfsupport/cfsupport.c	/^static char (__pyx_k9[]) = "Couldn't create runloop source";$/;"	v	file:
+__pyx_k9p	twisted/internet/cfsupport/cfsupport.c	/^static PyObject *__pyx_k9p;$/;"	v	file:
+__pyx_lineno	twisted/internet/cfsupport/cfsupport.c	/^static int __pyx_lineno;$/;"	v	file:
+__pyx_lineno	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^static int __pyx_lineno;$/;"	v	file:
+__pyx_lineno	twisted/python/_epoll.c	/^static int __pyx_lineno;$/;"	v	file:
+__pyx_lineno	twisted/test/raiser.c	/^static int __pyx_lineno;$/;"	v	file:
+__pyx_m	twisted/internet/cfsupport/cfsupport.c	/^static PyObject *__pyx_m;$/;"	v	file:
+__pyx_m	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^static PyObject *__pyx_m;$/;"	v	file:
+__pyx_m	twisted/python/_epoll.c	/^static PyObject *__pyx_m;$/;"	v	file:
+__pyx_m	twisted/test/raiser.c	/^static PyObject *__pyx_m;$/;"	v	file:
+__pyx_mdef_11iocpsupport_5Event___init__	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^static PyMethodDef __pyx_mdef_11iocpsupport_5Event___init__ = {"__init__", (PyCFunction)__pyx_f_11iocpsupport_5Event___init__, METH_VARARGS|METH_KEYWORDS, 0};$/;"	v	file:
+__pyx_mdoc	twisted/python/_epoll.c	/^static char __pyx_mdoc[] = "\\nInterface to epoll I\/O event notification facility.\\n";$/;"	v	file:
+__pyx_mdoc	twisted/test/raiser.c	/^static char __pyx_mdoc[] = "\\nA trivial extension that just raises an exception.\\nSee L{twisted.test.test_failure.test_failureConstructionWithMungedStackSucceeds}.\\n";$/;"	v	file:
+__pyx_members_9cfsupport_PyCFRunLoop	twisted/internet/cfsupport/cfsupport.c	/^static struct PyMemberDef __pyx_members_9cfsupport_PyCFRunLoop[] = {$/;"	v	typeref:struct:PyMemberDef	file:
+__pyx_members_9cfsupport_PyCFRunLoopTimer	twisted/internet/cfsupport/cfsupport.c	/^static struct PyMemberDef __pyx_members_9cfsupport_PyCFRunLoopTimer[] = {$/;"	v	typeref:struct:PyMemberDef	file:
+__pyx_members_9cfsupport_PyCFSocket	twisted/internet/cfsupport/cfsupport.c	/^static struct PyMemberDef __pyx_members_9cfsupport_PyCFSocket[] = {$/;"	v	typeref:struct:PyMemberDef	file:
+__pyx_methods	twisted/internet/cfsupport/cfsupport.c	/^static struct PyMethodDef __pyx_methods[] = {$/;"	v	typeref:struct:PyMethodDef	file:
+__pyx_methods	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^static struct PyMethodDef __pyx_methods[] = {$/;"	v	typeref:struct:PyMethodDef	file:
+__pyx_methods	twisted/python/_epoll.c	/^static struct PyMethodDef __pyx_methods[] = {$/;"	v	typeref:struct:PyMethodDef	file:
+__pyx_methods	twisted/test/raiser.c	/^static struct PyMethodDef __pyx_methods[] = {$/;"	v	typeref:struct:PyMethodDef	file:
+__pyx_methods_11iocpsupport_CompletionPort	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^static struct PyMethodDef __pyx_methods_11iocpsupport_CompletionPort[] = {$/;"	v	typeref:struct:PyMethodDef	file:
+__pyx_methods_6_epoll_epoll	twisted/python/_epoll.c	/^static struct PyMethodDef __pyx_methods_6_epoll_epoll[] = {$/;"	v	typeref:struct:PyMethodDef	file:
+__pyx_methods_9cfsupport_PyCFRunLoop	twisted/internet/cfsupport/cfsupport.c	/^static struct PyMethodDef __pyx_methods_9cfsupport_PyCFRunLoop[] = {$/;"	v	typeref:struct:PyMethodDef	file:
+__pyx_methods_9cfsupport_PyCFRunLoopTimer	twisted/internet/cfsupport/cfsupport.c	/^static struct PyMethodDef __pyx_methods_9cfsupport_PyCFRunLoopTimer[] = {$/;"	v	typeref:struct:PyMethodDef	file:
+__pyx_methods_9cfsupport_PyCFSocket	twisted/internet/cfsupport/cfsupport.c	/^static struct PyMethodDef __pyx_methods_9cfsupport_PyCFSocket[] = {$/;"	v	typeref:struct:PyMethodDef	file:
+__pyx_n_CTL_ADD	twisted/python/_epoll.c	/^static PyObject *__pyx_n_CTL_ADD;$/;"	v	file:
+__pyx_n_CTL_DEL	twisted/python/_epoll.c	/^static PyObject *__pyx_n_CTL_DEL;$/;"	v	file:
+__pyx_n_CTL_MOD	twisted/python/_epoll.c	/^static PyObject *__pyx_n_CTL_MOD;$/;"	v	file:
+__pyx_n_CreateIoCompletionPort	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^static PyObject *__pyx_n_CreateIoCompletionPort;$/;"	v	file:
+__pyx_n_ERR	twisted/python/_epoll.c	/^static PyObject *__pyx_n_ERR;$/;"	v	file:
+__pyx_n_ET	twisted/python/_epoll.c	/^static PyObject *__pyx_n_ET;$/;"	v	file:
+__pyx_n_Event	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^static PyObject *__pyx_n_Event;$/;"	v	file:
+__pyx_n_Exception	twisted/test/raiser.c	/^static PyObject *__pyx_n_Exception;$/;"	v	file:
+__pyx_n_False	twisted/internet/cfsupport/cfsupport.c	/^static PyObject *__pyx_n_False;$/;"	v	file:
+__pyx_n_False	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^static PyObject *__pyx_n_False;$/;"	v	file:
+__pyx_n_HUP	twisted/python/_epoll.c	/^static PyObject *__pyx_n_HUP;$/;"	v	file:
+__pyx_n_IN	twisted/python/_epoll.c	/^static PyObject *__pyx_n_IN;$/;"	v	file:
+__pyx_n_IOError	twisted/python/_epoll.c	/^static PyObject *__pyx_n_IOError;$/;"	v	file:
+__pyx_n_MSG	twisted/python/_epoll.c	/^static PyObject *__pyx_n_MSG;$/;"	v	file:
+__pyx_n_MemoryError	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^static PyObject *__pyx_n_MemoryError;$/;"	v	file:
+__pyx_n_OUT	twisted/python/_epoll.c	/^static PyObject *__pyx_n_OUT;$/;"	v	file:
+__pyx_n_PRI	twisted/python/_epoll.c	/^static PyObject *__pyx_n_PRI;$/;"	v	file:
+__pyx_n_PostQueuedCompletionStatus	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^static PyObject *__pyx_n_PostQueuedCompletionStatus;$/;"	v	file:
+__pyx_n_RDBAND	twisted/python/_epoll.c	/^static PyObject *__pyx_n_RDBAND;$/;"	v	file:
+__pyx_n_RDNORM	twisted/python/_epoll.c	/^static PyObject *__pyx_n_RDNORM;$/;"	v	file:
+__pyx_n_RaiserException	twisted/test/raiser.c	/^static PyObject *__pyx_n_RaiserException;$/;"	v	file:
+__pyx_n_True	twisted/internet/cfsupport/cfsupport.c	/^static PyObject *__pyx_n_True;$/;"	v	file:
+__pyx_n_ValueError	twisted/internet/cfsupport/cfsupport.c	/^static PyObject *__pyx_n_ValueError;$/;"	v	file:
+__pyx_n_ValueError	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^static PyObject *__pyx_n_ValueError;$/;"	v	file:
+__pyx_n_WRBAND	twisted/python/_epoll.c	/^static PyObject *__pyx_n_WRBAND;$/;"	v	file:
+__pyx_n_WRNORM	twisted/python/_epoll.c	/^static PyObject *__pyx_n_WRNORM;$/;"	v	file:
+__pyx_n_WindowsError	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^static PyObject *__pyx_n_WindowsError;$/;"	v	file:
+__pyx_n___init__	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^static PyObject *__pyx_n___init__;$/;"	v	file:
+__pyx_n___version__	twisted/internet/cfsupport/cfsupport.c	/^static PyObject *__pyx_n___version__;$/;"	v	file:
+__pyx_n_append	twisted/python/_epoll.c	/^static PyObject *__pyx_n_append;$/;"	v	file:
+__pyx_n_callback	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^static PyObject *__pyx_n_callback;$/;"	v	file:
+__pyx_n_getsockopt	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^static PyObject *__pyx_n_getsockopt;$/;"	v	file:
+__pyx_n_have_connectex	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^static PyObject *__pyx_n_have_connectex;$/;"	v	file:
+__pyx_n_ignore	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^static PyObject *__pyx_n_ignore;$/;"	v	file:
+__pyx_n_items	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^static PyObject *__pyx_n_items;$/;"	v	file:
+__pyx_n_now	twisted/internet/cfsupport/cfsupport.c	/^static PyObject *__pyx_n_now;$/;"	v	file:
+__pyx_n_owner	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^static PyObject *__pyx_n_owner;$/;"	v	file:
+__pyx_n_print_exc	twisted/internet/cfsupport/cfsupport.c	/^static PyObject *__pyx_n_print_exc;$/;"	v	file:
+__pyx_n_raiseException	twisted/test/raiser.c	/^static PyObject *__pyx_n_raiseException;$/;"	v	file:
+__pyx_n_socket	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^static PyObject *__pyx_n_socket;$/;"	v	file:
+__pyx_n_traceback	twisted/internet/cfsupport/cfsupport.c	/^static PyObject *__pyx_n_traceback;$/;"	v	file:
+__pyx_n_update	twisted/internet/cfsupport/cfsupport.c	/^static PyObject *__pyx_n_update;$/;"	v	file:
+__pyx_obj_11iocpsupport_CompletionPort	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^struct __pyx_obj_11iocpsupport_CompletionPort {$/;"	s	file:
+__pyx_obj_6_epoll_epoll	twisted/python/_epoll.c	/^struct __pyx_obj_6_epoll_epoll {$/;"	s	file:
+__pyx_obj_9cfsupport_PyCFRunLoop	twisted/internet/cfsupport/cfsupport.c	/^struct __pyx_obj_9cfsupport_PyCFRunLoop {$/;"	s	file:
+__pyx_obj_9cfsupport_PyCFRunLoopTimer	twisted/internet/cfsupport/cfsupport.c	/^struct __pyx_obj_9cfsupport_PyCFRunLoopTimer {$/;"	s	file:
+__pyx_obj_9cfsupport_PyCFSocket	twisted/internet/cfsupport/cfsupport.c	/^struct __pyx_obj_9cfsupport_PyCFSocket {$/;"	s	file:
+__pyx_ptype_11iocpsupport_CompletionPort	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^static PyTypeObject *__pyx_ptype_11iocpsupport_CompletionPort = 0;$/;"	v	file:
+__pyx_ptype_6_epoll_epoll	twisted/python/_epoll.c	/^static PyTypeObject *__pyx_ptype_6_epoll_epoll = 0;$/;"	v	file:
+__pyx_ptype_9cfsupport_PyCFRunLoop	twisted/internet/cfsupport/cfsupport.c	/^static PyTypeObject *__pyx_ptype_9cfsupport_PyCFRunLoop = 0;$/;"	v	file:
+__pyx_ptype_9cfsupport_PyCFRunLoopTimer	twisted/internet/cfsupport/cfsupport.c	/^static PyTypeObject *__pyx_ptype_9cfsupport_PyCFRunLoopTimer = 0;$/;"	v	file:
+__pyx_ptype_9cfsupport_PyCFSocket	twisted/internet/cfsupport/cfsupport.c	/^static PyTypeObject *__pyx_ptype_9cfsupport_PyCFSocket = 0;$/;"	v	file:
+__pyx_string_tab	twisted/internet/cfsupport/cfsupport.c	/^static __Pyx_StringTabEntry __pyx_string_tab[] = {$/;"	v	file:
+__pyx_string_tab	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^static __Pyx_StringTabEntry __pyx_string_tab[] = {$/;"	v	file:
+__pyx_string_tab	twisted/test/raiser.c	/^static __Pyx_StringTabEntry __pyx_string_tab[] = {$/;"	v	file:
+__pyx_t_11iocpsupport_BOOL	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^typedef int __pyx_t_11iocpsupport_BOOL;$/;"	t	file:
+__pyx_t_11iocpsupport_DWORD	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^typedef unsigned long __pyx_t_11iocpsupport_DWORD;$/;"	t	file:
+__pyx_t_11iocpsupport_HANDLE	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^typedef unsigned long __pyx_t_11iocpsupport_HANDLE;$/;"	t	file:
+__pyx_t_11iocpsupport_SOCKET	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^typedef unsigned long __pyx_t_11iocpsupport_SOCKET;$/;"	t	file:
+__pyx_t_11iocpsupport_ULONG_PTR	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^typedef unsigned long __pyx_t_11iocpsupport_ULONG_PTR;$/;"	t	file:
+__pyx_t_11iocpsupport_myOVERLAPPED	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^struct __pyx_t_11iocpsupport_myOVERLAPPED {$/;"	s	file:
+__pyx_t_11iocpsupport_size_t	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^typedef int __pyx_t_11iocpsupport_size_t;$/;"	t	file:
+__pyx_tp_as_buffer_CompletionPort	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^static PyBufferProcs __pyx_tp_as_buffer_CompletionPort = {$/;"	v	file:
+__pyx_tp_as_buffer_PyCFRunLoop	twisted/internet/cfsupport/cfsupport.c	/^static PyBufferProcs __pyx_tp_as_buffer_PyCFRunLoop = {$/;"	v	file:
+__pyx_tp_as_buffer_PyCFRunLoopTimer	twisted/internet/cfsupport/cfsupport.c	/^static PyBufferProcs __pyx_tp_as_buffer_PyCFRunLoopTimer = {$/;"	v	file:
+__pyx_tp_as_buffer_PyCFSocket	twisted/internet/cfsupport/cfsupport.c	/^static PyBufferProcs __pyx_tp_as_buffer_PyCFSocket = {$/;"	v	file:
+__pyx_tp_as_buffer_epoll	twisted/python/_epoll.c	/^static PyBufferProcs __pyx_tp_as_buffer_epoll = {$/;"	v	file:
+__pyx_tp_as_mapping_CompletionPort	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^static PyMappingMethods __pyx_tp_as_mapping_CompletionPort = {$/;"	v	file:
+__pyx_tp_as_mapping_PyCFRunLoop	twisted/internet/cfsupport/cfsupport.c	/^static PyMappingMethods __pyx_tp_as_mapping_PyCFRunLoop = {$/;"	v	file:
+__pyx_tp_as_mapping_PyCFRunLoopTimer	twisted/internet/cfsupport/cfsupport.c	/^static PyMappingMethods __pyx_tp_as_mapping_PyCFRunLoopTimer = {$/;"	v	file:
+__pyx_tp_as_mapping_PyCFSocket	twisted/internet/cfsupport/cfsupport.c	/^static PyMappingMethods __pyx_tp_as_mapping_PyCFSocket = {$/;"	v	file:
+__pyx_tp_as_mapping_epoll	twisted/python/_epoll.c	/^static PyMappingMethods __pyx_tp_as_mapping_epoll = {$/;"	v	file:
+__pyx_tp_as_number_CompletionPort	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^static PyNumberMethods __pyx_tp_as_number_CompletionPort = {$/;"	v	file:
+__pyx_tp_as_number_PyCFRunLoop	twisted/internet/cfsupport/cfsupport.c	/^static PyNumberMethods __pyx_tp_as_number_PyCFRunLoop = {$/;"	v	file:
+__pyx_tp_as_number_PyCFRunLoopTimer	twisted/internet/cfsupport/cfsupport.c	/^static PyNumberMethods __pyx_tp_as_number_PyCFRunLoopTimer = {$/;"	v	file:
+__pyx_tp_as_number_PyCFSocket	twisted/internet/cfsupport/cfsupport.c	/^static PyNumberMethods __pyx_tp_as_number_PyCFSocket = {$/;"	v	file:
+__pyx_tp_as_number_epoll	twisted/python/_epoll.c	/^static PyNumberMethods __pyx_tp_as_number_epoll = {$/;"	v	file:
+__pyx_tp_as_sequence_CompletionPort	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^static PySequenceMethods __pyx_tp_as_sequence_CompletionPort = {$/;"	v	file:
+__pyx_tp_as_sequence_PyCFRunLoop	twisted/internet/cfsupport/cfsupport.c	/^static PySequenceMethods __pyx_tp_as_sequence_PyCFRunLoop = {$/;"	v	file:
+__pyx_tp_as_sequence_PyCFRunLoopTimer	twisted/internet/cfsupport/cfsupport.c	/^static PySequenceMethods __pyx_tp_as_sequence_PyCFRunLoopTimer = {$/;"	v	file:
+__pyx_tp_as_sequence_PyCFSocket	twisted/internet/cfsupport/cfsupport.c	/^static PySequenceMethods __pyx_tp_as_sequence_PyCFSocket = {$/;"	v	file:
+__pyx_tp_as_sequence_epoll	twisted/python/_epoll.c	/^static PySequenceMethods __pyx_tp_as_sequence_epoll = {$/;"	v	file:
+__pyx_tp_clear_11iocpsupport_CompletionPort	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^static int __pyx_tp_clear_11iocpsupport_CompletionPort(PyObject *o) {$/;"	f	file:
+__pyx_tp_clear_6_epoll_epoll	twisted/python/_epoll.c	/^static int __pyx_tp_clear_6_epoll_epoll(PyObject *o) {$/;"	f	file:
+__pyx_tp_clear_9cfsupport_PyCFRunLoop	twisted/internet/cfsupport/cfsupport.c	/^static int __pyx_tp_clear_9cfsupport_PyCFRunLoop(PyObject *o) {$/;"	f	file:
+__pyx_tp_clear_9cfsupport_PyCFRunLoopTimer	twisted/internet/cfsupport/cfsupport.c	/^static int __pyx_tp_clear_9cfsupport_PyCFRunLoopTimer(PyObject *o) {$/;"	f	file:
+__pyx_tp_clear_9cfsupport_PyCFSocket	twisted/internet/cfsupport/cfsupport.c	/^static int __pyx_tp_clear_9cfsupport_PyCFSocket(PyObject *o) {$/;"	f	file:
+__pyx_tp_dealloc_11iocpsupport_CompletionPort	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^static void __pyx_tp_dealloc_11iocpsupport_CompletionPort(PyObject *o) {$/;"	f	file:
+__pyx_tp_dealloc_6_epoll_epoll	twisted/python/_epoll.c	/^static void __pyx_tp_dealloc_6_epoll_epoll(PyObject *o) {$/;"	f	file:
+__pyx_tp_dealloc_9cfsupport_PyCFRunLoop	twisted/internet/cfsupport/cfsupport.c	/^static void __pyx_tp_dealloc_9cfsupport_PyCFRunLoop(PyObject *o) {$/;"	f	file:
+__pyx_tp_dealloc_9cfsupport_PyCFRunLoopTimer	twisted/internet/cfsupport/cfsupport.c	/^static void __pyx_tp_dealloc_9cfsupport_PyCFRunLoopTimer(PyObject *o) {$/;"	f	file:
+__pyx_tp_dealloc_9cfsupport_PyCFSocket	twisted/internet/cfsupport/cfsupport.c	/^static void __pyx_tp_dealloc_9cfsupport_PyCFSocket(PyObject *o) {$/;"	f	file:
+__pyx_tp_new_11iocpsupport_CompletionPort	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^static PyObject *__pyx_tp_new_11iocpsupport_CompletionPort(PyTypeObject *t, PyObject *a, PyObject *k) {$/;"	f	file:
+__pyx_tp_new_6_epoll_epoll	twisted/python/_epoll.c	/^static PyObject *__pyx_tp_new_6_epoll_epoll(PyTypeObject *t, PyObject *a, PyObject *k) {$/;"	f	file:
+__pyx_tp_new_9cfsupport_PyCFRunLoop	twisted/internet/cfsupport/cfsupport.c	/^static PyObject *__pyx_tp_new_9cfsupport_PyCFRunLoop(PyTypeObject *t, PyObject *a, PyObject *k) {$/;"	f	file:
+__pyx_tp_new_9cfsupport_PyCFRunLoopTimer	twisted/internet/cfsupport/cfsupport.c	/^static PyObject *__pyx_tp_new_9cfsupport_PyCFRunLoopTimer(PyTypeObject *t, PyObject *a, PyObject *k) {$/;"	f	file:
+__pyx_tp_new_9cfsupport_PyCFSocket	twisted/internet/cfsupport/cfsupport.c	/^static PyObject *__pyx_tp_new_9cfsupport_PyCFSocket(PyTypeObject *t, PyObject *a, PyObject *k) {$/;"	f	file:
+__pyx_tp_traverse_11iocpsupport_CompletionPort	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^static int __pyx_tp_traverse_11iocpsupport_CompletionPort(PyObject *o, visitproc v, void *a) {$/;"	f	file:
+__pyx_tp_traverse_6_epoll_epoll	twisted/python/_epoll.c	/^static int __pyx_tp_traverse_6_epoll_epoll(PyObject *o, visitproc v, void *a) {$/;"	f	file:
+__pyx_tp_traverse_9cfsupport_PyCFRunLoop	twisted/internet/cfsupport/cfsupport.c	/^static int __pyx_tp_traverse_9cfsupport_PyCFRunLoop(PyObject *o, visitproc v, void *a) {$/;"	f	file:
+__pyx_tp_traverse_9cfsupport_PyCFRunLoopTimer	twisted/internet/cfsupport/cfsupport.c	/^static int __pyx_tp_traverse_9cfsupport_PyCFRunLoopTimer(PyObject *o, visitproc v, void *a) {$/;"	f	file:
+__pyx_tp_traverse_9cfsupport_PyCFSocket	twisted/internet/cfsupport/cfsupport.c	/^static int __pyx_tp_traverse_9cfsupport_PyCFSocket(PyObject *o, visitproc v, void *a) {$/;"	f	file:
+__pyx_type_11iocpsupport_CompletionPort	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^PyTypeObject __pyx_type_11iocpsupport_CompletionPort = {$/;"	v
+__pyx_type_6_epoll_epoll	twisted/python/_epoll.c	/^PyTypeObject __pyx_type_6_epoll_epoll = {$/;"	v
+__pyx_type_9cfsupport_PyCFRunLoop	twisted/internet/cfsupport/cfsupport.c	/^staticforward PyTypeObject __pyx_type_9cfsupport_PyCFRunLoop;$/;"	v
+__pyx_type_9cfsupport_PyCFRunLoop	twisted/internet/cfsupport/cfsupport.c	/^statichere PyTypeObject __pyx_type_9cfsupport_PyCFRunLoop = {$/;"	v
+__pyx_type_9cfsupport_PyCFRunLoopTimer	twisted/internet/cfsupport/cfsupport.c	/^staticforward PyTypeObject __pyx_type_9cfsupport_PyCFRunLoopTimer;$/;"	v
+__pyx_type_9cfsupport_PyCFRunLoopTimer	twisted/internet/cfsupport/cfsupport.c	/^statichere PyTypeObject __pyx_type_9cfsupport_PyCFRunLoopTimer = {$/;"	v
+__pyx_type_9cfsupport_PyCFSocket	twisted/internet/cfsupport/cfsupport.c	/^staticforward PyTypeObject __pyx_type_9cfsupport_PyCFSocket;$/;"	v
+__pyx_type_9cfsupport_PyCFSocket	twisted/internet/cfsupport/cfsupport.c	/^statichere PyTypeObject __pyx_type_9cfsupport_PyCFSocket = {$/;"	v
+__stdcall	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	18;"	d	file:
+_adapter_hook	zope/interface/_zope_interface_coptimizations.c	/^_adapter_hook(lookup *self, $/;"	f	file:
+_c_urlarg_methods	twisted/protocols/_c_urlarg.c	/^static PyMethodDef _c_urlarg_methods[] = {$/;"	v	file:
+_cache	zope/interface/_zope_interface_coptimizations.c	/^  PyObject *_cache;$/;"	m	struct:__anon1	file:
+_cache	zope/interface/_zope_interface_coptimizations.c	/^  PyObject *_cache;$/;"	m	struct:__anon2	file:
+_generations_tuple	zope/interface/_zope_interface_coptimizations.c	/^_generations_tuple(PyObject *ro)$/;"	f	file:
+_getcache	zope/interface/_zope_interface_coptimizations.c	/^_getcache(lookup *self, PyObject *provided, PyObject *name)$/;"	f	file:
+_lookup	zope/interface/_zope_interface_coptimizations.c	/^_lookup(lookup *self, $/;"	f	file:
+_lookup1	zope/interface/_zope_interface_coptimizations.c	/^_lookup1(lookup *self, $/;"	f	file:
+_lookupAll	zope/interface/_zope_interface_coptimizations.c	/^_lookupAll(lookup *self, PyObject *required, PyObject *provided)$/;"	f	file:
+_mcache	zope/interface/_zope_interface_coptimizations.c	/^  PyObject *_mcache;$/;"	m	struct:__anon1	file:
+_mcache	zope/interface/_zope_interface_coptimizations.c	/^  PyObject *_mcache;$/;"	m	struct:__anon2	file:
+_scache	zope/interface/_zope_interface_coptimizations.c	/^  PyObject *_scache;$/;"	m	struct:__anon1	file:
+_scache	zope/interface/_zope_interface_coptimizations.c	/^  PyObject *_scache;$/;"	m	struct:__anon2	file:
+_subcache	zope/interface/_zope_interface_coptimizations.c	/^_subcache(PyObject *cache, PyObject *key)$/;"	f	file:
+_subscriptions	zope/interface/_zope_interface_coptimizations.c	/^_subscriptions(lookup *self, PyObject *required, PyObject *provided)$/;"	f	file:
+_verify	zope/interface/_zope_interface_coptimizations.c	/^_verify(verify *self)$/;"	f	file:
+_verify_generations	zope/interface/_zope_interface_coptimizations.c	/^  PyObject *_verify_generations;$/;"	m	struct:__anon2	file:
+_verify_ro	zope/interface/_zope_interface_coptimizations.c	/^  PyObject *_verify_ro;$/;"	m	struct:__anon2	file:
+a.getContext	mercurial/templates/static/excanvas.js	/^var c=a.getElementsByTagName("canvas");for(var d=0;d<c.length;d++){if(!c[d].getContext){this.initElement(c[d])}}}},q:function(a){var b=a.outerHTML,c=a.ownerDocument.createElement(b);if(b.slice(-2)!="\/>"){var d="\/"+a.tagName,e;while((e=a.nextSibling)&&e.tagName!=d){e.removeNode()}if(e){e.removeNode()}}a.parentNode.replaceChild(c,a);return c},initElement:function(a){a=this.q(a);a.getContext=function(){if(this.l){return this.l}return this.l=new K(this)};a.attachEvent("onpropertychange",V);a.attachEvent("onresize",$/;"	f
+adapter_hooks	zope/interface/_zope_interface_coptimizations.c	/^static PyObject *str__conform__, *str_call_conform, *adapter_hooks;$/;"	v	file:
+b	mercurial/templates/static/excanvas.js	/^W);var b=a.attributes;if(b.width&&b.width.specified){a.style.width=b.width.nodeValue+"px"}else{a.width=a.clientWidth}if(b.height&&b.height.specified){a.style.height=b.height.nodeValue+"px"}else{a.height=a.clientHeight}return a}};function V(a){var b=a.srcElement;switch(a.propertyName){case "width":b.style.width=b.attributes.width.nodeValue+"px";b.getContext().clearRect();break;case "height":b.style.height=b.attributes.height.nodeValue+"px";b.getContext().clearRect();break}}function W(a){var b=a.srcElement;$/;"	v
+b	mercurial/templates/static/excanvas.js	/^if(!window.CanvasRenderingContext2D){(function(){var I=Math,i=I.round,L=I.sin,M=I.cos,m=10,A=m\/2,Q={init:function(a){var b=a||document;if(\/MSIE\/.test(navigator.userAgent)&&!window.opera){var c=this;b.attachEvent("onreadystatechange",function(){c.r(b)})}},r:function(a){if(a.readyState=="complete"){if(!a.namespaces["s"]){a.namespaces.add("g_vml_","urn:schemas-microsoft-com:vml")}var b=a.createStyleSheet();b.cssText="canvas{display:inline-block;overflow:hidden;text-align:left;width:300px;height:150px}g_vml_\\\\:*{behavior:url(#default#VML)}";$/;"	v
+b.b.b.b.j	mercurial/templates/static/excanvas.js	/^case "square":default:return"square"}}function K(a){this.a=J();this.m=[];this.k=[];this.c=[];this.strokeStyle="#000";this.fillStyle="#000";this.lineWidth=1;this.lineJoin="miter";this.lineCap="butt";this.miterLimit=m*1;this.globalAlpha=1;this.canvas=a;var b=a.ownerDocument.createElement("div");b.style.width=a.clientWidth+"px";b.style.height=a.clientHeight+"px";b.style.overflow="hidden";b.style.position="absolute";a.appendChild(b);this.j=b;this.d=1;this.e=1}var j=K.prototype;j.clearRect=function(){this.j.innerHTML=$/;"	m
+c	mercurial/templates/static/excanvas.js	/^var c=a.getElementsByTagName("canvas");for(var d=0;d<c.length;d++){if(!c[d].getContext){this.initElement(c[d])}}}},q:function(a){var b=a.outerHTML,c=a.ownerDocument.createElement(b);if(b.slice(-2)!="\/>"){var d="\/"+a.tagName,e;while((e=a.nextSibling)&&e.tagName!=d){e.removeNode()}if(e){e.removeNode()}}a.parentNode.replaceChild(c,a);return c},initElement:function(a){a=this.q(a);a.getContext=function(){if(this.l){return this.l}return this.l=new K(this)};a.attachEvent("onpropertychange",V);a.attachEvent("onresize",$/;"	v
+callout	twisted/internet/cfsupport/cfsupport.c	/^  PyObject *callout;$/;"	m	struct:__pyx_obj_9cfsupport_PyCFRunLoopTimer	file:
+cf	twisted/internet/cfsupport/cfsupport.c	/^  CFRunLoopTimerRef cf;$/;"	m	struct:__pyx_obj_9cfsupport_PyCFRunLoopTimer	file:
+cf	twisted/internet/cfsupport/cfsupport.c	/^  CFSocketRef cf;$/;"	m	struct:__pyx_obj_9cfsupport_PyCFSocket	file:
+cf	twisted/internet/cfsupport/cfsupport.c	/^  PyObject *cf;$/;"	m	struct:__pyx_obj_9cfsupport_PyCFRunLoop	file:
+colors	mercurial/templates/static/graph.js	/^var colors = [$/;"	v
+connectcallback	twisted/internet/cfsupport/cfsupport.c	/^  PyObject *connectcallback;$/;"	m	struct:__pyx_obj_9cfsupport_PyCFSocket	file:
+context	twisted/internet/cfsupport/cfsupport.c	/^  CFRunLoopTimerContext context;$/;"	m	struct:__pyx_obj_9cfsupport_PyCFRunLoopTimer	file:
+context	twisted/internet/cfsupport/cfsupport.c	/^  CFSocketContext context;$/;"	m	struct:__pyx_obj_9cfsupport_PyCFSocket	file:
+empty	zope/interface/_zope_interface_coptimizations.c	/^static PyObject *empty, *fallback, *str_implied, *str_cls, *str_implements;$/;"	v	file:
+fallback	zope/interface/_zope_interface_coptimizations.c	/^static PyObject *empty, *fallback, *str_implied, *str_cls, *str_implements;$/;"	v	file:
+fd	twisted/python/_epoll.c	/^  int fd;$/;"	m	struct:__pyx_obj_6_epoll_epoll	file:
+fileno	twisted/internet/cfsupport/cfsupport.c	/^  CFSocketNativeHandle fileno;$/;"	m	struct:__pyx_obj_9cfsupport_PyCFSocket	file:
+function.P	mercurial/templates/static/excanvas.js	/^0;this.h=[];this.i={x:0,y:0}}H.prototype.addColorStop=function(a,b){b=O(b);this.h.push({offset:1-a,color:b})};function P(){}G_vmlCanvasManager=Q;CanvasRenderingContext2D=K;CanvasGradient=H;CanvasPattern=P})()};$/;"	f
+getObjectSpecification	zope/interface/_zope_interface_coptimizations.c	/^getObjectSpecification(PyObject *ignored, PyObject *ob)$/;"	f	file:
+hexdigits	twisted/protocols/_c_urlarg.c	/^unsigned char hexdigits[256];$/;"	v
+ib_call	zope/interface/_zope_interface_coptimizations.c	/^ib_call(PyObject *self, PyObject *args, PyObject *kwargs)$/;"	f	file:
+ib_methods	zope/interface/_zope_interface_coptimizations.c	/^static struct PyMethodDef ib_methods[] = {$/;"	v	typeref:struct:PyMethodDef	file:
+implementedBy	zope/interface/_zope_interface_coptimizations.c	/^implementedBy(PyObject *ignored, PyObject *cls)$/;"	f	file:
+implementedByFallback	zope/interface/_zope_interface_coptimizations.c	/^implementedByFallback(PyObject *cls)$/;"	f	file:
+import_declarations	zope/interface/_zope_interface_coptimizations.c	/^import_declarations(void)$/;"	f	file:
+imported_declarations	zope/interface/_zope_interface_coptimizations.c	/^static int imported_declarations = 0;$/;"	v	file:
+initPointer	twisted/internet/iocpreactor/iocpsupport/winsock_pointers.c	/^int initPointer(SOCKET s, void **fun, GUID guid) {$/;"	f
+initWinsockPointers	twisted/internet/iocpreactor/iocpsupport/winsock_pointers.c	/^int initWinsockPointers() {$/;"	f
+init_c_urlarg	twisted/protocols/_c_urlarg.c	/^DL_EXPORT(void) init_c_urlarg(void)$/;"	f
+init_epoll	twisted/python/_epoll.c	/^PyMODINIT_FUNC init_epoll(void) {$/;"	f
+init_zope_interface_coptimizations	zope/interface/_zope_interface_coptimizations.c	/^init_zope_interface_coptimizations(void)$/;"	f
+initcfsupport	twisted/internet/cfsupport/cfsupport.c	/^DL_EXPORT(void) initcfsupport(void) {$/;"	f
+initialized	twisted/python/_epoll.c	/^  int initialized;$/;"	m	struct:__pyx_obj_6_epoll_epoll	file:
+initiocpsupport	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^PyMODINIT_FUNC initiocpsupport(void) {$/;"	f
+initraiser	twisted/test/raiser.c	/^PyMODINIT_FUNC initraiser(void) {$/;"	f
+inst_attr	zope/interface/_zope_interface_coptimizations.c	/^inst_attr(PyObject *self, PyObject *name)$/;"	f	file:
+ishexdigit	twisted/protocols/_c_urlarg.c	/^TM_INLINE int ishexdigit(unsigned char c) {$/;"	f
+j	mercurial/templates/static/excanvas.js	/^"";this.c=[]};j.beginPath=function(){this.c=[]};j.moveTo=function(a,b){this.c.push({type:"moveTo",x:a,y:b});this.f=a;this.g=b};j.lineTo=function(a,b){this.c.push({type:"lineTo",x:a,y:b});this.f=a;this.g=b};j.bezierCurveTo=function(a,b,c,d,e,g){this.c.push({type:"bezierCurveTo",cp1x:a,cp1y:b,cp2x:c,cp2y:d,x:e,y:g});this.f=e;this.g=g};j.quadraticCurveTo=function(a,b,c,d){var e=this.f+0.6666666666666666*(a-this.f),g=this.g+0.6666666666666666*(b-this.g),h=e+(c-this.f)\/3,l=g+(d-this.g)\/3;this.bezierCurveTo(e,$/;"	m
+j	mercurial/templates/static/excanvas.js	/^b,c,d){this.beginPath();this.moveTo(a,b);this.lineTo(a+c,b);this.lineTo(a+c,b+d);this.lineTo(a,b+d);this.closePath();this.fill()};j.createLinearGradient=function(a,b,c,d){var e=new H("gradient");return e};j.createRadialGradient=function(a,b,c,d,e,g){var h=new H("gradientradial");h.n=c;h.o=g;h.i.x=a;h.i.y=b;return h};j.drawImage=function(a,b){var c,d,e,g,h,l,n,o,f=a.runtimeStyle.width,k=a.runtimeStyle.height;a.runtimeStyle.width="auto";a.runtimeStyle.height="auto";var q=a.width,r=a.height;a.runtimeStyle.width=$/;"	m
+j	mercurial/templates/static/excanvas.js	/^e,'"',' joinstyle="',this.lineJoin,'"',' miterlimit="',this.miterLimit,'"',' endcap="',S(this.lineCap),'"',' weight="',this.lineWidth,'px"',' color="',d,'" \/>')}b.push("<\/g_vml_:shape>");this.j.insertAdjacentHTML("beforeEnd",b.join(""));this.c=[]};j.fill=function(){this.stroke(true)};j.closePath=function(){this.c.push({type:"close"})};j.b=function(a,b){return{x:m*(a*this.a[0][0]+b*this.a[1][0]+this.a[2][0])-A,y:m*(a*this.a[0][1]+b*this.a[1][1]+this.a[2][1])-A}};j.save=function(){var a={};N(this,a);$/;"	m
+j	mercurial/templates/static/excanvas.js	/^g,h,l,c,d)};j.arc=function(a,b,c,d,e,g){c*=m;var h=g?"at":"wa",l=a+M(d)*c-A,n=b+L(d)*c-A,o=a+M(e)*c-A,f=b+L(e)*c-A;if(l==o&&!g){l+=0.125}this.c.push({type:h,x:a,y:b,radius:c,xStart:l,yStart:n,xEnd:o,yEnd:f})};j.rect=function(a,b,c,d){this.moveTo(a,b);this.lineTo(a+c,b);this.lineTo(a+c,b+d);this.lineTo(a,b+d);this.closePath()};j.strokeRect=function(a,b,c,d){this.beginPath();this.moveTo(a,b);this.lineTo(a+c,b);this.lineTo(a+c,b+d);this.lineTo(a,b+d);this.closePath();this.stroke()};j.fillRect=function(a,$/;"	m
+j	mercurial/templates/static/excanvas.js	/^i(s.y\/m),"px;left:",i(s.x\/m),"px;")}t.push(' ">','<g_vml_:image src="',a.src,'"',' style="width:',m*e,";"," height:",m*g,';"',' cropleft="',h\/q,'"',' croptop="',l\/r,'"',' cropright="',(q-h-n)\/q,'"',' cropbottom="',(r-l-o)\/r,'"'," \/>","<\/g_vml_:group>");this.j.insertAdjacentHTML("BeforeEnd",t.join(""))};j.stroke=function(a){var b=[],c=O(a?this.fillStyle:this.strokeStyle),d=c[0],e=c[1]*this.globalAlpha,g=10,h=10;b.push("<g_vml_:shape",' fillcolor="',d,'"',' filled="',Boolean(a),'"',' style="position:absolute;width:',$/;"	m
+j	mercurial/templates/static/excanvas.js	/^this.k.push(a);this.m.push(this.a);this.a=G(J(),this.a)};j.restore=function(){N(this.k.pop(),this);this.a=this.m.pop()};j.translate=function(a,b){var c=[[1,0,0],[0,1,0],[a,b,1]];this.a=G(c,this.a)};j.rotate=function(a){var b=M(a),c=L(a),d=[[b,c,0],[-c,b,0],[0,0,1]];this.a=G(d,this.a)};j.scale=function(a,b){this.d*=a;this.e*=b;var c=[[a,0,0],[0,b,0],[0,0,1]];this.a=G(c,this.a)};j.clip=function(){};j.arcTo=function(){};j.createPattern=function(){return new P};function H(a){this.p=a;this.n=0;this.o=$/;"	m
+j.arcTo	mercurial/templates/static/excanvas.js	/^this.k.push(a);this.m.push(this.a);this.a=G(J(),this.a)};j.restore=function(){N(this.k.pop(),this);this.a=this.m.pop()};j.translate=function(a,b){var c=[[1,0,0],[0,1,0],[a,b,1]];this.a=G(c,this.a)};j.rotate=function(a){var b=M(a),c=L(a),d=[[b,c,0],[-c,b,0],[0,0,1]];this.a=G(d,this.a)};j.scale=function(a,b){this.d*=a;this.e*=b;var c=[[a,0,0],[0,b,0],[0,0,1]];this.a=G(c,this.a)};j.clip=function(){};j.arcTo=function(){};j.createPattern=function(){return new P};function H(a){this.p=a;this.n=0;this.o=$/;"	f
+j.createPattern	mercurial/templates/static/excanvas.js	/^this.k.push(a);this.m.push(this.a);this.a=G(J(),this.a)};j.restore=function(){N(this.k.pop(),this);this.a=this.m.pop()};j.translate=function(a,b){var c=[[1,0,0],[0,1,0],[a,b,1]];this.a=G(c,this.a)};j.rotate=function(a){var b=M(a),c=L(a),d=[[b,c,0],[-c,b,0],[0,0,1]];this.a=G(d,this.a)};j.scale=function(a,b){this.d*=a;this.e*=b;var c=[[a,0,0],[0,b,0],[0,0,1]];this.a=G(c,this.a)};j.clip=function(){};j.arcTo=function(){};j.createPattern=function(){return new P};function H(a){this.p=a;this.n=0;this.o=$/;"	f
+j.createRadialGradient	mercurial/templates/static/excanvas.js	/^b,c,d){this.beginPath();this.moveTo(a,b);this.lineTo(a+c,b);this.lineTo(a+c,b+d);this.lineTo(a,b+d);this.closePath();this.fill()};j.createLinearGradient=function(a,b,c,d){var e=new H("gradient");return e};j.createRadialGradient=function(a,b,c,d,e,g){var h=new H("gradientradial");h.n=c;h.o=g;h.i.x=a;h.i.y=b;return h};j.drawImage=function(a,b){var c,d,e,g,h,l,n,o,f=a.runtimeStyle.width,k=a.runtimeStyle.height;a.runtimeStyle.width="auto";a.runtimeStyle.height="auto";var q=a.width,r=a.height;a.runtimeStyle.width=$/;"	f
+j.drawImage	mercurial/templates/static/excanvas.js	/^b,c,d){this.beginPath();this.moveTo(a,b);this.lineTo(a+c,b);this.lineTo(a+c,b+d);this.lineTo(a,b+d);this.closePath();this.fill()};j.createLinearGradient=function(a,b,c,d){var e=new H("gradient");return e};j.createRadialGradient=function(a,b,c,d,e,g){var h=new H("gradientradial");h.n=c;h.o=g;h.i.x=a;h.i.y=b;return h};j.drawImage=function(a,b){var c,d,e,g,h,l,n,o,f=a.runtimeStyle.width,k=a.runtimeStyle.height;a.runtimeStyle.width="auto";a.runtimeStyle.height="auto";var q=a.width,r=a.height;a.runtimeStyle.width=$/;"	c
+j.save	mercurial/templates/static/excanvas.js	/^e,'"',' joinstyle="',this.lineJoin,'"',' miterlimit="',this.miterLimit,'"',' endcap="',S(this.lineCap),'"',' weight="',this.lineWidth,'px"',' color="',d,'" \/>')}b.push("<\/g_vml_:shape>");this.j.insertAdjacentHTML("beforeEnd",b.join(""));this.c=[]};j.fill=function(){this.stroke(true)};j.closePath=function(){this.c.push({type:"close"})};j.b=function(a,b){return{x:m*(a*this.a[0][0]+b*this.a[1][0]+this.a[2][0])-A,y:m*(a*this.a[0][1]+b*this.a[1][1]+this.a[2][1])-A}};j.save=function(){var a={};N(this,a);$/;"	c
+lookup	zope/interface/_zope_interface_coptimizations.c	/^} lookup;$/;"	t	typeref:struct:__anon1	file:
+lookup_adapter_hook	zope/interface/_zope_interface_coptimizations.c	/^lookup_adapter_hook(lookup *self, PyObject *args, PyObject *kwds)$/;"	f	file:
+lookup_changed	zope/interface/_zope_interface_coptimizations.c	/^lookup_changed(lookup *self, PyObject *ignored)$/;"	f	file:
+lookup_clear	zope/interface/_zope_interface_coptimizations.c	/^lookup_clear(lookup *self)$/;"	f	file:
+lookup_dealloc	zope/interface/_zope_interface_coptimizations.c	/^lookup_dealloc(lookup *self)$/;"	f	file:
+lookup_lookup	zope/interface/_zope_interface_coptimizations.c	/^lookup_lookup(lookup *self, PyObject *args, PyObject *kwds)$/;"	f	file:
+lookup_lookup1	zope/interface/_zope_interface_coptimizations.c	/^lookup_lookup1(lookup *self, PyObject *args, PyObject *kwds)$/;"	f	file:
+lookup_lookupAll	zope/interface/_zope_interface_coptimizations.c	/^lookup_lookupAll(lookup *self, PyObject *args, PyObject *kwds)$/;"	f	file:
+lookup_methods	zope/interface/_zope_interface_coptimizations.c	/^static struct PyMethodDef lookup_methods[] = {$/;"	v	typeref:struct:PyMethodDef	file:
+lookup_queryAdapter	zope/interface/_zope_interface_coptimizations.c	/^lookup_queryAdapter(lookup *self, PyObject *args, PyObject *kwds)$/;"	f	file:
+lookup_subscriptions	zope/interface/_zope_interface_coptimizations.c	/^lookup_subscriptions(lookup *self, PyObject *args, PyObject *kwds)$/;"	f	file:
+lookup_traverse	zope/interface/_zope_interface_coptimizations.c	/^lookup_traverse(lookup *self, visitproc visit, void *arg)$/;"	f	file:
+lpAcceptEx	twisted/internet/iocpreactor/iocpsupport/winsock_pointers.c	/^void *lpAcceptEx, *lpGetAcceptExSockaddrs, *lpConnectEx, *lpTransmitFile;$/;"	v
+lpAcceptEx	twisted/internet/iocpreactor/iocpsupport/winsock_pointers.h	/^(PASCAL FAR * lpAcceptEx)($/;"	v
+lpConnectEx	twisted/internet/iocpreactor/iocpsupport/winsock_pointers.c	/^void *lpAcceptEx, *lpGetAcceptExSockaddrs, *lpConnectEx, *lpTransmitFile;$/;"	v
+lpConnectEx	twisted/internet/iocpreactor/iocpsupport/winsock_pointers.h	/^(PASCAL FAR * lpConnectEx) ($/;"	v
+lpGetAcceptExSockaddrs	twisted/internet/iocpreactor/iocpsupport/winsock_pointers.c	/^void *lpAcceptEx, *lpGetAcceptExSockaddrs, *lpConnectEx, *lpTransmitFile;$/;"	v
+lpGetAcceptExSockaddrs	twisted/internet/iocpreactor/iocpsupport/winsock_pointers.h	/^(PASCAL FAR * lpGetAcceptExSockaddrs)($/;"	v
+lpTransmitFile	twisted/internet/iocpreactor/iocpsupport/winsock_pointers.c	/^void *lpAcceptEx, *lpGetAcceptExSockaddrs, *lpConnectEx, *lpTransmitFile;$/;"	v
+m_methods	zope/interface/_zope_interface_coptimizations.c	/^static struct PyMethodDef m_methods[] = {$/;"	v	typeref:struct:PyMethodDef	file:
+n	twisted/internet/cfsupport/cfsupport.c	/^typedef struct {PyObject **p; char *s; long n;} __Pyx_StringTabEntry; \/*proto*\/$/;"	m	struct:__anon6	file:
+n	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^typedef struct {PyObject **p; char *s; long n;} __Pyx_StringTabEntry; \/*proto*\/$/;"	m	struct:__anon8	file:
+n	twisted/python/_epoll.c	/^typedef struct {PyObject **p; char *s; long n;} __Pyx_StringTabEntry; \/*proto*\/$/;"	m	struct:__anon11	file:
+n	twisted/test/raiser.c	/^typedef struct {PyObject **p; char *s; long n;} __Pyx_StringTabEntry; \/*proto*\/$/;"	m	struct:__anon4	file:
+obj	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^  struct PyObject *obj;$/;"	m	struct:__pyx_t_11iocpsupport_myOVERLAPPED	typeref:struct:__pyx_t_11iocpsupport_myOVERLAPPED::PyObject	file:
+ov	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^  OVERLAPPED ov;$/;"	m	struct:__pyx_t_11iocpsupport_myOVERLAPPED	file:
+p	twisted/internet/cfsupport/cfsupport.c	/^typedef struct {PyObject **p; char *s; long n;} __Pyx_StringTabEntry; \/*proto*\/$/;"	m	struct:__anon6	file:
+p	twisted/internet/cfsupport/cfsupport.c	/^typedef struct {PyObject **p; char *s;} __Pyx_InternTabEntry; \/*proto*\/$/;"	m	struct:__anon5	file:
+p	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^typedef struct {PyObject **p; char *s; long n;} __Pyx_StringTabEntry; \/*proto*\/$/;"	m	struct:__anon8	file:
+p	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^typedef struct {PyObject **p; char *s;} __Pyx_InternTabEntry; \/*proto*\/$/;"	m	struct:__anon7	file:
+p	twisted/python/_epoll.c	/^typedef struct {PyObject **p; char *s; long n;} __Pyx_StringTabEntry; \/*proto*\/$/;"	m	struct:__anon11	file:
+p	twisted/python/_epoll.c	/^typedef struct {PyObject **p; char *s;} __Pyx_InternTabEntry; \/*proto*\/$/;"	m	struct:__anon10	file:
+p	twisted/python/_epoll.c	/^typedef struct {const char *s; const void **p;} __Pyx_CApiTabEntry; \/*proto*\/$/;"	m	struct:__anon9	file:
+p	twisted/test/raiser.c	/^typedef struct {PyObject **p; char *s; long n;} __Pyx_StringTabEntry; \/*proto*\/$/;"	m	struct:__anon4	file:
+p	twisted/test/raiser.c	/^typedef struct {PyObject **p; char *s;} __Pyx_InternTabEntry; \/*proto*\/$/;"	m	struct:__anon3	file:
+port	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^  __pyx_t_11iocpsupport_HANDLE port;$/;"	m	struct:__pyx_obj_11iocpsupport_CompletionPort	file:
+providedBy	zope/interface/_zope_interface_coptimizations.c	/^providedBy(PyObject *ignored, PyObject *ob)$/;"	f	file:
+readcallback	twisted/internet/cfsupport/cfsupport.c	/^  PyObject *readcallback;$/;"	m	struct:__pyx_obj_9cfsupport_PyCFSocket	file:
+reading	twisted/internet/cfsupport/cfsupport.c	/^  PyObject *reading;$/;"	m	struct:__pyx_obj_9cfsupport_PyCFSocket	file:
+s	twisted/internet/cfsupport/cfsupport.c	/^typedef struct {PyObject **p; char *s; long n;} __Pyx_StringTabEntry; \/*proto*\/$/;"	m	struct:__anon6	file:
+s	twisted/internet/cfsupport/cfsupport.c	/^typedef struct {PyObject **p; char *s;} __Pyx_InternTabEntry; \/*proto*\/$/;"	m	struct:__anon5	file:
+s	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^typedef struct {PyObject **p; char *s; long n;} __Pyx_StringTabEntry; \/*proto*\/$/;"	m	struct:__anon8	file:
+s	twisted/internet/iocpreactor/iocpsupport/iocpsupport.c	/^typedef struct {PyObject **p; char *s;} __Pyx_InternTabEntry; \/*proto*\/$/;"	m	struct:__anon7	file:
+s	twisted/python/_epoll.c	/^typedef struct {PyObject **p; char *s; long n;} __Pyx_StringTabEntry; \/*proto*\/$/;"	m	struct:__anon11	file:
+s	twisted/python/_epoll.c	/^typedef struct {PyObject **p; char *s;} __Pyx_InternTabEntry; \/*proto*\/$/;"	m	struct:__anon10	file:
+s	twisted/python/_epoll.c	/^typedef struct {const char *s; const void **p;} __Pyx_CApiTabEntry; \/*proto*\/$/;"	m	struct:__anon9	file:
+s	twisted/test/raiser.c	/^typedef struct {PyObject **p; char *s; long n;} __Pyx_StringTabEntry; \/*proto*\/$/;"	m	struct:__anon4	file:
+s	twisted/test/raiser.c	/^typedef struct {PyObject **p; char *s;} __Pyx_InternTabEntry; \/*proto*\/$/;"	m	struct:__anon3	file:
+source	twisted/internet/cfsupport/cfsupport.c	/^  CFRunLoopSourceRef source;$/;"	m	struct:__pyx_obj_9cfsupport_PyCFSocket	file:
+str__class__	zope/interface/_zope_interface_coptimizations.c	/^static PyObject *str__class__, *str__providedBy__;$/;"	v	file:
+str__conform__	zope/interface/_zope_interface_coptimizations.c	/^static PyObject *str__conform__, *str_call_conform, *adapter_hooks;$/;"	v	file:
+str__dict__	zope/interface/_zope_interface_coptimizations.c	/^static PyObject *str__dict__, *str__implemented__, *strextends;$/;"	v	file:
+str__implemented__	zope/interface/_zope_interface_coptimizations.c	/^static PyObject *str__dict__, *str__implemented__, *strextends;$/;"	v	file:
+str__providedBy__	zope/interface/_zope_interface_coptimizations.c	/^static PyObject *str__class__, *str__providedBy__;$/;"	v	file:
+str__provides__	zope/interface/_zope_interface_coptimizations.c	/^static PyObject *BuiltinImplementationSpecifications, *str__provides__;$/;"	v	file:
+str_call_conform	zope/interface/_zope_interface_coptimizations.c	/^static PyObject *str__conform__, *str_call_conform, *adapter_hooks;$/;"	v	file:
+str_cls	zope/interface/_zope_interface_coptimizations.c	/^static PyObject *empty, *fallback, *str_implied, *str_cls, *str_implements;$/;"	v	file:
+str_generation	zope/interface/_zope_interface_coptimizations.c	/^static PyObject *str_registry, *strro, *str_generation, *strchanged;$/;"	v	file:
+str_implements	zope/interface/_zope_interface_coptimizations.c	/^static PyObject *empty, *fallback, *str_implied, *str_cls, *str_implements;$/;"	v	file:
+str_implied	zope/interface/_zope_interface_coptimizations.c	/^static PyObject *empty, *fallback, *str_implied, *str_cls, *str_implements;$/;"	v	file:
+str_registry	zope/interface/_zope_interface_coptimizations.c	/^static PyObject *str_registry, *strro, *str_generation, *strchanged;$/;"	v	file:
+str_uncached_lookup	zope/interface/_zope_interface_coptimizations.c	/^static PyObject *str_uncached_lookup, *str_uncached_lookupAll;$/;"	v	file:
+str_uncached_lookupAll	zope/interface/_zope_interface_coptimizations.c	/^static PyObject *str_uncached_lookup, *str_uncached_lookupAll;$/;"	v	file:
+str_uncached_subscriptions	zope/interface/_zope_interface_coptimizations.c	/^static PyObject *str_uncached_subscriptions;$/;"	v	file:
+strchanged	zope/interface/_zope_interface_coptimizations.c	/^static PyObject *str_registry, *strro, *str_generation, *strchanged;$/;"	v	file:
+strextends	zope/interface/_zope_interface_coptimizations.c	/^static PyObject *str__dict__, *str__implemented__, *strextends;$/;"	v	file:
+strro	zope/interface/_zope_interface_coptimizations.c	/^static PyObject *str_registry, *strro, *str_generation, *strchanged;$/;"	v	file:
+tuplefy	zope/interface/_zope_interface_coptimizations.c	/^tuplefy(PyObject *v)$/;"	f	file:
+unquote	twisted/protocols/_c_urlarg.c	/^static PyObject *unquote(PyObject *self, PyObject *args, PyObject *kwargs)$/;"	f	file:
+verify	zope/interface/_zope_interface_coptimizations.c	/^} verify;$/;"	t	typeref:struct:__anon2	file:
+verifying_adapter_hook	zope/interface/_zope_interface_coptimizations.c	/^verifying_adapter_hook(verify *self, PyObject *args, PyObject *kwds)$/;"	f	file:
+verifying_changed	zope/interface/_zope_interface_coptimizations.c	/^verifying_changed(verify *self, PyObject *ignored)$/;"	f	file:
+verifying_clear	zope/interface/_zope_interface_coptimizations.c	/^verifying_clear(verify *self)$/;"	f	file:
+verifying_dealloc	zope/interface/_zope_interface_coptimizations.c	/^verifying_dealloc(verify *self)$/;"	f	file:
+verifying_lookup	zope/interface/_zope_interface_coptimizations.c	/^verifying_lookup(verify *self, PyObject *args, PyObject *kwds)$/;"	f	file:
+verifying_lookup1	zope/interface/_zope_interface_coptimizations.c	/^verifying_lookup1(verify *self, PyObject *args, PyObject *kwds)$/;"	f	file:
+verifying_lookupAll	zope/interface/_zope_interface_coptimizations.c	/^verifying_lookupAll(verify *self, PyObject *args, PyObject *kwds)$/;"	f	file:
+verifying_methods	zope/interface/_zope_interface_coptimizations.c	/^static struct PyMethodDef verifying_methods[] = {$/;"	v	typeref:struct:PyMethodDef	file:
+verifying_queryAdapter	zope/interface/_zope_interface_coptimizations.c	/^verifying_queryAdapter(verify *self, PyObject *args, PyObject *kwds)$/;"	f	file:
+verifying_subscriptions	zope/interface/_zope_interface_coptimizations.c	/^verifying_subscriptions(verify *self, PyObject *args, PyObject *kwds)$/;"	f	file:
+verifying_traverse	zope/interface/_zope_interface_coptimizations.c	/^verifying_traverse(verify *self, visitproc visit, void *arg)$/;"	f	file:
+writecallback	twisted/internet/cfsupport/cfsupport.c	/^  PyObject *writecallback;$/;"	m	struct:__pyx_obj_9cfsupport_PyCFSocket	file:
+writing	twisted/internet/cfsupport/cfsupport.c	/^  PyObject *writing;$/;"	m	struct:__pyx_obj_9cfsupport_PyCFSocket	file:
