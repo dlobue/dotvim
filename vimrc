@@ -16,7 +16,7 @@ nnoremap <F3> :call ToggleTab()<CR>
 " nnoremap <F4> :set tabstop=4<CR>:set tabstop=4<CR>:set softtabstop=4<CR>
 
 function! ToggleTab()
-    if tabstop == 4
+    if &expandtab
         set tabstop=2
         set softtabstop=2
         set shiftwidth=2
