@@ -1,3 +1,16 @@
+set nocompatible
+filetype on
+syntax on
+filetype plugin indent on
+set iskeyword+=.
+filetype plugin on
+" colorscheme wargrey
+colorscheme lucius
+set paste
+
+" show line and column number
+set number
+
 " enter spaces when tab is pressed:
 set expandtab
 " do not break lines when line lenght increases
@@ -30,6 +43,7 @@ endfunction
 
 " Copy indent from current line when starting a new line.
 set autoindent
+nnoremap <F6> :set noautoindent!<CR>
 " makes backspace key more powerful.
 set backspace=indent,eol,start
 " shows the match while typing
@@ -43,9 +57,6 @@ set wildmenu
 map <silent><A-Right> :tabnext<CR>
 map <silent><A-Left> :tabprevious<CR>
 
-
-" show line and column number
-set number
 
 " toggle line numbers and fold column for easy copying:
 nnoremap <F2> :set nonumber!<CR>:set foldcolumn=0<CR>
@@ -72,17 +83,13 @@ set foldlevel=0
 
 " set viminfo='100,f1
 " minibufexplorer settings:j
-let g:miniBufExplMapWindowNavArrows = 1
-let g:miniBufExplMapCTabSwitchWindows = 1
+" let g:miniBufExplMapWindowNavArrows = 1
+" let g:miniBufExplMapCTabSwitchWindows = 1
 
 let g:pcs_hotkey = 1
 let g:pcs_check_when_saving = 1
 
-syntax on
-filetype plugin indent on
-set iskeyword+=.
-filetype plugin on
-colorscheme wargrey
+let s:configured_vindect = 1
 
 " turn on pysmell autocompletion in python files
 " autocmd FileType python setlocal omnifunc=pysmell#Complete
