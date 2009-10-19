@@ -67,13 +67,13 @@ nnoremap <F2> :set nonumber!<CR>:set foldcolumn=0<CR>
 
 " this lets us put the marker in the file so that
 " it can be shared across and stored in version control.
-set foldmethod=marker
+"set foldmethod=marker
 " this is for python, put
 " # name for the folded text # {{{
 " to begin marker and
 " # }}}
 " close to end it.
-set commentstring=\ #\ %s
+"set commentstring=\ #\ %s
 " default fold level, all open, set it 200 or something
 " to make it all closed.
 set foldlevel=0
