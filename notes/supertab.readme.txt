@@ -1,33 +1,73 @@
-This is a continuation of vimscript #182 by Gergely Kontra, who has
-asked me to take over support and maintenance.  So if you have any
-questions or suggestions, please direct them to me.  Please read the
-description below as some enhancements have been made as well.
-
-Description:
-  This script allows you to use the tab key to do all your insert
-  completion (:help ins-completion).
-
-  Ex. To complete the word bar or baz
-    foo bar baz
-    b<Tab>
-
-
-  This version of SuperTab supports several configuration options:
-  NOTE: Please see the "Global Variables" fold in the script for more details.
-  - The default completion type (defaults to keyword completion)
-  - The duration that a non-default completion type will be retained before
-    switching back to the default (defaults to retaining the current
-    completion type until you manually kick off a different one).
-  - Disabling of mid-word (word character to the left and right) completion
-    (defaults to mid-word completion enabled).
-  - Ability to change the default mapping to kick off forward or backward
-    completion (defaults to <tab> and <s-tab>).
-  - A discovery list to determine the default completion type to use for any
-    given buffer (defaults to no discovery).
-  - Option to highlight the first entry in the results if your completeopt has
-    'menu' and 'longest'.
-
-  This version also adds a command (:SuperTabHelp) which opens up a buffer
-  listing all various completion types, where you can simply hit <enter> on
-  the completion type you wish to switch to.
 http://www.vim.org/scripts/script.php?script_id=1643
+
+description
+Supertab aims to provide tab completion to satisfy all your insert completion
+needs (:help ins-completion).
+
+This version is a continuation of vimscript #182 by Gergely Kontra, who has
+asked me to take over support and maintenance.  This version contains many
+enhancements.
+
+Supertab provides several features to enhance your insert completion
+experience:
+- You can set your favorite insert completion type (keyword, omni, etc.) as
+  supertab's default.
+- When using another completion type (ctrl-x ctrl-f), supertab will
+  temporarily make that the default allowing you to continue to use tab for
+  that completion. The duration is configurable to one of 'completion'
+  (retained until you exit the current completion mode), 'insert' (retained
+  until you leave insert mode), or 'session' (retained for the remainder of
+  your vim session).
+- Supertab provides a 'context' completion type which examines the text
+  preceding the cursor to decide which type of completion should be used
+  (omni, user, file, or keyword).  You can also plug in your own functions
+  which will be used to determine which completion type to use according to
+  your new functionality.
+- The 'context' completion can also be used to set the default completion type
+  according to what the file supports, based on a discovery mechanism which
+  you specify.
+- For users not yet familiar with all the various insert completion types that
+  vim supports, supertab also provides a :SuperTabHelp command which opens a
+  temporary buffer listing all the available types and the ability to easily
+  switch to that type.
+
+Supertab provides various settings allowing you to fully customize supertab to
+your tastes (the "Global Variables" fold in supertab.vim contains more details
+and examples):
+- g:SuperTabDefaultCompletionType - The default completion type to use.  If
+  you program in languages that support omni or user completions, I highly
+  recommend setting this to 'context'.
+- g:SuperTabContextDefaultCompletionType - The default completion type to use
+  when 'context' is the global default, but context completion has determined
+  that neither omni, user, or file completion should be used in the current
+  context.
+- g:SuperTabCompletionContexts - Used to configure a list of function names
+  which are used when the global default type is 'context'.  These functions
+  will be consulted in order to determine which completion type to use.
+  Advanced users can plug in their own functions here to customize their
+  'context' completion.
+- g:SuperTabRetainCompletionDuration - This setting determines how long a
+  non-default completion type should be retained as the temporary default.  By
+  default supertab will retain the alternate completion type until you leave
+  insert mode.
+- g:SuperTabMidWordCompletion - This can be used to turn off completion if you
+  are in the middle of a word.
+- g:SuperTabMappingForward, g:SuperTabMappingBackward - If using the tab key
+  for completion isn't for you, then you can use these to set an alternate key
+  to be used for your insert completion needs.
+- g:SuperTabMappingTabLiteral - For those rare cases where supertab would
+  normal want to start insert completion, but you just want to insert a tab,
+  this setting is used to define the key combination to use to do just that.
+  By default Ctrl-Tab is used.
+- g:SuperTabLongestHighlight - When enabled and you have the completion popup
+  enable and 'longest' in your completeopt, supertab will auto highlight the
+  first selection in the popup.
+- g:SuperTabContextDiscoverDiscovery - If you have 's:ContextDiscover' in your
+  g:SuperTabCompletionContexts list, then this setting will be consulted for a
+  list of simple variable:completion type pairs which will set the default
+  completion type to the first type whose variable evaluates to a non-zero or
+  non-empty value. 
+
+In addition to these settings, be sure to familiarize yourself with vim's own
+'completeopt' option (:help 'completeopt') to customize vim's completion
+behavior. 

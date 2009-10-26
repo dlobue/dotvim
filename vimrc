@@ -6,7 +6,10 @@ set iskeyword+=.
 filetype plugin on
 " colorscheme wargrey
 colorscheme lucius
-set paste
+"set paste
+
+" pydiction dictionary location
+" let g:pydiction_location = ~/.vim/pydiction/complete-dict
 
 " show line and column number
 set number
@@ -61,10 +64,6 @@ map <silent><A-Left> :tabprevious<CR>
 " toggle line numbers and fold column for easy copying:
 nnoremap <F2> :set nonumber!<CR>:set foldcolumn=0<CR>
 
-" automatically save and restore folds
-" au BufWinLeave * mkview
-" au BufWinEnter * silent loadview
-
 " this lets us put the marker in the file so that
 " it can be shared across and stored in version control.
 "set foldmethod=marker
@@ -93,7 +92,7 @@ let s:configured_vindect = 1
 
 " turn on pysmell autocompletion in python files
 " autocmd FileType python setlocal omnifunc=pysmell#Complete
-autocmd FileType python set complete+=k~/.vim/syntax/python.vim isk+=.,(
+" autocmd FileType python set complete+=k~/.vim/syntax/python.vim isk+=.,(
 
 au BufRead,BufNewFile *.mako set filetype=mako
 au BufRead,BufNewFile *.ghtml set filetype=genshi
