@@ -149,7 +149,8 @@ def detect(preferred=None, preferredsw=None, force=None, forcesw=None, maxlines=
 		preferredsw = maxpt[2]
 		if verbose>0:
 			total = reduce(lambda x,y: x+y, indents)
-			sw_str = '(%5.2f%%)'%(maxpt[0]/float(total)*100)
+            try: sw_str = '(%5.2f%%)'%(maxpt[0]/float(total)*100)
+            except ZeroDivisionError: sw_str = '(0)'
 			if verbose>1:
 				sw_str = sw_str+' '+`filter(lambda p: p[1]>0, map(None, range(0,513), indents))`
 
