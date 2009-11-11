@@ -106,6 +106,8 @@ map <silent><C-Left> <C-T>
 " ctrl+left arrow to go back
 map <silent><C-Right> <C-]>
 
+nnoremap FF :NERDTreeToggle<CR>
+
 " Taglist variables
 " Display function name in status bar:
 let g:ctags_statusline=1
