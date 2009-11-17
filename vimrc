@@ -8,6 +8,16 @@ filetype plugin on
 colorscheme lucius
 "set paste
 
+"Map Shift-Space and Ctrl-Space to return to normal mode
+inoremap <S-Space> <Esc>`^
+inoremap <C-Space> <Esc>`^
+inoremap <Leader><Space> <Esc>
+nnoremap <Leader><Space> <Esc>
+vnoremap <Leader><Space> <Esc>
+inoremap <Leader>i <Esc>`^
+inoremap <Leader>a <Esc>
+set timeoutlen=400
+
 " pydiction dictionary location
 " let g:pydiction_location = ~/.vim/pydiction/complete-dict
 
