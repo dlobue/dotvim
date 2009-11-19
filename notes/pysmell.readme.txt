@@ -25,3 +25,14 @@ To use PySmell omnicompletion from inside Vim, you have to have:
 4. `:setlocal omnifunc=pysmell#Complete` Note: If you want to always use pysmell for python, do: `autocmd FileType python setlocal omnifunc=pysmell#Complete`
 5. [OPTIONAL] Select a matcher of your liking - look at pysmell.vim for
 options. Eg: `:let g:pysmell_matcher='camel-case'` 
+
+####################
+To grab the latest pysmell:
+git clone git://github.com/orestis/pysmell.git
+
+put pysmell.vim into after/ftplugin/python
+grab pyflakes from http://www.vim.org/scripts/script.php?script_id=2441 and
+install it.
+in cloned pysmell source directory: python setup.py install
+necessary to install pysmell for access to pysmell app.
+
