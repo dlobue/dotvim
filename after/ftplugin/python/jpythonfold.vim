@@ -129,7 +129,7 @@ function! GetPythonFold(lnum)
         endif
     " Case E***: empty lines fold with previous
     " (***) change '=' to -1 if you want empty lines/comment out of a fold
-    " elseif line == '' | return '='
+    "elseif line == '' | return '='
     elseif line == '' | return '-1'
     endif
     " now we need the indent from previous
@@ -156,6 +156,7 @@ function! GetPythonFold(lnum)
             " Case S*<0*: new global statement if/while/for/try/with
             if 0<pind && line!~'^else\s*:\|^except.*:\|^elif.*:\|^finally\s*:' | return '>1'
             " Case S*=0*, after level 0 comment
+            "elseif 0==pind && getline(prevnonblank(a:lnum-1)) =~ '^\s*#' | return '='
             elseif 0==pind && getline(prevnonblank(a:lnum-1)) =~ '^\s*#' | return '>1'
             " Case S*=0*, other, stay 1
             else | return '='
@@ -185,7 +186,8 @@ function! GetPythonFold(lnum)
     " Case CR<= and CR<>
     "if line !~ '^\s*#' | call PrintIfCount(4,"Line: ".a:lnum.", blockindent: ".blockindent.", n: ".n.", nind: ".nind.", p: ".p.", pind: ".pind)
     endif
-    if line =~ '^\s*#' && ind>=nind | return -1
+    if line =~ '^\s*#' && ind>=nind | return '='
+    "if line =~ '^\s*#' && ind>=nind | return -1
     " Case CR<<: return next indent
     elseif line =~ '^\s*#' | return nind / &shiftwidth
     " Case SR<*: return actual indent
