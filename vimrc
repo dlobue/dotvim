@@ -18,6 +18,13 @@ inoremap <Leader>i <Esc>`^
 inoremap <Leader>a <Esc>
 set timeoutlen=400
 
+"vimdiff opts
+set diffopt=filler
+set diffopt+=iwhite
+set diffopt+=icase
+set diffopt+=horizontal
+
+
 " pydiction dictionary location
 " let g:pydiction_location = ~/.vim/pydiction/complete-dict
 

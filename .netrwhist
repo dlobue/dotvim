@@ -1,4 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_cnt =3
 let g:netrw_dirhist_1='/home/dominic/oldhidden/.offlineimap'
 let g:netrw_dirhist_2='/etc/ssmtp'
+let g:netrw_dirhist_3='/home/dominic/docs/stampsservers/dm1-web01-v/export/stamps_revenge/htdig/conf'
