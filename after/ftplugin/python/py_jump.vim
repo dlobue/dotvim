@@ -14,12 +14,12 @@
 " INSTALLATION: rename this file to python.vim
 " and copy it to your ~/.vim/ftplugin/ directory
 
-if exists("g:did_python_ftplugin")
+if exists("g:did_pyjump_ftplugin")
   finish
 endif
 
 " Don't load another plugin (this is global)
-let g:did_python_ftplugin = 1
+let g:did_pyjump_ftplugin = 1
 
 " This is the only tunable parameter of this script.
 " It specifies timeout (in seconds) for the backward jump.
