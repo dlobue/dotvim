@@ -63,13 +63,15 @@ endfunction
 
 " Copy indent from current line when starting a new line.
 set autoindent
-nnoremap <F6> :set noautoindent!<CR>
+nnoremap <F6> :set paste!<CR>
+" nnoremap <F6> :set noautoindent!<CR>
 " makes backspace key more powerful.
 set backspace=indent,eol,start
 " shows the match while typing
 " set incsearch
 " case insensitive search
-" set ignorecase
+set ignorecase
+set smartcase
 " show some autocomplete options in status bar
 set wildmenu
 
