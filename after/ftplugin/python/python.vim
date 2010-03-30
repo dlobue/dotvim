@@ -5,7 +5,7 @@
 "set foldmethod=syntax
 "let g:vimsyn_folding='afP'
 
-let g:ifold_mode=2 
+"let g:ifold_mode=2 
 
 " python tags
 set tags+=~/.vim/tags/python.ctags
