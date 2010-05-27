@@ -9,6 +9,7 @@ let g:vimsyn_folding='afP'
 
 " python tags
 set tags+=~/.vim/tags/python.ctags
+set tags+=~/.vim/tags/python-sitelibs.ctags
 
 " PySmell omnicompletion
 setlocal omnifunc=pysmell#Complete

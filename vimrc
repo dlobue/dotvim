@@ -29,10 +29,20 @@ nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
 
 " show line and column number
 set number
-" enter spaces when tab is pressed:
-set expandtab
 " do not break lines when line lenght increases
 set textwidth=0
+
+" By default, it goes without auto-wrap. If I want, I can type <C-B> to toggle
+" auto-wrap. Another <C-B> toggles back. 
+" set sr fo=roqm1 tw=64
+" im <C-B> <C-O>:setl sr! fo<C-R>=strpart("-+",&sr,1)<CR>=tc<CR>
+
+" if virtualedit=insert, use the following binding instead
+" im <C-B> <C-O>:setl sr! fo<C-R>=strpart("-+",&sr,1)<CR>=tc<CR>_<BS><Right>
+
+
+" enter spaces when tab is pressed:
+set expandtab
 " user 4 spaces to represent a tab
 set tabstop=4
 set softtabstop=4
@@ -81,14 +91,6 @@ map <silent><A-Left> :tabprevious<CR>
 " toggle line numbers and fold column for easy copying:
 nnoremap <F2> :set nonumber!<CR>:set foldcolumn=0<CR>
 
-" this lets us put the marker in the file so that
-" it can be shared across and stored in version control.
-"set foldmethod=marker
-" this is for python, put
-" # name for the folded text # {{{
-" to begin marker and
-" # }}}
-" close to end it.
 "set commentstring=\ #\ %s
 " default fold level, all open, set it 200 or something
 " to make it all closed.
@@ -97,27 +99,15 @@ set foldlevel=0
 " share clipboard with windows clipboard
 " set clipboard+=unnamed
 
-" set viminfo='100,f1
-" minibufexplorer settings:j
-" let g:miniBufExplMapWindowNavArrows = 1
-" let g:miniBufExplMapCTabSwitchWindows = 1
-
 let g:pcs_hotkey = 1
 let g:pcs_check_when_saving = 1
 
 let s:configured_vindect = 1
 
-" turn on pysmell autocompletion in python files
-" autocmd FileType python setlocal omnifunc=pysmell#Complete
-" autocmd FileType python set complete+=k~/.vim/syntax/python.vim isk+=.,(
-
 au BufRead,BufNewFile *.mako set filetype=mako
 au BufRead,BufNewFile *.ghtml set filetype=genshi
 au BufRead,BufNewFile *.ghr set filetype=ghrml
 
-" Tag files
-"set tags+=/root/.vim/tags/python.ctags
-"set tags+=/root/.vim/tags/python-sitelibs.ctags
 " ctrl+right to goto source of function under the cursor
 map <silent><C-Left> <C-T>
 " ctrl+left arrow to go back
