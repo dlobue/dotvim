@@ -6,7 +6,6 @@ set iskeyword+=.
 filetype plugin on
 " colorscheme wargrey
 colorscheme lucius
-"set paste
 
 "Map Shift-Space and Ctrl-Space to return to normal mode
 inoremap <S-Space> <Esc>`^
@@ -24,13 +23,12 @@ set diffopt+=iwhite
 set diffopt+=icase
 set diffopt+=horizontal
 
+" remove all trailing whitespace
+nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
 
-" pydiction dictionary location
-" let g:pydiction_location = ~/.vim/pydiction/complete-dict
 
 " show line and column number
 set number
-
 " enter spaces when tab is pressed:
 set expandtab
 " do not break lines when line lenght increases
