@@ -15,6 +15,9 @@ filetype plugin on
 inoremap <Leader>\ <Esc>
 nnoremap <Leader>\ <Esc>
 vnoremap <Leader>\ <Esc>
+inoremap <Leader><Space> <Esc>
+nnoremap <Leader><Space> <Esc>
+vnoremap <Leader><Space> <Esc>
 inoremap <Leader>i <Esc>`^
 inoremap <Leader>a <Esc>
 set timeoutlen=400
