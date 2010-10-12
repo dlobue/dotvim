@@ -1,18 +1,20 @@
 set nocompatible
+
+if &term =~ 'xterm-256color'
+    colorscheme lucius
+else
+    colorscheme wargrey
+endif
+
 filetype on
 syntax on
 filetype plugin indent on
-set iskeyword+=.
+" set iskeyword+=.
 filetype plugin on
-" colorscheme wargrey
-colorscheme lucius
 
-"Map Shift-Space and Ctrl-Space to return to normal mode
-inoremap <S-Space> <Esc>`^
-inoremap <C-Space> <Esc>`^
-inoremap <Leader><Space> <Esc>
-nnoremap <Leader><Space> <Esc>
-vnoremap <Leader><Space> <Esc>
+inoremap <Leader>\ <Esc>
+nnoremap <Leader>\ <Esc>
+vnoremap <Leader>\ <Esc>
 inoremap <Leader>i <Esc>`^
 inoremap <Leader>a <Esc>
 set timeoutlen=400

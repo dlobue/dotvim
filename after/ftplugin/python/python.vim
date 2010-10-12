@@ -7,7 +7,10 @@ let g:vimsyn_folding='afP'
 
 "text width before wrapping.
 "set to 0 to use the terminal width
-set textwidth=78
+set textwidth=80
+
+"make periods word boundaries
+" set iskeyword-=.
 
 "set a wrap margin of 2 characters at the end of each line, and do automatic
 "word-wrapping as you type in text. 

@@ -34,8 +34,15 @@ if !exists('g:pysmell_matcher')
 endif
 
 python << eopython
-from pysmell import vimhelper, idehelper
 import vim
+import os.path
+import sys
+
+#scriptdir = os.path.join(vim.eval('expand("<sfile>:p:h")'), 'pyflakes')
+scriptdir = vim.eval('expand("<sfile>:p:h")')
+sys.path.insert(0, scriptdir)
+
+from pysmell import vimhelper, idehelper
 import string
 TRANSLATEQUOTES = string.maketrans("\'\"", "\"\'")
 eopython

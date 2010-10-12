@@ -28,7 +28,8 @@ import os.path
 import sys
 
 # get the directory this script is in: the pyflakes python module should be installed there.
-scriptdir = os.path.join(os.path.dirname(vim.eval('expand("<sfile>")')), 'pyflakes')
+# scriptdir = os.path.join(os.path.dirname(vim.eval('expand("<sfile>")')), 'pyflakes')
+scriptdir = os.path.join(vim.eval('expand("<sfile>:p:h")'), 'pyflakes')
 sys.path.insert(0, scriptdir)
 
 from pyflakes import checker, ast, messages
