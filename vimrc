@@ -2,8 +2,10 @@ set nocompatible
 
 if &term =~ 'xterm-256color'
     colorscheme lucius
-else
+elseif &term =~ 'xterm' || &term =~ 'xterm-color'
     colorscheme wargrey
+else
+    colorscheme mustang
 endif
 
 filetype on
