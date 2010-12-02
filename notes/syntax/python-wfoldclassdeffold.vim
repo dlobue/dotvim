@@ -48,7 +48,7 @@ syn keyword pythonStatement	return try with
 syn keyword pythonStatement	global assert
 syn keyword pythonStatement	lambda yield
 
-syn match   pythonDefStatement	/^\s*\%(def\|class\)/
+syn match   pythonDefStatement	/^\s*\%(def \|class \)/
   \ nextgroup=pythonFunction skipwhite
 syn region  pythonFunctionFold	start="^\z(\s*\)\%(def\|class\)\>"
   \ end="\ze\%(\s*\n\)\+\%(\z1\s\)\@!." fold transparent
