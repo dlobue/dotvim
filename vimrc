@@ -1,18 +1,20 @@
 set nocompatible
 
-if &term =~ 'xterm-256color'
-    colorscheme lucius
-elseif &term =~ 'xterm' || &term =~ 'xterm-color'
-    colorscheme wargrey
-else
+if has('gui_running')
     colorscheme mustang
+elseif &term =~ 'xterm-256color'
+    colorscheme lucius
+else
+    colorscheme wargrey
 endif
 
 filetype on
 syntax on
 filetype plugin indent on
-" set iskeyword+=.
 filetype plugin on
+" set iskeyword+=.
+
+set csprg=gtags-cscope
 
 inoremap <Leader>\ <Esc>
 nnoremap <Leader>\ <Esc>
@@ -29,9 +31,6 @@ set diffopt=filler
 set diffopt+=iwhite
 set diffopt+=icase
 set diffopt+=horizontal
-
-" remove all trailing whitespace
-nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
 
 
 " show line and column number
@@ -51,25 +50,27 @@ set textwidth=0
 " enter spaces when tab is pressed:
 set expandtab
 " user 4 spaces to represent a tab
-set tabstop=4
 set softtabstop=4
 " number of space to use for auto indent
 " you can use >> or << keys to indent current line or selection
 " in normal mode.
 set shiftwidth=4
 
-nnoremap <F3> :call ToggleTab()<CR>
+" remove all trailing whitespace
+nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
+" toggles turning on paste mode for safe pasting from the clipboard
+" (prevents auto-indentation from going nuts)
+nnoremap <F6> :set paste!<CR>
+" toggle line numbers and fold column for easy copying:
+nnoremap <F2> :set nonumber!<CR>:set foldcolumn=0<CR>
 
-" nnoremap <F3> :set tabstop=2<CR>:set tabstop=2<CR>:set softtabstop=2<CR>
-" nnoremap <F4> :set tabstop=4<CR>:set tabstop=4<CR>:set softtabstop=4<CR>
+nnoremap <F3> :call ToggleTab()<CR>
 
 function! ToggleTab()
     if &expandtab
-        set tabstop=2
         set softtabstop=2
         set shiftwidth=2
     else
-        set tabstop=4
         set softtabstop=4
         set shiftwidth=4
     endif
@@ -78,12 +79,9 @@ endfunction
 
 " Copy indent from current line when starting a new line.
 set autoindent
-nnoremap <F6> :set paste!<CR>
-" nnoremap <F6> :set noautoindent!<CR>
+
 " makes backspace key more powerful.
 set backspace=indent,eol,start
-" shows the match while typing
-" set incsearch
 " case insensitive search
 set ignorecase
 set smartcase
@@ -94,9 +92,6 @@ set wildmenu
 map <silent><A-Right> :tabnext<CR>
 map <silent><A-Left> :tabprevious<CR>
 
-
-" toggle line numbers and fold column for easy copying:
-nnoremap <F2> :set nonumber!<CR>:set foldcolumn=0<CR>
 
 "set commentstring=\ #\ %s
 " default fold level, all open, set it 200 or something

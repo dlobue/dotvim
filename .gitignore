@@ -3,3 +3,4 @@ view
 *.pyo
 *.swp
 *~
+.netrwhist

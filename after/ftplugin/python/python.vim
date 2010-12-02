@@ -7,7 +7,7 @@ let g:vimsyn_folding='afP'
 
 "text width before wrapping.
 "set to 0 to use the terminal width
-set textwidth=80
+"set textwidth=80
 
 "make periods word boundaries
 " set iskeyword-=.
