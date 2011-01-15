@@ -35,6 +35,8 @@ set diffopt+=horizontal
 
 " show line and column number
 set number
+" highlight results
+set hlsearch
 " do not break lines when line lenght increases
 set textwidth=0
 
@@ -100,6 +102,8 @@ set foldlevel=0
 
 " share clipboard with windows clipboard
 " set clipboard+=unnamed
+
+let g:notesRoot = '~/docs/notes'
 
 let g:pcs_hotkey = 1
 let g:pcs_check_when_saving = 1
