@@ -85,6 +85,7 @@ set backspace=indent,eol,start
 " case insensitive search
 set ignorecase
 set smartcase
+set hlsearch
 " show some autocomplete options in status bar
 set wildmenu
 
