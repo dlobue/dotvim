@@ -78,6 +78,10 @@ function! ToggleTab()
     endif
 endfunction
         
+function! DeTab()
+    set tabstop=4
+    :retab
+endfunction
 
 " Copy indent from current line when starting a new line.
 set autoindent
