@@ -76,8 +76,8 @@ syn region pythonString		start=+[uU]\="""+ end=+"""+ contains=pythonEscape,@Spel
 syn region pythonString		start=+[uU]\='''+ end=+'''+ contains=pythonEscape,@Spell fold
 syn region pythonRawString	start=+[uU]\=[rR]'+ end=+'+ skip=+\\\\\|\\'+ contains=@Spell
 syn region pythonRawString	start=+[uU]\=[rR]"+ end=+"+ skip=+\\\\\|\\"+ contains=@Spell
-syn region pythonRawString	start=+[uU]\=[rR]"""+ end=+"""+ contains=@Spell
-syn region pythonRawString	start=+[uU]\=[rR]'''+ end=+'''+ contains=@Spell
+syn region pythonRawString	start=+[uU]\=[rR]"""+ end=+"""+ contains=@Spell fold
+syn region pythonRawString	start=+[uU]\=[rR]'''+ end=+'''+ contains=@Spell fold
 syn match  pythonEscape		+\\[abfnrtv'"\\]+ contained
 syn match  pythonEscape		"\\\o\{1,3}" contained
 syn match  pythonEscape		"\\x\x\{2}" contained
