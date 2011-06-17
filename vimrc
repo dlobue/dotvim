@@ -100,6 +100,27 @@ map <silent><A-Right> :tabnext<CR>
 map <silent><A-Left> :tabprevious<CR>
 
 
+function TabLeft()
+   let tab_number = tabpagenr() - 1
+   if tab_number == 0
+      execute "tabm" tabpagenr('$') - 1
+   else
+      execute "tabm" tab_number - 1
+   endif
+endfunction
+
+function TabRight()
+   let tab_number = tabpagenr() - 1
+   let last_tab_number = tabpagenr('$') - 1
+   if tab_number == last_tab_number
+      execute "tabm" 0
+   else
+      execute "tabm" tab_number + 1
+   endif
+endfunction
+
+
+
 "set commentstring=\ #\ %s
 " default fold level, all open, set it 200 or something
 " to make it all closed.
