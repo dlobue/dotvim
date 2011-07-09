@@ -14,6 +14,11 @@ filetype plugin indent on
 filetype plugin on
 " set iskeyword+=.
 
+" disable annoying gvim stuff
+if has('gui_running')
+    set guioptions-=arLT
+endif
+
 set csprg=gtags-cscope
 
 inoremap <Leader>\ <Esc>
