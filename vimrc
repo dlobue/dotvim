@@ -15,9 +15,10 @@ filetype plugin on
 " set iskeyword+=.
 
 " disable annoying gvim stuff
-if has('gui_running')
-    set guioptions-=arLT
-endif
+set guioptions-=T
+set guioptions-=L
+set guioptions-=r
+set guioptions-=a
 
 set csprg=gtags-cscope
 
