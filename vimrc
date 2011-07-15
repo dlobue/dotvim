@@ -19,6 +19,7 @@ set guioptions-=T
 set guioptions-=L
 set guioptions-=r
 set guioptions-=a
+set clipboard=
 
 set csprg=gtags-cscope
 
