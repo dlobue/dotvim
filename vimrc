@@ -148,6 +148,8 @@ let g:pcs_check_when_saving = 1
 
 let s:configured_vindect = 1
 
+let g:SuperTabDefaultCompletionType = "context"
+
 au BufRead,BufNewFile *.mako set filetype=mako
 au BufRead,BufNewFile *.ghtml set filetype=genshi
 au BufRead,BufNewFile *.ghr set filetype=ghrml
