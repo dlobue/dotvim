@@ -1,5 +1,5 @@
 set nocompatible
-source bundle/pathogen/autoload/pathogen.vim
+source ~/.vim/bundle/pathogen/autoload/pathogen.vim
 call pathogen#infect()
 
 if has('gui_running')
@@ -150,7 +150,7 @@ let s:configured_vindect = 1
 
 let g:SuperTabDefaultCompletionType = "context"
 
-set statusline = %{fugitive#statusline()}
+set statusline = "%{fugitive#statusline()}"
 
 au BufRead,BufNewFile *.mako set filetype=mako
 au BufRead,BufNewFile *.ghtml set filetype=genshi
