@@ -1,4 +1,6 @@
 set nocompatible
+source bundle/pathogen/autoload/pathogen.vim
+call pathogen#infect()
 
 if has('gui_running')
     colorscheme mustang
@@ -49,7 +51,7 @@ set hlsearch
 set textwidth=0
 
 " By default, it goes without auto-wrap. If I want, I can type <C-B> to toggle
-" auto-wrap. Another <C-B> toggles back. 
+" auto-wrap. Another <C-B> toggles back.
 " set sr fo=roqm1 tw=64
 " im <C-B> <C-O>:setl sr! fo<C-R>=strpart("-+",&sr,1)<CR>=tc<CR>
 
@@ -85,7 +87,7 @@ function! ToggleTab()
         set shiftwidth=4
     endif
 endfunction
-        
+
 function! DeTab()
     set tabstop=4
     :retab
@@ -172,3 +174,4 @@ let Tlist_Compact_Format = 1
 let Tlist_Exit_OnlyWindow = 1
 let Tlist_GainFocus_On_ToggleOpen = 1
 let Tlist_File_Fold_Auto_Close = 1
+
