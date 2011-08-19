@@ -27,6 +27,8 @@ set tags+=~/.vim/tags/python-sitelibs.ctags
 " PySmell omnicompletion
 setlocal omnifunc=pysmell#Complete
 
+set completeopt=menuone,longest,preview
+
 
 " change SpellBad highlight color
 highlight SpellBad guisp=#533B38
