@@ -1,6 +1,8 @@
 set nocompatible
 source ~/.vim/bundle/pathogen/autoload/pathogen.vim
 call pathogen#infect()
+" generate helptags
+Helptags
 
 if has('gui_running')
     colorscheme mustang
@@ -142,6 +144,7 @@ set foldlevel=0
 
 " share clipboard with windows clipboard
 " set clipboard+=unnamed
+
 
 let g:notesRoot = '~/docs/notes'
 
