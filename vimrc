@@ -10,6 +10,8 @@ else
     colorscheme wargrey
 endif
 
+let g:CSApprox_attr_map = { 'bold' : 'bold', 'italic' : '', 'sp' : '' }
+
 filetype on
 syntax on
 filetype plugin indent on
