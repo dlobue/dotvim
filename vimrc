@@ -150,6 +150,8 @@ let s:configured_vindect = 1
 
 let g:SuperTabDefaultCompletionType = "context"
 
+set statusline = %{fugitive#statusline()}
+
 au BufRead,BufNewFile *.mako set filetype=mako
 au BufRead,BufNewFile *.ghtml set filetype=genshi
 au BufRead,BufNewFile *.ghr set filetype=ghrml
