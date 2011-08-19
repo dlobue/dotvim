@@ -5,6 +5,7 @@ call pathogen#infect()
 if has('gui_running')
     colorscheme mustang
 elseif &term =~ 'xterm-256color'
+    set t_Co=256
     colorscheme lucius
 else
     colorscheme wargrey
