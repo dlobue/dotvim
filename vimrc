@@ -6,7 +6,8 @@ if has('gui_running')
     colorscheme mustang
 elseif &term =~ 'xterm-256color'
     set t_Co=256
-    colorscheme lucius
+    "colorscheme lucius
+    colorscheme mustang
 else
     colorscheme wargrey
 endif
