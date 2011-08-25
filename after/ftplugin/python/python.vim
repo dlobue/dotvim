@@ -30,6 +30,9 @@ set tags+=~/.vim/tags/python-sitelibs.ctags
 
 set completeopt=menuone,longest,preview
 
+" Rope AutoComplete
+let ropevim_vim_completion = 1
+let ropevim_extended_complete = 1
 
 " change SpellBad highlight color
 "highlight SpellBad term=underline gui=undercurl guisp=#533B38
