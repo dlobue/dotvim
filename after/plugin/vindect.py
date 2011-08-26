@@ -64,10 +64,10 @@ _def_indent, _def_sw, _def_maxlines, _def_verbose = None, None, None, None
 def setDefaults(indent=None, shiftwidth=None, maxlines=None, verbose=None):
     """set default settings to use for detect()"""
     global _def_indent, _def_sw, _def_maxlines, _def_verbose
-    if indent: _def_indent=indent
-    if shiftwidth: _def_sw=shiftwidth
-    if maxlines: _def_maxlines=maxlines
-    if verbose: _def_verbose=verbose
+    if indent is not None: _def_indent=indent
+    if shiftwidth is not None: _def_sw=shiftwidth
+    if maxlines is not None: _def_maxlines=maxlines
+    if verbose is not None: _def_verbose=verbose
 
 setDefaults('tab', 4, 1000, 1)
 

@@ -67,11 +67,11 @@ set textwidth=0
 " enter spaces when tab is pressed:
 set expandtab
 " user 4 spaces to represent a tab
-set softtabstop=4
+"set softtabstop=4
 " number of space to use for auto indent
 " you can use >> or << keys to indent current line or selection
 " in normal mode.
-set shiftwidth=4
+"set shiftwidth=4
 
 " remove all trailing whitespace
 nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
