@@ -57,7 +57,9 @@ want to keep the autocmd to set cindent/smartindent/etc appropriatly)
 
 __version__ = "1.0"
 
-import vim, re, os
+import vim, re
+
+_def_indent, _def_sw, _def_maxlines, _def_verbose = None, None, None, None
 
 def setDefaults(indent=None, shiftwidth=None, maxlines=None, verbose=None):
     """set default settings to use for detect()"""
@@ -83,7 +85,10 @@ def detect(preferred=None, preferredsw=None, force=None, forcesw=None, maxlines=
     verbose -- print detection info 0=none, 1=std, 2=extra
     """
     b = vim.current.buffer
-    if verbose>0: print 'vindect:',
+    if verbose:
+        print 'vindect:',
+
+    global _def_indent, _def_sw, _def_maxlines, _def_verbose
 
     if not preferred: preferred = _def_indent
     if not preferredsw: preferredsw = _def_sw
@@ -114,6 +119,7 @@ def detect(preferred=None, preferredsw=None, force=None, forcesw=None, maxlines=
             #generate a tuple containing:
             # (number matching this type, is the preferred type?, the name of this type)
             return (n, p==name, name)
+
         preferred = max(pref(mix+mspc,'mix'), pref(spc,'space'), pref(tab,'tab'))[2]
         ind_str = '(s=%s, t=%s, m=%s(%+i), e=%s)'%(spc,tab,mix,mspc,err)
 
@@ -131,16 +137,20 @@ def detect(preferred=None, preferredsw=None, force=None, forcesw=None, maxlines=
             l = b[i]
             cur = 0
             for c in l:
-                if c == '\t': cur = (cur+8)/8 * 8
-                elif c == ' ': cur = cur+1
+                if c == '\t':
+                    cur = (cur+8)/8 * 8
+                elif c == ' ':
+                    cur = cur+1
                 else:
                     ind=abs(cur - prev)
-                    if ind: #don't count 0's since they just mean this line is the same indent as the previous.
+                    if ind:
+                        #don't count 0's since they just mean this line is the same indent as the previous.
                         # XXX: should we also try to detect (and ignore) blank lines between lines of the same indent some how?
                         # it doesn't seem to be a big enough number of them to worry...
                         indents[ind]=indents[ind]+1
                     break
             prev = cur
+
         def pref(n,v,p=preferredsw):
             #generate a tuple containing:
             # (number matching this sw, is the preferred sw?, the sw)
@@ -149,8 +159,11 @@ def detect(preferred=None, preferredsw=None, force=None, forcesw=None, maxlines=
         preferredsw = maxpt[2]
         if verbose>0:
             total = reduce(lambda x,y: x+y, indents)
-            try: sw_str = '(%5.2f%%)'%(maxpt[0]/float(total)*100)
-            except ZeroDivisionError: sw_str = '(0)'
+            try:
+                sw_str = '(%5.2f%%)'%(maxpt[0]/float(total)*100)
+            except ZeroDivisionError:
+                sw_str = '(0)'
+
             if verbose>1:
                 sw_str = sw_str+' '+`filter(lambda p: p[1]>0, map(None, range(0,513), indents))`
 
@@ -158,7 +171,8 @@ def detect(preferred=None, preferredsw=None, force=None, forcesw=None, maxlines=
     vim.command('syn clear indentError')
 
     if dosyntax and not vim.eval('&syntax'):
-        print '(syntax not on)',
+        if verbose:
+            print '(syntax not on)'
         dosyntax=0
 
     settings={
@@ -174,7 +188,8 @@ def detect(preferred=None, preferredsw=None, force=None, forcesw=None, maxlines=
         vim.command('set tabstop=8 shiftwidth=%s softtabstop=0 nosmarttab noexpandtab '%preferredsw + settings[1])
 
     #if verbose>0: print preferred, force and '(forced)' or '(s=%s, t=%s, m=%s(%+i), e=%s)'%(spc,tab,mix,mspc,err)
-    if verbose>0: print preferred, ind_str, 'sw=%i'%preferredsw, sw_str
+    if verbose:
+        print preferred, ind_str, 'sw=%i'%preferredsw, sw_str
     return preferred
 
 # todo:
