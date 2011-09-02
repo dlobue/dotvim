@@ -29,7 +29,6 @@ set guioptions-=a
 set guioptions-=m
 set clipboard=
 
-set csprg=gtags-cscope
 
 inoremap <Leader>\ <Esc>
 nnoremap <Leader>\ <Esc>
