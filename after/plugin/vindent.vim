@@ -15,4 +15,5 @@ endif
 if s:configured_vindect
   py vindect.setDefaults(indent='space', shiftwidth=4, verbose=0)
   au Syntax * py vindect.detect(preferred='space', preferredsw=4)
+  au Syntax gitconfig py vindect.detect(preferred='tab', preferredsw=4)
 endif
