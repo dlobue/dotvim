@@ -21,8 +21,8 @@ set iskeyword-=.
 "let g:ifold_mode=2 
 
 " python tags
-set tags+=~/.vim/tags/python.ctags
-set tags+=~/.vim/tags/python-sitelibs.ctags
+"set tags+=~/.vim/tags/python.ctags
+"set tags+=~/.vim/tags/python-sitelibs.ctags
 
 if executable('pydoc2')
     let g:pydoc_cmd = 'pydoc2'
