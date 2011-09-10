@@ -7,10 +7,10 @@
     // Predefined globals whom JSHint will ignore.
     "browser"       : true,   // Standard browser globals e.g. `window`, `document`.
 
-    "node"          : false,
+    "node"          : true,
     "rhino"         : false,
     "couch"         : false,
-    "wsh"           : true,   // Windows Scripting Host.
+    "wsh"           : false,   // Windows Scripting Host.
 
     "jquery"        : true,
     "prototypejs"   : false,
@@ -54,6 +54,7 @@
     "shadow"        : false,  // Allows re-define variables later in code e.g. `var x=1; x=2;`.
     "supernew"      : false,  // Tolerate `new function () { ... };` and `new Object;`.
     "undef"         : true,   // Require all non-global variables be declared before they are used.
+    "proto"         : false,  // if the `__proto__` property should be disallowed
 
 
     // Persone styling prefrences.
