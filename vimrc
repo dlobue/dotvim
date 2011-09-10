@@ -140,9 +140,6 @@ endfunction
 " to make it all closed.
 set foldlevel=0
 
-" share clipboard with windows clipboard
-" set clipboard+=unnamed
-
 
 let g:notesRoot = '~/docs/notes'
 
