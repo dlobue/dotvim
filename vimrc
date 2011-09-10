@@ -140,6 +140,8 @@ endfunction
 " to make it all closed.
 set foldlevel=0
 
+" allow unmodified buffers to be backgrounded
+set hidden
 
 let g:notesRoot = '~/docs/notes'
 
