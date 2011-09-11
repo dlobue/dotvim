@@ -62,6 +62,13 @@ set textwidth=0
 " if virtualedit=insert, use the following binding instead
 " im <C-B> <C-O>:setl sr! fo<C-R>=strpart("-+",&sr,1)<CR>=tc<CR>_<BS><Right>
 
+set scrolloff=3
+set sidescrolloff=3
+"set showmode
+"set showcmd
+"set laststatus=2
+
+
 
 " enter spaces when tab is pressed:
 set expandtab
