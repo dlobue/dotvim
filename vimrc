@@ -1,5 +1,5 @@
 set nocompatible
-source ~/.vim/bundle/pathogen/autoload/pathogen.vim
+exec 'source ' . expand('<sfile>:p:h') . '/.vim/bundle/pathogen/autoload/pathogen.vim'
 call pathogen#infect()
 " generate helptags
 Helptags
