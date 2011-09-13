@@ -68,6 +68,7 @@ set sidescrolloff=3
 "set showcmd
 "set laststatus=2
 
+let g:localvimrc_sandbox=0
 
 
 " enter spaces when tab is pressed:
