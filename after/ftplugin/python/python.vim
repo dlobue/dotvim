@@ -32,6 +32,7 @@ endif
 " PySmell omnicompletion
 "setlocal omnifunc=pysmell#Complete
 "set omnifunc=pythoncomplete#Complete
+setlocal omnifunc=RopeCompleteFunc
 
 set completeopt=menuone,longest,preview
 

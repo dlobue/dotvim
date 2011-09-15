@@ -80,3 +80,7 @@
 	path = bundle/autotag
 	url = https://github.com/vim-scripts/AutoTag.git
 	ignore = untracked
+[submodule "bundle/rope-omni"]
+	path = bundle/rope-omni
+	url = https://github.com/rygwdn/rope-omni.git
+	ignore = untracked
