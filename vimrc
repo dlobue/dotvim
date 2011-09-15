@@ -29,13 +29,27 @@ set guioptions-=a
 set guioptions-=m
 set clipboard=
 
+set autoindent " Copy indent from current line when starting a new line.
+set backspace=indent,eol,start
+set ignorecase " case insensitive search
+set smartcase " make search case-sensitive if search str has caps
+set hlsearch " highlight results
+set wildmenu " show some autocomplete options in status bar
+set foldlevel=0 " default fold level. 0 for all closed
+set hidden " allow unmodified buffers to be backgrounded
+set number " show line and column number
+set textwidth=0 " do not break lines when line lenght increases
+set scrolloff=3
+set sidescrolloff=3
+"set showmode
+"set showcmd
+"set laststatus=2
+
+
 
 inoremap <Leader>\ <Esc>
 nnoremap <Leader>\ <Esc>
 vnoremap <Leader>\ <Esc>
-inoremap <Leader><Space> <Esc>
-nnoremap <Leader><Space> <Esc>
-vnoremap <Leader><Space> <Esc>
 inoremap <Leader>i <Esc>`^
 inoremap <Leader>a <Esc>
 set timeoutlen=400
@@ -47,12 +61,7 @@ set diffopt+=icase
 set diffopt+=horizontal
 
 
-" show line and column number
-set number
-" highlight results
-set hlsearch
-" do not break lines when line lenght increases
-set textwidth=0
+
 
 " By default, it goes without auto-wrap. If I want, I can type <C-B> to toggle
 " auto-wrap. Another <C-B> toggles back.
@@ -62,17 +71,8 @@ set textwidth=0
 " if virtualedit=insert, use the following binding instead
 " im <C-B> <C-O>:setl sr! fo<C-R>=strpart("-+",&sr,1)<CR>=tc<CR>_<BS><Right>
 
-set scrolloff=3
-set sidescrolloff=3
-"set showmode
-"set showcmd
-"set laststatus=2
-
-let g:localvimrc_sandbox=0
-
-
-" enter spaces when tab is pressed:
-set expandtab
+ " enter spaces when tab is pressed:
+"set expandtab
 " user 4 spaces to represent a tab
 "set softtabstop=4
 " number of space to use for auto indent
@@ -88,34 +88,12 @@ nnoremap <F6> :set paste!<CR>
 " toggle line numbers and fold column for easy copying:
 nnoremap <F2> :set nonumber!<CR>:set foldcolumn=0<CR>
 
-nnoremap <F3> :call ToggleTab()<CR>
-
-function! ToggleTab()
-    if &expandtab
-        set softtabstop=2
-        set shiftwidth=2
-    else
-        set softtabstop=4
-        set shiftwidth=4
-    endif
-endfunction
-
 function! DeTab()
     set tabstop=4
     :retab
 endfunction
 
-" Copy indent from current line when starting a new line.
-set autoindent
 
-" makes backspace key more powerful.
-set backspace=indent,eol,start
-" case insensitive search
-set ignorecase
-set smartcase
-set hlsearch
-" show some autocomplete options in status bar
-set wildmenu
 
 " move between vim tabs with ALT+[Left|Right]Arrow
 map <silent><A-Right> :tabnext<CR>
@@ -143,14 +121,8 @@ endfunction
 
 
 
-"set commentstring=\ #\ %s
-" default fold level, all open, set it 200 or something
-" to make it all closed.
-set foldlevel=0
 
-" allow unmodified buffers to be backgrounded
-set hidden
-
+let g:localvimrc_sandbox=0
 let g:notesRoot = '~/docs/notes'
 
 let g:pcs_hotkey = 1
@@ -158,9 +130,9 @@ let g:pcs_check_when_saving = 1
 
 let s:configured_vindect = 1
 
-let g:SuperTabDefaultCompletionType = "context"
+"let g:SuperTabDefaultCompletionType = "context"
 
-set statusline = "%{fugitive#statusline()}"
+"set statusline = "%{fugitive#statusline()}"
 
 au BufRead,BufNewFile *.mako set filetype=mako
 au BufRead,BufNewFile *.ghtml set filetype=genshi
@@ -227,9 +199,9 @@ exec 'set tags =' . BuildTagsFromPath()
 
 
 " Remember last location in file
-if has("autocmd")
-  au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
-    \| exe "normal g'\"" | endif
-endif
+"if has("autocmd")
+  "au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
+    "\| exe "normal g'\"" | endif
+"endif
 
 
