@@ -55,10 +55,9 @@ inoremap <Leader>a <Esc>
 set timeoutlen=400
 
 "vimdiff opts
-set diffopt=filler
+set diffopt+=filler
 set diffopt+=iwhite
 set diffopt+=icase
-set diffopt+=horizontal
 
 
 
