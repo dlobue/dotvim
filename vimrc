@@ -96,11 +96,6 @@ endfunction
 
 
 
-" move between vim tabs with ALT+[Left|Right]Arrow
-map <silent><A-Right> :tabnext<CR>
-map <silent><A-Left> :tabprevious<CR>
-
-
 function TabLeft()
    let tab_number = tabpagenr() - 1
    if tab_number == 0
