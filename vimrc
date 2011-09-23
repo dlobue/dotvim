@@ -59,7 +59,9 @@ set diffopt+=filler
 set diffopt+=iwhite
 set diffopt+=icase
 
-
+"mappings to emulate gt & gT, only for buffers
+nmap gb :bn<CR>
+nmap gB :bp<CR>
 
 
 " By default, it goes without auto-wrap. If I want, I can type <C-B> to toggle
