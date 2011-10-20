@@ -117,8 +117,8 @@ endfunction
 
 
 
-
-let g:localvimrc_sandbox=0
+let g:localvimrc_ask = 0
+let g:localvimrc_sandbox = 0
 let g:notesRoot = '~/docs/notes'
 
 let g:pcs_hotkey = 1
