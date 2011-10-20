@@ -1,3 +1,3 @@
---python-kinds=-iv
+--python-kinds=-i
 --exclude=build
 --exclude=dist
