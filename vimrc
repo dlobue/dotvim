@@ -170,6 +170,15 @@ let g:tagbar_width = 30
 
 if has('cscope')
     set cscopetag cscopeverbose
+
+    nmap <Leader>ss :cs find s <C-R>=expand("<cword>")<CR><CR>
+    nmap <Leader>sg :cs find g <C-R>=expand("<cword>")<CR><CR>
+    nmap <Leader>sc :cs find c <C-R>=expand("<cword>")<CR><CR>
+    nmap <Leader>st :cs find t <C-R>=expand("<cword>")<CR><CR>
+    nmap <Leader>se :cs find e <C-R>=expand("<cword>")<CR><CR>
+    nmap <Leader>sf :cs find f <C-R>=expand("<cfile>")<CR><CR>
+    nmap <Leader>si :cs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
+    nmap <Leader>sd :cs find d <C-R>=expand("<cword>")<CR><CR>
 endif
 
 
