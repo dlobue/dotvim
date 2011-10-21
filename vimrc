@@ -166,6 +166,22 @@ let g:tagbar_autofocus = 1
 let g:tagbar_autoshowtag = 1
 let g:tagbar_width = 30
 
+function! _child_of_git()
+    let l:pid = getpid()
+    while l:pid > 1
+        let [l:name, @_, l:pid] = split( readfile('/proc/'.l:pid.'/stat', 1)[0], '\W\+')[1:3]
+        if l:name =~ 'git'
+            return 1
+        endif
+    endwhile
+    return 0
+endfunction
+
+if &diff
+    if _child_of_git()
+        autocmd VimEnter * execute "windo set noma nowrite" | set ma write
+    endif
+endif
 
 "original
 "command! -nargs=1 Silent  | execute ':silent !'.<q-args>  | execute ':redraw!'
