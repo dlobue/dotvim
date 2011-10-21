@@ -167,6 +167,14 @@ let g:tagbar_autoshowtag = 1
 let g:tagbar_width = 30
 
 
+"original
+"command! -nargs=1 Silent  | execute ':silent !'.<q-args>  | execute ':redraw!'
+"my more streamlined version
+command! -nargs=1 -bar -bang Silent execute ':silent<bang> <q-args>'  | redraw!
+
+"lets get Silent working before i start messing with autocommands
+"autocmd QuickFixCmdPost *grep* cwindow
+
 if has('cscope')
     set cscopetag cscopeverbose
 
