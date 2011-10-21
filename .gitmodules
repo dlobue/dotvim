@@ -56,10 +56,6 @@
 	path = bundle/rope-vim
 	url = https://github.com/klen/rope-vim.git
 	ignore = untracked
-[submodule "bundle/python_calltips"]
-	path = bundle/python_calltips
-	url = https://github.com/vim-scripts/python_calltips.git
-	ignore = untracked
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git
