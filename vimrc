@@ -61,10 +61,6 @@ set diffopt+=filler
 set diffopt+=iwhite
 set diffopt+=icase
 
-"mappings to emulate gt & gT, only for buffers
-nmap gb :bn<CR>
-nmap gB :bp<CR>
-
 
 " By default, it goes without auto-wrap. If I want, I can type <C-B> to toggle
 " auto-wrap. Another <C-B> toggles back.
@@ -166,6 +162,22 @@ let g:tagbar_autofocus = 1
 let g:tagbar_autoshowtag = 1
 let g:tagbar_width = 30
 
+"let g:miniBufExplorerDebugLevel = 9
+"let g:miniBufExplorerDebugMode = 0
+
+let g:miniBufExplMapWindowNavVim = 1
+let g:miniBufExplMapCTabSwitchBufs = 1
+let g:miniBufExplModSelTarget = 1
+"let g:miniBufExplShowBufNumbers = 0
+let g:miniBufExplSplitToEdge = 0
+
+"mappings to emulate gt & gT, only for buffers
+"nmap gb :bn<CR>
+"nmap gB :bp<CR>
+nmap gb <C-TAB>
+nmap gB <C-S-TAB>
+
+
 function! _child_of_git()
     let l:pid = getpid()
     while l:pid > 1
@@ -178,6 +190,7 @@ function! _child_of_git()
 endfunction
 
 if &diff
+    let g:loaded_minibufexplorer = 1
     if _child_of_git()
         autocmd VimEnter * execute "windo set noma nowrite" | set ma write
     endif
