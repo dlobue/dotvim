@@ -30,6 +30,7 @@ set guioptions-=a
 set guioptions-=m
 set clipboard=
 
+set pastetoggle=<F12>       " Sane indentation on pastes
 set autoindent " Copy indent from current line when starting a new line.
 set backspace=indent,eol,start
 set ignorecase " case insensitive search
@@ -84,9 +85,6 @@ nmap gB :bp<CR>
 
 " remove all trailing whitespace
 nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
-" toggles turning on paste mode for safe pasting from the clipboard
-" (prevents auto-indentation from going nuts)
-nnoremap <F6> :set paste!<CR>
 " toggle line numbers and fold column for easy copying:
 nnoremap <F2> :set nonumber!<CR>:set foldcolumn=0<CR>
 
