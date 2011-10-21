@@ -96,3 +96,7 @@
 	path = bundle/minibufexpl
 	url = https://github.com/fholgado/minibufexpl.vim.git
 	ignore = untracked
+[submodule "bundle/tabular"]
+	path = bundle/tabular
+	url = https://github.com/godlygeek/tabular.git
+	ignore = untracked
