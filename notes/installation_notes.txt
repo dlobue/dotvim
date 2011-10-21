@@ -1,3 +1,0 @@
-Copy the file to your ftplugin/ directory.  If, for some reason, you want to
-change the name of the file, copy it to ftplugin/python/ or :source it from
-ftplugin/python.vim 
