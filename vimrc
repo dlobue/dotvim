@@ -94,7 +94,7 @@ endfunction
 
 
 
-function TabLeft()
+function! TabLeft()
    let tab_number = tabpagenr() - 1
    if tab_number == 0
       execute "tabm" tabpagenr('$') - 1
@@ -103,7 +103,7 @@ function TabLeft()
    endif
 endfunction
 
-function TabRight()
+function! TabRight()
    let tab_number = tabpagenr() - 1
    let last_tab_number = tabpagenr('$') - 1
    if tab_number == last_tab_number
