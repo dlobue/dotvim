@@ -48,6 +48,9 @@ set sidescrolloff=3
 "set laststatus=2
 
 
+au BufEnter * if &ft == 'qf' | set scrolloff=1 | endif
+au BufLeave * if &ft == 'qf' | set scrolloff=3 | endif
+
 
 inoremap <Leader>\ <Esc>
 nnoremap <Leader>\ <Esc>
