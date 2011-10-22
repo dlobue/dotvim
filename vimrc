@@ -125,9 +125,6 @@ let s:configured_vindect = 1
 
 "set statusline = "%{fugitive#statusline()}"
 
-au BufRead,BufNewFile *.mako set filetype=mako
-au BufRead,BufNewFile *.ghtml set filetype=genshi
-au BufRead,BufNewFile *.ghr set filetype=ghrml
 
 " ctrl+right to goto source of function under the cursor
 map <silent><C-Left> <C-T>
@@ -136,23 +133,10 @@ map <silent><C-Right> <C-]>
 
 nnoremap FF :NERDTreeToggle<CR>
 
-" Taglist variables
 " Display function name in status bar:
 let g:ctags_statusline=1
 " Automatically start script
 let generate_tags=1
-" Shorter commands to toggle Taglist display
-"nnoremap TT :TlistToggle<CR>
-"" map <F4> :TlistToggle<cr>
-"" Various Taglist diplay config:
-"let Tlist_Ctags_Cmd = 'ctags'
-"let Tlist_Use_Right_Window = 1
-"let Tlist_Compact_Format = 1
-"let Tlist_Exit_OnlyWindow = 1
-"let Tlist_GainFocus_On_ToggleOpen = 1
-"let Tlist_File_Fold_Auto_Close = 1
-"" Displays taglist results in a vertical window:
-"let Tlist_Use_Horiz_Window=0
 
 
 nnoremap TT :TagbarToggle<CR>
