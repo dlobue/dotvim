@@ -110,7 +110,7 @@ function TabRight()
    endif
 endfunction
 
-
+let g:CommandTMaxHeight = 12
 
 let g:localvimrc_ask = 0
 let g:localvimrc_sandbox = 0
