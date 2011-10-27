@@ -186,7 +186,8 @@ endif
 "original
 "command! -nargs=1 Silent  | execute ':silent !'.<q-args>  | execute ':redraw!'
 "my more streamlined version
-command! -nargs=1 -bar -bang Silent execute ':silent<bang> <q-args>'  | redraw!
+command! -nargs=1 -bar -bang Silent execute ':silent<bang> '.<q-args>  | redraw!
+command! -nargs=1 Grep execute 'Silent! grep! '.<q-args> | cw
 
 "lets get Silent working before i start messing with autocommands
 "autocmd QuickFixCmdPost *grep* cwindow
