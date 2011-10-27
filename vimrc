@@ -179,7 +179,7 @@ endfunction
 if &diff
     let g:loaded_minibufexplorer = 1
     if _child_of_git()
-        autocmd VimEnter * execute "windo set noma nowrite" | set ma write
+        autocmd VimEnter * execute "windo set noma nowrite filetype=git foldmarker=<<<<<<<,>>>>>>>" | set ma write
     endif
 endif
 
