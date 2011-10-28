@@ -147,6 +147,7 @@ let generate_tags=1
 
 
 nnoremap TT :TagbarToggle<CR>
+nnoremap FG :GundoToggle<CR>
 
 let g:tagbar_compact = 1
 let g:tagbar_autofocus = 1
