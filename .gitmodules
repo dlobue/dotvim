@@ -72,6 +72,10 @@
 	path = bundle/localvimrc
 	url = https://github.com/embear/vim-localvimrc.git
 	ignore = untracked
+[submodule "bundle/aftersyntaxc"]
+	path = bundle/aftersyntaxc
+	url = git://github.com/kergoth/aftersyntaxc.vim.git
+	ignore = untracked
 [submodule "bundle/autotag"]
 	path = bundle/autotag
 	url = https://github.com/vim-scripts/AutoTag.git
