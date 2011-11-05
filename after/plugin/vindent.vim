@@ -18,4 +18,5 @@ if s:configured_vindect
   au Syntax ruby py vindect.detect(preferred='space', preferredsw=2)
   au Syntax help py vindect.detect(preferred='mix', dosyntax=0, preferredsw=4)
   au Syntax gitconfig py vindect.detect(preferred='tab', preferredsw=4)
+  au Syntax c,cpp py vindect.detect(preferred='tab', preferredsw=4)
 endif
