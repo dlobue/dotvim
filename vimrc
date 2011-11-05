@@ -43,6 +43,9 @@ set number " show line and column number
 set textwidth=0 " do not break lines when line lenght increases
 set scrolloff=3
 set sidescrolloff=3
+set completeopt=longest,menu,preview
+"set completeopt=longest,menu,menuone,preview
+set history=1000
 "set showmode
 "set showcmd
 "set laststatus=2
@@ -117,6 +120,10 @@ function! TabRight()
    endif
 endfunction
 
+"let g:SuperTabLongestHighlight = 1
+let g:SuperTabDefaultCompletionType = "context"
+let g:SuperTabLongestEnhanced = 1
+
 let g:CommandTMaxHeight = 12
 
 let g:localvimrc_ask = 0
@@ -128,15 +135,14 @@ let g:pcs_check_when_saving = 1
 
 let s:configured_vindect = 1
 
-"let g:SuperTabDefaultCompletionType = "context"
 
 "set statusline = "%{fugitive#statusline()}"
 
 
 " ctrl+right to goto source of function under the cursor
-map <silent><C-Left> <C-T>
-" ctrl+left arrow to go back
 map <silent><C-Right> <C-]>
+" ctrl+left arrow to go back
+map <silent><C-Left> <C-T>
 
 nnoremap FF :NERDTreeToggle<CR>
 
