@@ -4,6 +4,11 @@ call pathogen#infect()
 " generate helptags
 Helptags
 
+if !has('gui') || v:version < 703
+    "disable csapprox if we don't have gui
+    "it gives an annoying error otherwise
+    let g:CSApprox_loaded = 1
+endif
 if has('gui_running')
     colorscheme mustang
     set lines=28 columns=122
