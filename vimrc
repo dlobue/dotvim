@@ -55,6 +55,7 @@ set maxmempattern=10000
 au BufEnter * if &ft == 'qf' | set scrolloff=1 | endif
 au BufLeave * if &ft == 'qf' | set scrolloff=3 | endif
 
+au BufRead,BufNewFile *.jsm set filetype=javascript
 
 inoremap <Leader>\ <Esc>
 nnoremap <Leader>\ <Esc>
@@ -100,6 +101,17 @@ function! DeTab()
     :retab
 endfunction
 
+" Search for selected text, forwards or backwards.
+vnoremap <silent> * :<C-U>
+  \let old_reg=getreg('"')<Bar>let old_regtype=getregtype('"')<CR>
+  \gvy/<C-R><C-R>=substitute(
+  \escape(@", '/\.*$^~['), '\_s\+', '\\_s\\+', 'g')<CR><CR>
+  \gV:call setreg('"', old_reg, old_regtype)<CR>
+vnoremap <silent> # :<C-U>
+  \let old_reg=getreg('"')<Bar>let old_regtype=getregtype('"')<CR>
+  \gvy?<C-R><C-R>=substitute(
+  \escape(@", '?\.*$^~['), '\_s\+', '\\_s\\+', 'g')<CR><CR>
+  \gV:call setreg('"', old_reg, old_regtype)<CR>
 
 
 function! TabLeft()
