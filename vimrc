@@ -49,6 +49,7 @@ set history=1000
 "set showmode
 "set showcmd
 "set laststatus=2
+set maxmempattern=10000
 
 
 au BufEnter * if &ft == 'qf' | set scrolloff=1 | endif
