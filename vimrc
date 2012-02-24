@@ -153,6 +153,8 @@ let g:pcs_check_when_saving = 1
 
 let s:configured_vindect = 1
 
+let g:syntastic_enable_signs=0
+
 
 "set statusline = "%{fugitive#statusline()}"
 
