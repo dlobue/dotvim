@@ -6,6 +6,10 @@
 	path = bundle/fugitive
 	url = git://github.com/tpope/vim-fugitive.git
 	ignore = untracked
+[submodule "bundle/rst-tables"]
+	path = bundle/rst-tables
+	url = git://github.com/vim-scripts/RST-Tables.git
+	ignore = untracked
 [submodule "bundle/indexedsearch"]
 	path = bundle/indexedsearch
 	url = https://github.com/vim-scripts/IndexedSearch.git
