@@ -142,6 +142,10 @@ let g:SuperTabDefaultCompletionType = "context"
 let g:SuperTabLongestHighlight = 1
 let g:SuperTabLongestEnhanced = 1
 
+
+let g:python_auto_complete_variables = 1
+let g:python_auto_complete_modules = 1
+
 let g:CommandTMaxHeight = 12
 
 let g:localvimrc_ask = 0
