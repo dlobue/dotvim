@@ -138,8 +138,8 @@ function! TabRight()
    endif
 endfunction
 
-"let g:SuperTabLongestHighlight = 1
 let g:SuperTabDefaultCompletionType = "context"
+let g:SuperTabLongestHighlight = 1
 let g:SuperTabLongestEnhanced = 1
 
 let g:CommandTMaxHeight = 12
