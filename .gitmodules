@@ -84,6 +84,10 @@
 	path = bundle/autotag
 	url = https://github.com/vim-scripts/AutoTag.git
 	ignore = untracked
+[submodule "bundle/vim-scala"]
+	path = bundle/vim-scala
+	url = git://github.com/derekwyatt/vim-scala.git
+	ignore = untracked
 [submodule "bundle/threesome"]
 	path = bundle/threesome
 	url = https://github.com/sjl/threesome.vim.git
