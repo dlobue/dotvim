@@ -100,6 +100,10 @@
 	path = bundle/unimpaired
 	url = https://github.com/tpope/vim-unimpaired.git
 	ignore = untracked
+[submodule "bundle/yankring"]
+	path = bundle/yankring
+	url = https://github.com/vim-scripts/YankRing.vim.git
+	ignore = untracked
 [submodule "bundle/gitv"]
 	path = bundle/gitv
 	url = https://github.com/gregsexton/gitv.git
