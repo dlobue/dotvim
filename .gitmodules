@@ -42,11 +42,6 @@
 	path = bundle/csapprox
 	url = https://github.com/godlygeek/csapprox.git
 	ignore = untracked
-[submodule "bundle/pyflakes-vim"]
-	path = bundle/pyflakes-vim
-	url = https://github.com/kevinw/pyflakes-vim.git
-	ignore = untracked
-	fetchRecurseSubmodules = true
 [submodule "bundle/supertab"]
 	path = bundle/supertab
 	url = https://github.com/ervandew/supertab.git
