@@ -26,7 +26,6 @@
 	path = bundle/command-t
 	url = https://github.com/wincent/Command-T.git
 	ignore = untracked
-	ignore = untracked
 [submodule "bundle/nerdcommenter"]
 	path = bundle/nerdcommenter
 	url = https://github.com/scrooloose/nerdcommenter.git
@@ -91,10 +90,6 @@
 [submodule "bundle/vim-scala"]
 	path = bundle/vim-scala
 	url = git://github.com/derekwyatt/vim-scala.git
-	ignore = untracked
-[submodule "bundle/threesome"]
-	path = bundle/threesome
-	url = https://github.com/sjl/threesome.vim.git
 	ignore = untracked
 [submodule "bundle/vim-eunuch"]
 	path = bundle/vim-eunuch
