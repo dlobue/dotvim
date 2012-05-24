@@ -54,6 +54,10 @@
 	path = bundle/tagbar
 	url = https://github.com/majutsushi/tagbar.git
 	ignore = untracked
+[submodule "bundle/ctrlp"]
+	path = bundle/ctrlp
+	url = https://github.com/kien/ctrlp.vim.git
+	ignore = untracked
 [submodule "bundle/speeddating"]
 	path = bundle/speeddating
 	url = https://github.com/tpope/vim-speeddating.git
