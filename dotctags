@@ -2,6 +2,8 @@
 --exclude=build
 --exclude=dist
 
+--extra=+q
+--fields=+fkstimnS
 
 --langdef=Scala
 --langmap=Scala:.scala
