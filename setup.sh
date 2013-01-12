@@ -7,3 +7,6 @@ ln -s .vim/jshintrc ~/.jshintrc
 cd ~/.vim
 git submodule update --init --recursive
 
+cd bundle/vimproc
+make -f make_unix.mak
+
