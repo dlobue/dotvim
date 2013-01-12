@@ -18,6 +18,10 @@
 	path = bundle/indexedsearch
 	url = https://github.com/vim-scripts/IndexedSearch.git
 	ignore = untracked
+[submodule "bundle/vimside"]
+	path = bundle/vimside
+	url = git://github.com/megaannum/vimside.git
+	ignore = untracked
 [submodule "bundle/bufexplorer"]
 	path = bundle/bufexplorer
 	url = https://github.com/vim-scripts/bufexplorer.zip.git
