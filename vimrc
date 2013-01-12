@@ -56,6 +56,10 @@ set history=1000
 "set showcmd
 "set laststatus=2
 set maxmempattern=10000
+let s:wordsfile = '/usr/share/dict/words'
+if filereadable(s:wordsfile)
+    exec 'set dictionary+=' . s:wordsfile
+endif
 
 
 au BufEnter * if &ft == 'qf' | set scrolloff=1 | endif
@@ -78,6 +82,10 @@ set diffopt+=icase
 "mappings to emulate gt & gT, only for buffers
 nmap gb :bn<CR>
 nmap gB :bp<CR>
+
+"ctrlp shortcuts
+nnoremap <Leader>b :CtrlP<CR>
+nnoremap <Leader>bb :CtrlPBuffer<CR>
 
 
 " By default, it goes without auto-wrap. If I want, I can type <C-B> to toggle
@@ -244,7 +252,8 @@ function! BuildTagsFromPath()
     return join(pathogen#uniq(extend(_path_to_parts(expand('%:p:h')), _path_to_parts(getcwd()))), ',')
 endfunction
 
-exec 'set tags =' . BuildTagsFromPath()
+exec 'set tags+=' . BuildTagsFromPath()
+
 
 
 " Remember last location in file
