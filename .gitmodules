@@ -70,6 +70,10 @@
 	path = bundle/vim-pad
 	url = https://github.com/fmoralesc/vim-pad.git
 	ignore = untracked
+[submodule "bundle/riv.vim"]
+	path = bundle/riv.vim
+	url = git://github.com/Rykka/riv.vim.git
+	ignore = untracked
 [submodule "bundle/aftersyntaxc"]
 	path = bundle/aftersyntaxc
 	url = git://github.com/kergoth/aftersyntaxc.vim.git
