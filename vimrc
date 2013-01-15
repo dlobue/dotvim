@@ -160,7 +160,6 @@ let g:CommandTMaxHeight = 12
 let g:localvimrc_ask = 0
 let g:localvimrc_sandbox = 0
 let g:notesRoot = '~/docs/notes'
-let g:pad_dir = '~/docs/pad_dir'
 
 let g:pcs_hotkey = 1
 let g:pcs_check_when_saving = 1

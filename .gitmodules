@@ -74,10 +74,6 @@
 	path = bundle/localvimrc
 	url = https://github.com/embear/vim-localvimrc.git
 	ignore = untracked
-[submodule "bundle/vim-pad"]
-	path = bundle/vim-pad
-	url = https://github.com/fmoralesc/vim-pad.git
-	ignore = untracked
 [submodule "bundle/riv.vim"]
 	path = bundle/riv.vim
 	url = git://github.com/Rykka/riv.vim.git
