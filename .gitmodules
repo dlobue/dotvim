@@ -74,10 +74,6 @@
 	path = bundle/aftersyntaxc
 	url = git://github.com/kergoth/aftersyntaxc.vim.git
 	ignore = untracked
-[submodule "bundle/simple-sbt-integration"]
-	path = bundle/simple-sbt-integration
-	url = git://github.com/leifwickland/vim-simple-sbt-integration.git
-	ignore = untracked
 [submodule "bundle/autotag"]
 	path = bundle/autotag
 	url = https://github.com/vim-scripts/AutoTag.git
