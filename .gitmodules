@@ -18,10 +18,6 @@
 	path = bundle/vimside
 	url = git://github.com/megaannum/vimside.git
 	ignore = untracked
-[submodule "bundle/bufexplorer"]
-	path = bundle/bufexplorer
-	url = https://github.com/vim-scripts/bufexplorer.zip.git
-	ignore = untracked
 [submodule "bundle/gundo"]
 	path = bundle/gundo
 	url = https://github.com/sjl/gundo.vim.git
