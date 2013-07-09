@@ -1,5 +1,5 @@
 set nocompatible
-let g:pathogen_disabled = ["command-t"]
+let g:pathogen_disabled = ['command-t', 'securemodelines']
 exec 'source ' . expand('<sfile>:p:h') . '/.vim/bundle/pathogen/autoload/pathogen.vim'
 call pathogen#infect()
 " generate helptags
@@ -190,7 +190,8 @@ nnoremap FF :NERDTreeToggle<CR>
 " Display function name in status bar:
 let g:ctags_statusline=1
 " Automatically start script
-let generate_tags=1
+let generate_tags=0
+let g:generate_tags=0
 
 
 nnoremap TT :TagbarToggle<CR>
@@ -262,11 +263,15 @@ endfunction
 exec 'set tags+=' . BuildTagsFromPath()
 
 
+au Syntax go,golang set tags+=/root/projects/go-reference/go/go1.1
 
 " Remember last location in file
 "if has("autocmd")
   "au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
     "\| exe "normal g'\"" | endif
 "endif
+
+
+autocmd SwapExists * :let b:swapname = v:swapname
 
 
