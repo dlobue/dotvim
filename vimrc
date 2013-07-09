@@ -106,7 +106,15 @@ nnoremap <Leader>bb :CtrlPBuffer<CR>
 "set shiftwidth=4
 
 " remove all trailing whitespace
-nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
+nnoremap <silent> <F5> :call RemoveTrailingWhitespace()<CR>
+function! RemoveTrailingWhitespace()
+    let l:winview = winsaveview()
+    let _s=@/
+    :%s/\s\+$//e
+    let @/=_s
+    :nohl
+    call winrestview(l:winview)
+endfunction
 " toggle line numbers and fold column for easy copying:
 nnoremap <F2> :set nonumber!<CR>:set foldcolumn=0<CR>
 
