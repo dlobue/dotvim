@@ -19,4 +19,5 @@ if s:configured_vindect
   au Syntax help py vindect.detect(preferred='mix', dosyntax=0, preferredsw=4)
   au Syntax gitconfig py vindect.detect(preferred='tab', preferredsw=4)
   au Syntax c,cpp py vindect.detect(preferred='tab', preferredsw=4)
+  au Syntax go,golang py vindect.detect(preferred='tab', preferredsw=4, force='tab')
 endif
