@@ -106,6 +106,10 @@
 	path = bundle/self
 	url = git://github.com/megaannum/self.git
 	ignore = untracked
+[submodule "bundle/vim-javascript"]
+	path = bundle/vim-javascript
+	url = git://github.com/pangloss/vim-javascript.git
+	ignore = untracked
 [submodule "bundle/unimpaired"]
 	path = bundle/unimpaired
 	url = https://github.com/tpope/vim-unimpaired.git
