@@ -6,7 +6,7 @@
 --fields=+fkstimnS
 
 --langdef=Scala
---langmap=Scala:.scala
+--langmap=Scala:.scala__
 --regex-Scala=/^[ \t]*class[ \t]*([a-zA-Z0-9_]+)/\1/c,classes/
 --regex-Scala=/^[ \t]*object[ \t]*([a-zA-Z0-9_]+)/\1/o,objects/
 --regex-Scala=/^[ \t]*trait[ \t]*([a-zA-Z0-9_]+)/\1/t,traits/
@@ -19,3 +19,13 @@
 --regex-Scala=/^[ \t]*import[ \t]*([a-zA-Z0-9_{}., \t=>]+$)/\1/i,includes/
 --regex-Scala=/^[ \t]*package[ \t]*([a-zA-Z0-9_.]+$)/\1/p,packages/
 
+
+
+--langdef=js
+--langmap=js:.js
+--regex-js=/([A-Za-z0-9._$]+)[ \t]*[:=][ \t]*\{/\1/,object/
+--regex-js=/([A-Za-z0-9._$()]+)[ \t]*[:=][ \t]*function[ \t]*\(/\1/,function/
+--regex-js=/function[ \t]+([A-Za-z0-9._$]+)[ \t]*([^)])/\1/,function/
+--regex-js=/([A-Za-z0-9._$]+)[ \t]*[:=][ \t]*\[/\1/,array/
+--regex-js=/([^= ]+)[ \t]*=[ \t]*[^"]'[^']*/\1/,string/
+--regex-js=/([^= ]+)[ \t]*=[ \t]*[^']"[^"]*/\1/,string/
