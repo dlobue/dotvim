@@ -262,6 +262,8 @@ endfunction
 
 exec 'set tags+=' . BuildTagsFromPath()
 
+command DiffOrig vert new | set bt=nofile | r ++edit # | 0d_ | diffthis | wincmd p | diffthis
+
 
 au Syntax go,golang set tags+=/root/projects/go-reference/go/go1.1
 
