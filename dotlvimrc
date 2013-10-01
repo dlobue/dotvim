@@ -10,7 +10,9 @@ exec 'let g:loaded_lvimrc_'. b:project_name .' = 1'
 if filereadable(b:project_path .'/tags')
     exec 'set tags+='. b:project_path .'/tags'
 endif
-exec 'cs add '. b:project_path .'/cscope.out '. b:project_path
+if filereadable(b:project_path .'/cscope.out')
+    exec 'cs add '. b:project_path .'/cscope.out '. b:project_path
 "exec 'CCTreeLoadDB '.  b:project_path .'/cscope.out'
+endif
 echo 'finished loading'
 
