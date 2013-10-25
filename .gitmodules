@@ -134,6 +134,10 @@
 	path = bundle/vimproc
 	url = git://github.com/Shougo/vimproc.git
 	ignore = untracked
+[submodule "bundle/vim-fireplace"]
+	path = bundle/vim-fireplace
+	url = git@github.com:tpope/vim-fireplace.git
+	ignore = untracked
 [submodule "bundle/tabular"]
 	path = bundle/tabular
 	url = https://github.com/godlygeek/tabular.git
