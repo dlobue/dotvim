@@ -1,6 +1,6 @@
 
 let b:project_path = expand('<sfile>:p:h')
-let b:project_name = expand('<sfile>:p:h:t')
+let b:project_name = substitute(expand('<sfile>:p:h:t'), '-', '_', 'g')
 
 if exists('g:loaded_lvimrc_'. b:project_name)
     finish
