@@ -14,6 +14,10 @@
 	path = bundle/vimshell
 	url = git://github.com/Shougo/vimshell.git
 	ignore = untracked
+[submodule "bundle/rainbow_parentheses"]
+	path = bundle/rainbow_parentheses
+	url = git@github.com:kien/rainbow_parentheses.vim.git
+	ignore = untracked
 [submodule "bundle/indexedsearch"]
 	path = bundle/indexedsearch
 	url = https://github.com/vim-scripts/IndexedSearch.git
