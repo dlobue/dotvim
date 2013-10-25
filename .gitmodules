@@ -122,6 +122,10 @@
 	path = bundle/gitv
 	url = https://github.com/gregsexton/gitv.git
 	ignore = untracked
+[submodule "bundle/vim-clojure-static"]
+	path = bundle/vim-clojure-static
+	url = git@github.com:guns/vim-clojure-static.git
+	ignore = untracked
 [submodule "bundle/vimproc"]
 	path = bundle/vimproc
 	url = git://github.com/Shougo/vimproc.git
