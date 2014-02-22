@@ -1,5 +1,5 @@
 set nocompatible
-let g:pathogen_disabled = ['command-t', 'securemodelines']
+let g:pathogen_disabled = ['securemodelines', 'vim-classpath']
 exec 'source ' . expand('<sfile>:p:h') . '/.vim/bundle/pathogen/autoload/pathogen.vim'
 call pathogen#infect()
 " generate helptags
