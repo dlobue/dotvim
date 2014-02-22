@@ -176,6 +176,9 @@ let s:configured_vindect = 1
 
 let g:syntastic_enable_signs=0
 
+let g:ctrlp_custom_ignore = { 'dir':  '\v[\/]\.(git|hg|svn)$|\v[\/]target$', 'file': '\v\.(exe|so|dll|html|class)$' }
+set wildignore+=*/.git/*,*/.hg/*,*/.svn/*
+
 
 "set statusline = "%{fugitive#statusline()}"
 
