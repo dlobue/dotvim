@@ -16,7 +16,7 @@
 	ignore = untracked
 [submodule "bundle/rainbow_parentheses"]
 	path = bundle/rainbow_parentheses
-	url = git@github.com:kien/rainbow_parentheses.vim.git
+	url = git://github.com/kien/rainbow_parentheses.vim.git
 	ignore = untracked
 [submodule "bundle/indexedsearch"]
 	path = bundle/indexedsearch
@@ -120,11 +120,11 @@
 	ignore = untracked
 [submodule "bundle/scall"]
 	path = bundle/scall
-	url = git@github.com:thinca/vim-scall.git
+	url = git://github.com/thinca/vim-scall.git
 	ignore = untracked
 [submodule "bundle/tern"]
 	path = bundle/tern
-	url = git@github.com:marijnh/tern_for_vim.git
+	url = git://github.com/marijnh/tern_for_vim.git
 	ignore = untracked
 [submodule "bundle/vim-classpath"]
 	path = bundle/vim-classpath
@@ -136,7 +136,7 @@
 	ignore = untracked
 [submodule "bundle/vim-clojure-static"]
 	path = bundle/vim-clojure-static
-	url = git@github.com:guns/vim-clojure-static.git
+	url = git://github.com/guns/vim-clojure-static.git
 	ignore = untracked
 [submodule "bundle/vimproc"]
 	path = bundle/vimproc
@@ -144,7 +144,7 @@
 	ignore = untracked
 [submodule "bundle/vim-fireplace"]
 	path = bundle/vim-fireplace
-	url = git@github.com:tpope/vim-fireplace.git
+	url = git://github.com/tpope/vim-fireplace.git
 	ignore = untracked
 [submodule "bundle/tabular"]
 	path = bundle/tabular
