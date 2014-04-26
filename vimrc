@@ -268,6 +268,15 @@ exec 'set tags+=' . BuildTagsFromPath()
 command! DiffOrig vert new | set bt=nofile | r ++edit # | 0d_ | diffthis | wincmd p | diffthis
 command! Scratch new +setlocal\ buftype=nofile\ bufhidden=hide\ noswapfile
 
+function! CurrentFile()
+    return resolve(expand('%:p'))
+endfunction
+
+function! YankCurrentFile()
+    let @* = CurrentFile()
+endfunction
+
+nmap <Leader>yf :call YankCurrentFile()<CR>
 
 au Syntax go,golang set tags+=/root/projects/go-reference/go/go1.1
 
