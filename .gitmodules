@@ -46,10 +46,6 @@
 	path = bundle/securemodelines
 	url = https://github.com/ciaranm/securemodelines.git
 	ignore = untracked
-[submodule "bundle/scala_format"]
-	path = bundle/scala_format
-	url = git://github.com/megaannum/scala_format.git
-	ignore = untracked
 [submodule "bundle/csapprox"]
 	path = bundle/csapprox
 	url = https://github.com/godlygeek/csapprox.git
