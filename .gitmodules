@@ -130,10 +130,6 @@
 	path = bundle/scall
 	url = git://github.com/thinca/vim-scall.git
 	ignore = untracked
-[submodule "bundle/paredit"]
-	path = bundle/paredit
-	url = git://github.com/kovisoft/paredit.git
-	ignore = untracked
 [submodule "bundle/tern"]
 	path = bundle/tern
 	url = git://github.com/marijnh/tern_for_vim.git
