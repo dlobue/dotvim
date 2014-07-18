@@ -183,6 +183,11 @@ let g:ctrlp_custom_ignore = { 'dir':  '\v[\/]\.(git|hg|svn)$|\v[\/]target$', 'fi
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*
 
 
+let g:NERDCustomDelimiters = {
+    \ 'text': { 'left': '#'}
+\ }
+
+
 "set statusline = "%{fugitive#statusline()}"
 
 
