@@ -162,3 +162,7 @@
 	path = bundle/tabular
 	url = https://github.com/godlygeek/tabular.git
 	ignore = untracked
+[submodule "bundle/vim-repeat"]
+	path = bundle/vim-repeat
+	url = git://github.com/tpope/vim-repeat.git
+	ignore = untracked
