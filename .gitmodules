@@ -166,3 +166,7 @@
 	path = bundle/vim-repeat
 	url = git://github.com/tpope/vim-repeat.git
 	ignore = untracked
+[submodule "bundle/vim-sexp"]
+	path = bundle/vim-sexp
+	url = git://github.com/guns/vim-sexp.git
+	ignore = untracked
