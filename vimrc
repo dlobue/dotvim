@@ -136,6 +136,9 @@ vnoremap <silent> # :<C-U>
   \gV:call setreg('"', old_reg, old_regtype)<CR>
 
 
+inoremap <Leader>id <C-R>=strftime("%F %H:%M %z")<CR>
+nnoremap <Leader>id "=strftime("%F %H:%M %z")<CR>P
+
 function! TabLeft()
    let tab_number = tabpagenr() - 1
    if tab_number == 0
