@@ -36,6 +36,10 @@ set guioptions-=a
 set guioptions-=m
 set clipboard=
 
+" when opening a file in a new split, the new file goes in the opposite (aka new) split
+set splitbelow
+set splitright
+
 set pastetoggle=<F12>       " Sane indentation on pastes
 set autoindent " Copy indent from current line when starting a new line.
 set backspace=indent,eol,start
