@@ -143,6 +143,10 @@ vnoremap <silent> # :<C-U>
 inoremap <Leader>id <C-R>=strftime("%F %H:%M %z")<CR>
 nnoremap <Leader>id "=strftime("%F %H:%M %z")<CR>P
 
+inoremap <Leader>ir <C-R>=Random(10,90)<CR>
+nnoremap <Leader>ir "=Random(10,90)<CR>P
+
+
 function! TabLeft()
    let tab_number = tabpagenr() - 1
    if tab_number == 0
