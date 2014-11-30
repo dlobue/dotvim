@@ -234,7 +234,10 @@ endfunction
 
 if &diff
     if _child_of_git()
-        autocmd VimEnter * execute "windo set noma nowrite filetype=git foldmarker=<<<<<<<,>>>>>>>" | set ma write
+        " vimdiff was started by mergetool. make all the reference buffers
+        " immutable to prevent confusion, since they cannot be written to
+        " anyway.
+        autocmd VimEnter * execute 'windo set noma nowrite filetype=git foldmarker=<<<<<<<,>>>>>>>' | set ma write
     endif
 endif
 
