@@ -284,7 +284,17 @@ endfunction
 
 exec 'set tags+=' . BuildTagsFromPath()
 
-command! DiffOrig vert new | set bt=nofile | r ++edit # | 0d_ | diffthis | wincmd p | diffthis
+function! s:DiffWithSaved()
+  let l:filetype=&ft
+  diffthis
+  vnew
+  exe "setlocal bt=nofile bh=wipe nobl noswf ft=" . l:filetype
+  r ++edit # 
+  0d_
+  diffthis
+endfunction
+command! DiffOrig call s:DiffWithSaved()
+"command! DiffOrig vert new | set bt=nofile | r ++edit # | 0d_ | diffthis | wincmd p | diffthis
 command! Scratch new +setlocal\ buftype=nofile\ bufhidden=hide\ noswapfile
 
 function! CurrentFile()
