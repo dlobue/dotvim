@@ -162,3 +162,6 @@
 	path = bundle/vim-sexp-mappings-for-regular-people
 	url = git://github.com/tpope/vim-sexp-mappings-for-regular-people.git
 	ignore = untracked
+[submodule "bundle/vim-clojure-highlight"]
+	path = bundle/vim-clojure-highlight
+	url = git@github.com:guns/vim-clojure-highlight.git
