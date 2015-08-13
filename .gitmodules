@@ -161,3 +161,7 @@
 [submodule "bundle/vim-clojure-highlight"]
 	path = bundle/vim-clojure-highlight
 	url = git@github.com:guns/vim-clojure-highlight.git
+[submodule "bundle/matchit"]
+	path = bundle/matchit
+	url = git://github.com/vim-scripts/matchit.zip.git
+	ignore = untracked
