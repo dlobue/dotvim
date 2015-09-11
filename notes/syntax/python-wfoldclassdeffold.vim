@@ -54,10 +54,12 @@ syn region  pythonFunctionFold	start="^\z(\s*\)\%(def\|class\)\>"
   \ end="\ze\%(\s*\n\)\+\%(\z1\s\)\@!." fold transparent
 syn match   pythonFunction	"[a-zA-Z_][a-zA-Z0-9_]*" contained
 
-syn match   pythonComment /#\%(.\%({{{\|}}}\)\@!\)*$/
+syn match   pythonComment /#\%(.\%({{{\|}}}\)\@!\|.\)*$/
   \ contains=pythonTodo,@Spell
 syn region  pythonFold matchgroup=pythonComment
   \ start='#.*{{{.*$' end='#.*}}}.*$' fold transparent
+syn region pythonList start='\[' end='\]' fold transparent
+syn region pythonDict start='{' end='}' fold transparent
 
 syn keyword pythonRepeat	for while
 syn keyword pythonConditional	if elif else
