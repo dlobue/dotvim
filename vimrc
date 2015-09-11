@@ -1,5 +1,5 @@
 set nocompatible
-let g:pathogen_disabled = ['securemodelines', 'vim-classpath']
+let g:pathogen_disabled = ['securemodelines', 'vim-classpath', 'supertab']
 exec 'source ' . fnamemodify(resolve(expand('<sfile>:p')), ':h') . '/bundle/pathogen/autoload/pathogen.vim'
 call pathogen#infect()
 " generate helptags
@@ -187,7 +187,8 @@ let s:configured_vindect = 1
 
 let g:syntastic_enable_signs=0
 
-let g:ctrlp_custom_ignore = { 'dir':  '\v[\/]\.(git|hg|svn)$|\v[\/]target$', 'file': '\v\.(exe|so|dll|html|class)$' }
+let g:ctrlp_custom_ignore = { 'dir':  '\v[\/]\.(git|hg|svn)$|\v[\/]target$', 'file': '\v\.(exe|so|dll|class)$' }
+"let g:ctrlp_custom_ignore = { 'dir':  '\v[\/]\.(git|hg|svn)$|\v[\/]target$', 'file': '\v\.(exe|so|dll|html|class)$' }
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*
 
 
@@ -309,13 +310,19 @@ nmap <Leader>yf :call YankCurrentFile()<CR>
 
 au Syntax go,golang set tags+=/root/projects/go-reference/go/go1.1
 
-" Remember last location in file
-"if has("autocmd")
-  "au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
-    "\| exe "normal g'\"" | endif
-"endif
-
 
 autocmd SwapExists * :let b:swapname = v:swapname
 
+let g:NERDTreeIgnore=['\~$', '\.pyc$']
+
+let g:jedi#popup_on_dot = 0
+let g:jedi#show_call_signatures = 0 " don't use jedi's syntax files. use our custom modified one which does this already
+let g:jedi#use_tabs_not_buffers = 0
+
+let g:virtualenv_directory = '/root/projects/venv'
+
+
+" clojure
+
+let g:clojure_fold=1
 
