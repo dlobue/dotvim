@@ -5,6 +5,8 @@ call pathogen#infect()
 " generate helptags
 Helptags
 
+let g:rehash256=1
+
 if !has('gui') || v:version < 703
     "disable csapprox if we don't have gui
     "it gives an annoying error otherwise
