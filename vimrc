@@ -254,14 +254,32 @@ command! -nargs=1 Grep execute 'Silent! grep! '.<q-args> | cw
 if has('cscope')
     set cscopetag cscopeverbose
 
-    nmap <Leader>ss :cs find s <C-R>=expand("<cword>")<CR><CR>
-    nmap <Leader>sg :cs find g <C-R>=expand("<cword>")<CR><CR>
-    nmap <Leader>sc :cs find c <C-R>=expand("<cword>")<CR><CR>
-    nmap <Leader>st :cs find t <C-R>=expand("<cword>")<CR><CR>
-    nmap <Leader>se :cs find e <C-R>=expand("<cword>")<CR><CR>
-    nmap <Leader>sf :cs find f <C-R>=expand("<cfile>")<CR><CR>
-    nmap <Leader>si :cs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
-    nmap <Leader>sd :cs find d <C-R>=expand("<cword>")<CR><CR>
+    "nmap <Leader>ss :cs find s <C-R>=<cword><CR>
+    "nmap <Leader>sg :cs find g <C-R>=<cword><CR>
+    "nmap <Leader>sc :cs find c <C-R>=<cword><CR>
+    "nmap <Leader>st :cs find t <C-R>=<cword><CR>
+    "nmap <Leader>se :cs find e <C-R>=<cword><CR>
+    "nmap <Leader>sf :cs find f <C-R>=<cfile><CR>
+    "nmap <Leader>si :cs find i ^<C-R>=<cfile>$<CR>
+    "nmap <Leader>sd :cs find d <C-R>=<cword><CR>
+
+    "nmap <Leader>ss :cs find s <C-R>=expand("<cword>")<CR><CR>
+    "nmap <Leader>sg :cs find g <C-R>=expand("<cword>")<CR><CR>
+    "nmap <Leader>sc :cs find c <C-R>=expand("<cword>")<CR><CR>
+    "nmap <Leader>st :cs find t <C-R>=expand("<cword>")<CR><CR>
+    "nmap <Leader>se :cs find e <C-R>=expand("<cword>")<CR><CR>
+    "nmap <Leader>sf :cs find f <C-R>=expand("<cfile>")<CR><CR>
+    "nmap <Leader>si :cs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
+    "nmap <Leader>sd :cs find d <C-R>=expand("<cword>")<CR><CR>
+
+    nmap <Leader>ss :execute 'cs find s '. expand('<cword>')<CR>
+    nmap <Leader>sg :execute 'cs find g '. expand('<cword>')<CR>
+    nmap <Leader>sc :execute 'cs find c '. expand('<cword>')<CR>
+    nmap <Leader>st :execute 'cs find t '. expand('<cword>')<CR>
+    nmap <Leader>se :execute 'cs find e '. expand('<cword>')<CR>
+    nmap <Leader>sf :execute 'cs find f '. expand('<cfile>')<CR>
+    nmap <Leader>si :execute 'cs find i ^'. expand('<cfile>') .'$'<CR>
+    nmap <Leader>sd :execute 'cs find d '. expand('<cword>')<CR>
 endif
 
 
