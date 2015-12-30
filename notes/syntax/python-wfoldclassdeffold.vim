@@ -72,12 +72,12 @@ syn keyword pythonTodo		TODO FIXME XXX contained
 syn match   pythonDecorator	"@" display nextgroup=pythonFunction skipwhite
 
 " strings
-syn region pythonString		start=+[uU]\='+ end=+'+ skip=+\\\\\|\\'+ contains=pythonEscape,@Spell
-syn region pythonString		start=+[uU]\="+ end=+"+ skip=+\\\\\|\\"+ contains=pythonEscape,@Spell
+syn region pythonString		start=+[uU]\='+ end=+'+ skip=+\\\\\|\\'+ oneline contains=pythonEscape,@Spell
+syn region pythonString		start=+[uU]\="+ end=+"+ skip=+\\\\\|\\"+ oneline contains=pythonEscape,@Spell
 syn region pythonString		start=+[uU]\="""+ end=+"""+ contains=pythonEscape,@Spell fold
 syn region pythonString		start=+[uU]\='''+ end=+'''+ contains=pythonEscape,@Spell fold
-syn region pythonRawString	start=+[uU]\=[rR]'+ end=+'+ skip=+\\\\\|\\'+ contains=@Spell
-syn region pythonRawString	start=+[uU]\=[rR]"+ end=+"+ skip=+\\\\\|\\"+ contains=@Spell
+syn region pythonRawString	start=+[uU]\=[rR]'+ end=+'+ skip=+\\\\\|\\'+ oneline contains=@Spell
+syn region pythonRawString	start=+[uU]\=[rR]"+ end=+"+ skip=+\\\\\|\\"+ oneline contains=@Spell
 syn region pythonRawString	start=+[uU]\=[rR]"""+ end=+"""+ contains=@Spell fold
 syn region pythonRawString	start=+[uU]\=[rR]'''+ end=+'''+ contains=@Spell fold
 syn match  pythonEscape		+\\[abfnrtv'"\\]+ contained
