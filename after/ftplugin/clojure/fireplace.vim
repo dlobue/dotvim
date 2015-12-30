@@ -19,7 +19,8 @@ function! StartClojureRepl()
         echoe 'Problem getting unused port number!'
         return
     endif
-    let l:procobj = vimproc#popen2('setsid lein repl :headless :port '. g:repl_port)
+    "let l:procobj = vimproc#popen2('setsid lein repl :headless :port '. g:repl_port)
+    let l:procobj = vimproc#popen2('setsid lein update-in :source-paths conj \"'. getcwd() .'\" -- update-in :test-paths conj \"'. getcwd() .'\" -- repl :headless :port '. g:repl_port)
     if empty(l:procobj)
         echoe 'Problem starting repl! procobj empty!'
         return
