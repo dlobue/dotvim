@@ -174,3 +174,6 @@
 [submodule "bundle/jedi-vim"]
 	path = bundle/jedi-vim
 	url = git@github.com:davidhalter/jedi-vim.git
+[submodule "bundle/multiple-search"]
+	path = bundle/multiple-search
+	url = git://github.com/vim-scripts/MultipleSearch.git
