@@ -161,6 +161,7 @@
 [submodule "bundle/vim-clojure-highlight"]
 	path = bundle/vim-clojure-highlight
 	url = git://github.com/guns/vim-clojure-highlight.git
+	ignore = untracked
 [submodule "bundle/matchit"]
 	path = bundle/matchit
 	url = git://github.com/vim-scripts/matchit.zip.git
@@ -168,15 +169,20 @@
 [submodule "bundle/typescript-vim"]
 	path = bundle/typescript-vim
 	url = git://github.com/leafgarland/typescript-vim.git
+	ignore = untracked
 [submodule "bundle/tsuquyomi"]
 	path = bundle/tsuquyomi
 	url = git://github.com/Quramy/tsuquyomi.git
+	ignore = untracked
 [submodule "bundle/jedi-vim"]
 	path = bundle/jedi-vim
 	url = git@github.com:davidhalter/jedi-vim.git
+	ignore = untracked
 [submodule "bundle/multiple-search"]
 	path = bundle/multiple-search
 	url = git://github.com/vim-scripts/MultipleSearch.git
+	ignore = untracked
 [submodule "bundle/diffchar"]
 	path = bundle/diffchar
 	url = git://github.com/rickhowe/diffchar.vim.git
+	ignore = untracked
