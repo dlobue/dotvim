@@ -177,3 +177,6 @@
 [submodule "bundle/multiple-search"]
 	path = bundle/multiple-search
 	url = git://github.com/vim-scripts/MultipleSearch.git
+[submodule "bundle/diffchar"]
+	path = bundle/diffchar
+	url = git://github.com/rickhowe/diffchar.vim.git
