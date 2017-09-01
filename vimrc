@@ -1,5 +1,5 @@
 set nocompatible
-let g:pathogen_disabled = ['securemodelines', 'vim-classpath', 'supertab']
+let g:pathogen_disabled = ['securemodelines', 'vim-classpath', 'supertab', 'pydoc', 'vim-virtualenv']
 exec 'source ' . fnamemodify(resolve(expand('<sfile>:p')), ':h') . '/bundle/pathogen/autoload/pathogen.vim'
 call pathogen#infect()
 " generate helptags
@@ -338,6 +338,7 @@ let g:NERDTreeIgnore=['\~$', '\.pyc$']
 let g:jedi#popup_on_dot = 0
 let g:jedi#show_call_signatures = 0 " don't use jedi's syntax files. use our custom modified one which does this already
 let g:jedi#use_tabs_not_buffers = 0
+let g:jedi#auto_vim_configuration = 0
 
 "let g:virtualenv_directory = '/root/projects/venv'
 let g:virtualenv_directory = '/root/.virtualenvs'
@@ -346,4 +347,4 @@ let g:virtualenv_directory = '/root/.virtualenvs'
 " clojure
 
 let g:clojure_fold=1
-
+let g:xml_syntax_folding = 1
