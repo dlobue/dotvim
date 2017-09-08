@@ -1,0 +1,17 @@
+diff --git a/plugin/sexp_mappings_for_regular_people.vim b/plugin/sexp_mappings_for_regular_people.vim
+index 6e2b13a..100b06c 100644
+--- a/plugin/sexp_mappings_for_regular_people.vim
++++ b/plugin/sexp_mappings_for_regular_people.vim
+@@ -50,6 +50,12 @@ function! s:sexp_mappings() abort
+   nmap <buffer> <)  <Plug>(sexp_emit_tail_element)
+   nmap <buffer> <(  <Plug>(sexp_capture_prev_element)
+   nmap <buffer> >)  <Plug>(sexp_capture_next_element)
++
++
++  imap <buffer> <C-{>  <Plug>(sexp_emit_head_element)
++  imap <buffer> <C-}>  <Plug>(sexp_emit_tail_element)
++  imap <buffer> <C-(>  <Plug>(sexp_capture_prev_element)
++  imap <buffer> <C-)>  <Plug>(sexp_capture_next_element)
+ endfunction
+ 
+ function! s:setup() abort
