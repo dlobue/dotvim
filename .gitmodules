@@ -195,3 +195,6 @@
 [submodule "bundle/vim-rsi"]
 	path = bundle/vim-rsi
 	url = git://github.com/tpope/vim-rsi.git
+[submodule "bundle/commentary"]
+	path = bundle/commentary
+	url = git://github.com/tpope/vim-commentary.git
