@@ -186,3 +186,6 @@
 	path = bundle/diffchar
 	url = git://github.com/rickhowe/diffchar.vim.git
 	ignore = untracked
+[submodule "bundle/scriptease"]
+	path = bundle/scriptease
+	url = git://github.com/tpope/vim-scriptease.git
