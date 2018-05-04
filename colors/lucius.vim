@@ -452,7 +452,8 @@ else
     hi CursorColumn                 guibg=#444444
     hi CursorLine                   guibg=#444444
     hi IncSearch    guifg=bg
-    hi MatchParen   guifg=fg        guibg=#87af00
+    "hi MatchParen   guifg=fg        guibg=#87af00
+    hi MatchParen   guibg=bg        guifg=#87af00 gui=bold
     hi Search       guifg=bg
     hi Visual                       guibg=#005f87
     if s:contrast == "low"
