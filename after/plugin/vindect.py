@@ -185,7 +185,7 @@ def detect(preferred=None, preferredsw=None, force=None, forcesw=None, maxlines=
         vim.command('hi link indentError Error')
     if dotabstop:
         #set default values before hand.
-        vim.command('set tabstop=8 shiftwidth=%s softtabstop=0 nosmarttab noexpandtab '%preferredsw + settings[1])
+        vim.command('set tabstop=4 shiftwidth=%s softtabstop=0 nosmarttab noexpandtab '%preferredsw + settings[1])
 
     #if verbose>0: print preferred, force and '(forced)' or '(s=%s, t=%s, m=%s(%+i), e=%s)'%(spc,tab,mix,mspc,err)
     if verbose:
