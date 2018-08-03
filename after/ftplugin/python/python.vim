@@ -44,3 +44,8 @@ let ropevim_extended_complete = 1
 "highlight SpellBad term=underline gui=undercurl guisp=#000000
 "hi SpellBad        ctermfg=darkred guifg=darkred
 highlight SpellBad term=reverse ctermbg=1
+
+
+if executable('cgrep')
+    set grepprg=cgrep\ -r\ --language-filter=Python\ $*
+endif
