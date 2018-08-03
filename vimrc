@@ -205,6 +205,10 @@ let g:pcs_check_when_saving = 1
 let s:configured_vindect = 1
 
 let g:syntastic_enable_signs=0
+let g:ale_set_signs = 0
+let g:ale_set_loclist = 1
+let g:ale_set_quickfix = 1
+let g:ale_enabled = 0
 
 let g:ctrlp_custom_ignore = { 'dir':  '\v[\/]\.(git|hg|svn)$|\v[\/]target$', 'file': '\v\.(exe|so|dll|class)$' }
 "let g:ctrlp_custom_ignore = { 'dir':  '\v[\/]\.(git|hg|svn)$|\v[\/]target$', 'file': '\v\.(exe|so|dll|html|class)$' }
