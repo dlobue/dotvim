@@ -90,6 +90,11 @@ au BufLeave * if &ft == 'qf' | set scrolloff=3 | endif
 
 au BufRead,BufNewFile *.jsm set filetype=javascript
 
+" map nerdcommenter keystrokes to commentary plugin
+nmap <Leader>c<Space> gcc
+xmap <Leader>c<Space> gc
+omap <Leader>c<Space> gc
+
 set timeoutlen=400
 
 "vimdiff opts
