@@ -201,3 +201,6 @@
 [submodule "bundle/narrowregion"]
 	path = bundle/narrowregion
 	url = git://github.com/chrisbra/NrrwRgn.git
+[submodule "bundle/VimOrganizer"]
+	path = bundle/VimOrganizer
+	url = git://github.com/hsitz/VimOrganizer.git
