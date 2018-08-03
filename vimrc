@@ -1,28 +1,45 @@
 set nocompatible
-let g:pathogen_disabled = ['securemodelines', 'vim-classpath', 'supertab', 'pydoc', 'vim-virtualenv']
+let g:pathogen_disabled = [
+            \'vim-classpath',
+            \'vim-javascript',
+            \'syntastic',
+            \]
+            "\'ale',
+
+if has('nvim')
+    call add(g:pathogen_disabled, 'csapprox')
+endif
+
 exec 'source ' . fnamemodify(resolve(expand('<sfile>:p')), ':h') . '/bundle/pathogen/autoload/pathogen.vim'
 call pathogen#infect()
 " generate helptags
 Helptags
 
-let g:rehash256=1
+if !has('nvim')
+    let g:rehash256=1
 
-if !has('gui') || v:version < 703
-    "disable csapprox if we don't have gui
-    "it gives an annoying error otherwise
-    let g:CSApprox_loaded = 1
-endif
-if has('gui_running')
-    colorscheme mustang
-    set lines=28 columns=122
-elseif &term =~ 'xterm-256color'
-    set t_Co=256
-    colorscheme lucius
+    if !has('gui') || v:version < 703
+        "disable csapprox if we don't have gui
+        "it gives an annoying error otherwise
+        let g:CSApprox_loaded = 1
+    endif
+    if has('gui_running')
+        colorscheme mustang
+        set lines=28 columns=122
+    elseif &term =~ 'xterm-256color'
+        set t_Co=256
+        colorscheme lucius-orig
+    else
+        colorscheme wargrey
+    endif
+
+    let g:CSApprox_attr_map = { 'bold' : 'bold', 'italic' : '', 'sp' : '' }
 else
-    colorscheme wargrey
+    set background=dark
+    colorscheme lucius
+    LuciusBlack
+    " set lines=28 columns=122
 endif
-
-let g:CSApprox_attr_map = { 'bold' : 'bold', 'italic' : '', 'sp' : '' }
 
 filetype on
 syntax on
