@@ -26,7 +26,7 @@ else
 endif
 
 " cython extentions
-syn keyword cythonStatement     cdef cpdef typedef ctypedef sizeof
+" syn keyword cythonStatement     cdef cpdef typedef ctypedef sizeof
 syn keyword cythonType          int long short float double char object void
 syn keyword cythonType          signed unsigned
 syn keyword cythonType          size_t Py_ssize_t
@@ -35,6 +35,15 @@ syn keyword cythonStructure     struct union enum
 syn keyword cythonPrecondit     include cimport
 syn keyword cythonAccess        public private property readonly extern api
 syn keyword cythonGilAttrs      gil nogil
+
+
+" syn match   cythonDefStatement	/^\s*\%(\%(async \)\?def \|class \)/
+syn match   cythonDefStatement	/^\s*\%(cdef \|cpdef \)/
+  \ nextgroup=pythonFunction skipwhite
+syn region  cythonFunctionFold	start="^\z(\s*\)\%(cdef\|cpdef\)\>"
+  \ end="\ze\%(\s*\n\)\+\%(\z1\s\)\@!." fold transparent
+
+
 " If someome wants Python's built-ins highlighted probably he
 " also wants cython's built-ins highlighted
 if exists("python_highlight_builtins") || exists("cython_highlight_builtins")
