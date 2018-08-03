@@ -45,7 +45,6 @@ filetype on
 syntax on
 filetype plugin indent on
 filetype plugin on
-" set iskeyword+=.
 
 " disable annoying gvim stuff
 set guioptions-=T
@@ -59,6 +58,7 @@ set clipboard=
 set splitbelow
 set splitright
 
+set directory=. " put swapfile in same directory as file
 set pastetoggle=<F12>       " Sane indentation on pastes
 set autoindent " Copy indent from current line when starting a new line.
 set backspace=indent,eol,start
@@ -90,11 +90,6 @@ au BufLeave * if &ft == 'qf' | set scrolloff=3 | endif
 
 au BufRead,BufNewFile *.jsm set filetype=javascript
 
-inoremap <Leader>\ <Esc>
-nnoremap <Leader>\ <Esc>
-vnoremap <Leader>\ <Esc>
-inoremap <Leader>i <Esc>`^
-inoremap <Leader>a <Esc>
 set timeoutlen=400
 
 "vimdiff opts
@@ -159,8 +154,8 @@ vnoremap <silent> # :<C-U>
   \gV:call setreg('"', old_reg, old_regtype)<CR>
 
 
-inoremap <Leader>id <C-R>=strftime("%F %H:%M %z")<CR>
-nnoremap <Leader>id "=strftime("%F %H:%M %z")<CR>P
+inoremap <Leader>id <C-R>=strftime("%F %T %z")<CR>
+nnoremap <Leader>id "=strftime("%F %T %z")<CR>P
 
 inoremap <Leader>ir <C-R>=Random(10,90)<CR>
 nnoremap <Leader>ir "=Random(10,90)<CR>P
@@ -210,7 +205,7 @@ let g:ale_set_loclist = 1
 let g:ale_set_quickfix = 1
 let g:ale_enabled = 0
 
-let g:ctrlp_custom_ignore = { 'dir':  '\v[\/]\.(git|hg|svn)$|\v[\/]target$', 'file': '\v\.(exe|so|dll|class)$' }
+let g:ctrlp_custom_ignore = { 'dir':  '\v[\/]\.(git|hg|svn)$|\v[\/]target$', 'file': '\v\.(exe|so|dll|class|pyc)$' }
 "let g:ctrlp_custom_ignore = { 'dir':  '\v[\/]\.(git|hg|svn)$|\v[\/]target$', 'file': '\v\.(exe|so|dll|html|class)$' }
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*
 
@@ -218,15 +213,6 @@ set wildignore+=*/.git/*,*/.hg/*,*/.svn/*
 let g:NERDCustomDelimiters = {
     \ 'text': { 'left': '#'}
 \ }
-
-
-"set statusline = "%{fugitive#statusline()}"
-
-
-" ctrl+right to goto source of function under the cursor
-map <silent><C-Right> <C-]>
-" ctrl+left arrow to go back
-map <silent><C-Left> <C-T>
 
 nnoremap FF :NERDTreeToggle<CR>
 
@@ -336,7 +322,6 @@ function! s:DiffWithSaved()
   diffthis
 endfunction
 command! DiffOrig call s:DiffWithSaved()
-"command! DiffOrig vert new | set bt=nofile | r ++edit # | 0d_ | diffthis | wincmd p | diffthis
 command! Scratch new +setlocal\ buftype=nofile\ bufhidden=hide\ noswapfile
 
 function! CurrentFile()
@@ -360,10 +345,6 @@ let g:jedi#popup_on_dot = 0
 let g:jedi#show_call_signatures = 0 " don't use jedi's syntax files. use our custom modified one which does this already
 let g:jedi#use_tabs_not_buffers = 0
 let g:jedi#auto_vim_configuration = 0
-
-"let g:virtualenv_directory = '/root/projects/venv'
-let g:virtualenv_directory = '/root/.virtualenvs'
-
 
 " clojure
 
