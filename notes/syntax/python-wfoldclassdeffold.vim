@@ -47,10 +47,13 @@ syn keyword pythonStatement	pass print raise
 syn keyword pythonStatement	return try with
 syn keyword pythonStatement	global assert
 syn keyword pythonStatement	lambda yield
+" syn keyword pythonStatement	async await
 
-syn match   pythonDefStatement	/^\s*\%(def \|class \)/
+" syn match   pythonDefStatement	/^\s*\%(def \|class \)/
+syn match   pythonDefStatement	/^\s*\%(\%(async \)\?def \|class \)/
   \ nextgroup=pythonFunction skipwhite
-syn region  pythonFunctionFold	start="^\z(\s*\)\%(def\|class\)\>"
+" syn region  pythonFunctionFold start="^\z(\s*\)\%(def\|class\)\>"
+syn region  pythonFunctionFold	start="^\z(\s*\)\%(\%(async \)\?def\|class\)\>"
   \ end="\ze\%(\s*\n\)\+\%(\z1\s\)\@!." fold transparent
 syn match   pythonFunction	"[a-zA-Z_][a-zA-Z0-9_]*" contained
 
