@@ -206,11 +206,11 @@ let s:configured_vindect = 1
 
 let g:syntastic_enable_signs=0
 let g:ale_set_signs = 0
-let g:ale_set_loclist = 1
+let g:ale_set_loclist = 0
 let g:ale_set_quickfix = 1
 let g:ale_enabled = 0
 
-let g:ctrlp_custom_ignore = { 'dir':  '\v[\/]\.(git|hg|svn)$|\v[\/]target$', 'file': '\v\.(exe|so|dll|class|pyc)$' }
+let g:ctrlp_custom_ignore = { 'dir':  '\v[\/]\.(git|hg|svn|idea)$|\v[\/]target$|node_modules', 'file': '\v\.(exe|so|dll|class|pyc)$' }
 "let g:ctrlp_custom_ignore = { 'dir':  '\v[\/]\.(git|hg|svn)$|\v[\/]target$', 'file': '\v\.(exe|so|dll|html|class)$' }
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*
 
@@ -261,6 +261,7 @@ endif
 "my more streamlined version
 command! -nargs=1 -bar -bang Silent execute ':silent<bang> '.<q-args>  | redraw!
 command! -nargs=1 Grep execute 'Silent! grep! '.<q-args> | cw
+command! -nargs=1 LGrep execute 'Silent! lgrep! '.<q-args> | lw
 
 "lets get Silent working before i start messing with autocommands
 "autocmd QuickFixCmdPost *grep* cwindow
@@ -340,6 +341,7 @@ endfunction
 nmap <Leader>yf :call YankCurrentFile()<CR>
 
 au Syntax go,golang set tags+=/root/projects/go-reference/go/go1.1
+au Syntax json setlocal foldmethod=syntax
 
 
 autocmd SwapExists * :let b:swapname = v:swapname
