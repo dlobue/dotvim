@@ -197,3 +197,6 @@
 [submodule "bundle/vim-table-mode"]
 	path = bundle/vim-table-mode
 	url = git@github.com:dhruvasagar/vim-table-mode.git
+[submodule "bundle/vim-orgmode"]
+	path = bundle/vim-orgmode
+	url = git@github.com:jceb/vim-orgmode.git
