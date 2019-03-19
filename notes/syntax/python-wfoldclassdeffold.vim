@@ -60,6 +60,7 @@ syn region  pythonFold matchgroup=pythonComment
   \ start='#.*{{{.*$' end='#.*}}}.*$' fold transparent
 syn region pythonList start='\[' end='\]' fold transparent
 syn region pythonDict start='{' end='}' fold transparent
+syn region pythonTuple start='\%(^\s*\%(class\|def\)\s\+\w\+\)\@<!(' end=')' fold transparent
 
 syn keyword pythonRepeat	for while
 syn keyword pythonConditional	if elif else
