@@ -200,3 +200,6 @@
 [submodule "bundle/vim-orgmode"]
 	path = bundle/vim-orgmode
 	url = git@github.com:jceb/vim-orgmode.git
+[submodule "bundle/utl.vim"]
+	path = bundle/utl.vim
+	url = git@github.com:vim-scripts/utl.vim.git\ngit@github.com:vim-scripts/utl.vim.git
