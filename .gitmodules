@@ -203,3 +203,6 @@
 [submodule "bundle/utl.vim"]
 	path = bundle/utl.vim
 	url = git@github.com:vim-scripts/utl.vim.git\ngit@github.com:vim-scripts/utl.vim.git
+[submodule "bundle/vim-SyntaxRange"]
+	path = bundle/vim-SyntaxRange
+	url = git@github.com:inkarkat/vim-SyntaxRange.git\ngit@github.com:inkarkat/vim-SyntaxRange.git
