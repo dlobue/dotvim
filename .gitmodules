@@ -206,3 +206,6 @@
 [submodule "bundle/vim-SyntaxRange"]
 	path = bundle/vim-SyntaxRange
 	url = git@github.com:inkarkat/vim-SyntaxRange.git\ngit@github.com:inkarkat/vim-SyntaxRange.git
+[submodule "bundle/ultisnips"]
+	path = bundle/ultisnips
+	url = git@github.com:SirVer/ultisnips.git\ngit@github.com:SirVer/ultisnips.git
