@@ -194,3 +194,6 @@
 [submodule "bundle/ale"]
 	path = bundle/ale
 	url = git://github.com/w0rp/ale.git
+[submodule "bundle/vim-table-mode"]
+	path = bundle/vim-table-mode
+	url = git@github.com:dhruvasagar/vim-table-mode.git
