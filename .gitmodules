@@ -212,3 +212,6 @@
 [submodule "bundle/vim-json"]
 	path = bundle/vim-json
 	url = git@github.com:elzr/vim-json.git\ngit@github.com:elzr/vim-json.git
+[submodule "bundle/vim-yaml"]
+	path = bundle/vim-yaml
+	url = git@github.com:stephpy/vim-yaml.git\ngit@github.com:stephpy/vim-yaml.git
