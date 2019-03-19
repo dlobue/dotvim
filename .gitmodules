@@ -215,3 +215,6 @@
 [submodule "bundle/vim-yaml"]
 	path = bundle/vim-yaml
 	url = git@github.com:stephpy/vim-yaml.git\ngit@github.com:stephpy/vim-yaml.git
+[submodule "bundle/vim-yaml-folds"]
+	path = bundle/vim-yaml-folds
+	url = git@github.com:pedrohdz/vim-yaml-folds.git\ngit@github.com:pedrohdz/vim-yaml-folds.git
