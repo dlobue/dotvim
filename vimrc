@@ -7,7 +7,7 @@ let g:pathogen_disabled = [
             \'es.next.syntax.vim',
             \'javascript-libraries-syntax.vim',
             \'syntastic',
-            \'VimOrganizer',
+            \'vim-SyntaxRange',
             \]
             " \'vim-javascript',
             " \'ale',
@@ -274,3 +274,12 @@ let g:jedi#auto_vim_configuration = 0
 
 let g:clojure_fold=1
 let g:xml_syntax_folding = 1
+
+let g:jsx_ext_required = 0
+let g:javascript_plugin_flow = 1
+
+let g:terraform_align=1
+let g:terraform_fold_sections=1
+
+let g:EditorConfig_exclude_patterns = ['fugitive://.\*']
+
