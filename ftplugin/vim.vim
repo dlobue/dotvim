@@ -1,5 +1,6 @@
 " Folding via syntax is used for this filetype.
 setlocal foldmethod=syntax
+let g:vimsyn_folding = 'f'
 
 " Vim's command window ('q:') and the :options window also set filetype=vim. We
 " do not want folding in these enabled by default, though, because some

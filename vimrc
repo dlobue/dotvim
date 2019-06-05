@@ -1,10 +1,16 @@
 set nocompatible
 let g:pathogen_disabled = [
             \'vim-classpath',
-            \'vim-javascript',
+            \'vim-jsx',
+            \'yajs.vim',
+            \'typescript-vim',
+            \'es.next.syntax.vim',
+            \'javascript-libraries-syntax.vim',
             \'syntastic',
+            \'VimOrganizer',
             \]
-            "\'ale',
+            " \'vim-javascript',
+            " \'ale',
 
 if has('nvim')
     call add(g:pathogen_disabled, 'csapprox')
@@ -130,21 +136,8 @@ nnoremap <Leader>bb :CtrlPBuffer<CR>
 
 " remove all trailing whitespace
 nnoremap <silent> <F5> :call RemoveTrailingWhitespace()<CR>
-function! RemoveTrailingWhitespace()
-    let l:winview = winsaveview()
-    let _s=@/
-    :%s/\s\+$//e
-    let @/=_s
-    :nohl
-    call winrestview(l:winview)
-endfunction
 " toggle line numbers and fold column for easy copying:
 nnoremap <F2> :set nonumber!<CR>:set foldcolumn=0<CR>
-
-function! DeTab()
-    set tabstop=4
-    :retab
-endfunction
 
 " Search for selected text, forwards or backwards.
 vnoremap <silent> * :<C-U>
@@ -165,25 +158,10 @@ nnoremap <Leader>id "=strftime("%F %T %z")<CR>P
 inoremap <Leader>ir <C-R>=Random(10,90)<CR>
 nnoremap <Leader>ir "=Random(10,90)<CR>P
 
+" URL encode/decode selection
+vnoremap <leader>en :!python -c 'import sys,urllib.parse;print(urllib.quote(sys.stdin.read().strip()))'<cr>
+vnoremap <leader>de :!python -c 'import sys,urllib.parse;print(urllib.unquote(sys.stdin.read().strip()))'<cr>
 
-function! TabLeft()
-   let tab_number = tabpagenr() - 1
-   if tab_number == 0
-      execute "tabm" tabpagenr('$') - 1
-   else
-      execute "tabm" tab_number - 1
-   endif
-endfunction
-
-function! TabRight()
-   let tab_number = tabpagenr() - 1
-   let last_tab_number = tabpagenr('$') - 1
-   if tab_number == last_tab_number
-      execute "tabm" 0
-   else
-      execute "tabm" tab_number + 1
-   endif
-endfunction
 
 let g:SuperTabDefaultCompletionType = "context"
 let g:SuperTabLongestHighlight = 1
@@ -236,26 +214,6 @@ let g:tagbar_autofocus = 1
 let g:tagbar_autoshowtag = 1
 let g:tagbar_width = 30
 
-function! _child_of_git()
-    let l:pid = getpid()
-    while l:pid > 1
-        let [l:name, @_, l:pid] = split( readfile('/proc/'.l:pid.'/stat', 1)[0], '\W\+')[1:3]
-        if l:name =~ 'git'
-            return 1
-        endif
-    endwhile
-    return 0
-endfunction
-
-if &diff
-    if _child_of_git()
-        " vimdiff was started by mergetool. make all the reference buffers
-        " immutable to prevent confusion, since they cannot be written to
-        " anyway.
-        autocmd VimEnter * execute 'windo set noma nowrite filetype=git foldmarker=<<<<<<<,>>>>>>>' | set ma write
-    endif
-endif
-
 "original
 "command! -nargs=1 Silent  | execute ':silent !'.<q-args>  | execute ':redraw!'
 "my more streamlined version
@@ -297,48 +255,7 @@ if has('cscope')
     nmap <Leader>sd :execute 'cs find d '. expand('<cword>')<CR>
 endif
 
-
-function! _path_to_parts(path)
-    let l:frags = split(a:path, '/')
-    let l:tagpaths = []
-    let l:i = 0
-    while l:i < len(l:frags)
-        let l:_tp = '/' . join(l:frags[:l:i], '/') . '/tags'
-        if filereadable(l:_tp)
-            let l:tagpaths += [l:_tp]
-        endif
-        let l:i += 1
-    endwhile
-    return reverse(l:tagpaths)
-endfunction
-
-function! BuildTagsFromPath()
-    return join(pathogen#uniq(extend(_path_to_parts(expand('%:p:h')), _path_to_parts(getcwd()))), ',')
-endfunction
-
-exec 'set tags+=' . BuildTagsFromPath()
-
-function! s:DiffWithSaved()
-  let l:filetype=&ft
-  diffthis
-  vnew
-  exe "setlocal bt=nofile bh=wipe nobl noswf ft=" . l:filetype
-  r ++edit # 
-  0d_
-  diffthis
-endfunction
-command! DiffOrig call s:DiffWithSaved()
 command! Scratch new +setlocal\ buftype=nofile\ bufhidden=hide\ noswapfile
-
-function! CurrentFile()
-    return resolve(expand('%:p'))
-endfunction
-
-function! YankCurrentFile()
-    let @* = CurrentFile()
-endfunction
-
-nmap <Leader>yf :call YankCurrentFile()<CR>
 
 au Syntax go,golang set tags+=/root/projects/go-reference/go/go1.1
 au Syntax json setlocal foldmethod=syntax
