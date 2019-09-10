@@ -1,6 +1,10 @@
 " Folding via syntax is used for this filetype.
 setlocal foldmethod=syntax
-let g:vimsyn_folding = 'f'
+" can't set vimsyn here. it is too late.
+" let g:vimsyn_folding = 'falmpPrt'
+
+" Add : to keyword list so things like lookup by tags works
+set iskeyword+=:
 
 " Vim's command window ('q:') and the :options window also set filetype=vim. We
 " do not want folding in these enabled by default, though, because some

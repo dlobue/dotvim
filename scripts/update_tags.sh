@@ -7,12 +7,13 @@ if [ -z "$SRC_DIR" ]; then
     exit 1
 fi
 
-# PROJECT_DIR=$(dirname "$0")
-# cd $PROJECT_DIR
+PROJECT_DIR=$(dirname "$0")
+cd $PROJECT_DIR
 
 find ${SRC_DIR} -type f -name '*.py' > cscope.files
 
 ctags -L cscope.files
-pypy /root/projects/python-reference/pycscope/pycscope-0.3/pycscope.py -i cscope.files
+# pypy /root/projects/python-reference/pycscope/pycscope-0.3/pycscope.py -i cscope.files
+pypy /root/projects/python-reference/pycscope/pycscope/pycscope -i cscope.files
 #pycscope.py -i cscope.files
 

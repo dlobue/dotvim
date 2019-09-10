@@ -221,6 +221,9 @@ command! -nargs=1 -bar -bang Silent execute ':silent<bang> '.<q-args>  | redraw!
 command! -nargs=1 Grep execute 'Silent! grep! '.<q-args> | cw
 command! -nargs=1 LGrep execute 'Silent! lgrep! '.<q-args> | lw
 
+command! SHighlightCoverage execute 'Silent! HighlightCoverage'
+command! SToggleCoverage execute 'Silent! ToggleCoverage'
+
 "lets get Silent working before i start messing with autocommands
 "autocmd QuickFixCmdPost *grep* cwindow
 
@@ -266,9 +269,12 @@ autocmd SwapExists * :let b:swapname = v:swapname
 let g:NERDTreeIgnore=['\~$', '\.pyc$']
 
 let g:jedi#popup_on_dot = 0
-let g:jedi#show_call_signatures = 0 " don't use jedi's syntax files. use our custom modified one which does this already
+" previously had show_call_signatures at 0
+" changing to 2 to show call signatures in command line
+let g:jedi#show_call_signatures = 2 " don't use jedi's syntax files. use our custom modified one which does this already
 let g:jedi#use_tabs_not_buffers = 0
 let g:jedi#auto_vim_configuration = 0
+let g:jedi#smart_auto_mappings = 1
 
 " clojure
 
@@ -282,4 +288,8 @@ let g:terraform_align=1
 let g:terraform_fold_sections=1
 
 let g:EditorConfig_exclude_patterns = ['fugitive://.\*']
+
+let g:vimsyn_folding = 'falmpPrt'
+
+" let g:suda_smart_edit = 1
 
