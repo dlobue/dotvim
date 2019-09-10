@@ -41,13 +41,13 @@ endif
 
 setlocal foldmethod=syntax
 
-syn keyword pythonStatement	break continue del
-syn keyword pythonStatement	except exec finally
-syn keyword pythonStatement	pass print raise
-syn keyword pythonStatement	return try with
-syn keyword pythonStatement	global assert
-syn keyword pythonStatement	lambda yield
-" syn keyword pythonStatement	async await
+if exists("python_highlight_all")
+  let python_highlight_numbers = 1
+  let python_highlight_builtins = 1
+  let python_highlight_exceptions = 1
+  let python_highlight_space_errors = 1
+endif
+
 
 " syn match   pythonDefStatement	/^\s*\%(def \|class \)/
 syn match   pythonDefStatement	/^\s*\%(\%(async \)\?def \|class \)/
@@ -66,8 +66,15 @@ syn region pythonList start='\[' end='\]' fold transparent
 syn region pythonDict start='{' end='}' fold transparent
 syn region pythonTuple start='\%(^\s*\%(class\|def\)\s\+\w\+\)\@<!(' end=')' fold transparent
 
-syn keyword pythonRepeat	for while
+syn keyword pythonStatement	break continue del
+syn keyword pythonStatement	except exec finally
+syn keyword pythonStatement	pass print raise
+syn keyword pythonStatement	return try with
+syn keyword pythonStatement	global assert
+syn keyword pythonStatement	lambda yield
+" syn keyword pythonStatement	async await
 syn keyword pythonConditional	if elif else
+syn keyword pythonRepeat	for while
 syn keyword pythonOperator	and in is not or
 " AS will be a keyword in Python 3
 syn keyword pythonPreCondit	import from as
@@ -90,13 +97,6 @@ syn match  pythonEscape		"\\\o\{1,3}" contained
 syn match  pythonEscape		"\\x\x\{2}" contained
 syn match  pythonEscape		"\(\\u\x\{4}\|\\U\x\{8}\)" contained
 syn match  pythonEscape		"\\$"
-
-if exists("python_highlight_all")
-  let python_highlight_numbers = 1
-  let python_highlight_builtins = 1
-  let python_highlight_exceptions = 1
-  let python_highlight_space_errors = 1
-endif
 
 if exists("python_highlight_numbers")
   " numbers (including longs and complex)
