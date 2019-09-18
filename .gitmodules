@@ -215,3 +215,6 @@
 [submodule "bundle/coverage-highlight.vim"]
 	path = bundle/coverage-highlight.vim
 	url = git@github.com:mgedmin/coverage-highlight.vim.git\ngit@github.com:mgedmin/coverage-highlight.vim.git
+[submodule "bundle/semshi"]
+	path = bundle/semshi
+	url = git@github.com:numirias/semshi.git\ngit@github.com:numirias/semshi.git
