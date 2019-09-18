@@ -221,3 +221,6 @@
 [submodule "bundle/SimpylFold"]
 	path = bundle/SimpylFold
 	url = git@github.com:tmhedberg/SimpylFold.git\ngit@github.com:tmhedberg/SimpylFold.git
+[submodule "bundle/FastFold"]
+	path = bundle/FastFold
+	url = git@github.com:Konfekt/FastFold.git\ngit@github.com:Konfekt/FastFold.git
