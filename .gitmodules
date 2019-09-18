@@ -224,3 +224,6 @@
 [submodule "bundle/FastFold"]
 	path = bundle/FastFold
 	url = git@github.com:Konfekt/FastFold.git\ngit@github.com:Konfekt/FastFold.git
+[submodule "bundle/pythonsense"]
+	path = bundle/pythonsense
+	url = git@github.com:jeetsukumaran/vim-pythonsense.git\ngit@github.com:jeetsukumaran/vim-pythonsense.git
