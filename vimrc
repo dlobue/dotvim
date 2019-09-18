@@ -293,3 +293,7 @@ let g:vimsyn_folding = 'falmpPrt'
 
 " let g:suda_smart_edit = 1
 
+let python_no_doctest_code_highlight = 1
+let python_no_doctest_highlight = 1
+let python_space_error_highlight = 1
+

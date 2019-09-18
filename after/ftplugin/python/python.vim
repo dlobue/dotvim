@@ -1,38 +1,11 @@
-" pydiction dictionary location
-" let g:pydiction_location = "~/.vim/pydiction/complete-dict"
-
 " syntax folding
-set foldmethod=syntax
-let g:vimsyn_folding='afP'
-
-"text width before wrapping.
-"set to 0 to use the terminal width
-"set textwidth=80
+" set foldmethod=syntax
+" let g:vimsyn_folding='afP'
 
 "make periods word boundaries
-" set iskeyword-=.
-
-"set a wrap margin of 2 characters at the end of each line, and do automatic
-"word-wrapping as you type in text. 
-"set wm=2
-
 set iskeyword-=.
 
-"let g:ifold_mode=2 
-
-" python tags
-"set tags+=~/.vim/tags/python.ctags
-"set tags+=~/.vim/tags/python-sitelibs.ctags
-
-" PySmell omnicompletion
-"setlocal omnifunc=pysmell#Complete
-"set omnifunc=pythoncomplete#Complete
-
 set completeopt=menuone,longest,preview
-
-" Rope AutoComplete
-" let ropevim_vim_completion = 1
-" let ropevim_extended_complete = 1
 
 " change SpellBad highlight color
 "highlight SpellBad term=underline gui=undercurl guisp=#533B38
@@ -40,7 +13,21 @@ set completeopt=menuone,longest,preview
 "hi SpellBad        ctermfg=darkred guifg=darkred
 highlight SpellBad term=reverse ctermbg=1
 
+" disable fucking error signs
+let g:semshi#error_sign=v:false
+" let g:semshi#update_delay_factor=0.0
+" default value for semshiSelected
+" hi semshiSelected        ctermfg=231 guifg=#ffffff ctermbg=161 guibg=#d7005f
+" the default config of semshiSelected is too distracting. clear it and use
+" something more subtle.
+hi clear semshiSelected
+hi semshiSelected cterm=bold,italic gui=bold,italic
 
 if executable('cgrep')
     set grepprg=cgrep\ -r\ --language-filter=Python\ $*
+endif
+
+" use black-macchiato to format code
+if executable('black-macchiato')
+    set formatprg=black-macchiato
 endif
