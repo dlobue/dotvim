@@ -218,3 +218,6 @@
 [submodule "bundle/semshi"]
 	path = bundle/semshi
 	url = git@github.com:numirias/semshi.git\ngit@github.com:numirias/semshi.git
+[submodule "bundle/SimpylFold"]
+	path = bundle/SimpylFold
+	url = git@github.com:tmhedberg/SimpylFold.git\ngit@github.com:tmhedberg/SimpylFold.git
