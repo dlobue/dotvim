@@ -61,3 +61,53 @@ function! YankCurrentFile()
 endfunction
 
 nmap <Leader>yf :call YankCurrentFile()<CR>
+
+function! utils#match(...)
+  let b = call("match",a:000)
+  let e = call("matchend",a:000)
+  let s = call("matchlist",a:000)
+  if s == []
+    let s = ["","","","","","","","","",""]
+  endif
+  return [b,e] + s
+endfunction
+
+function! utils#findatoffset(string,pattern,offset)
+  let line = a:string
+  let curpos = 0
+  let offset = a:offset
+  while strpart(line,offset,1) == " "
+    let offset += 1
+  endwhile
+  let [start,end,string;caps] = utils#match(line,a:pattern,curpos,0)
+  while start >= 0
+    if offset >= start && offset < end
+      break
+    endif
+    let curpos = start + 1
+    let [start,end,string;caps] = utils#match(line,a:pattern,curpos,0)
+  endwhile
+  return [start,end,string] + caps
+endfunction
+
+function! utils#findinline(pattern)
+  return utils#findatoffset(getline('.'),a:pattern,col('.')-1)
+endfunction
+
+function! utils#replaceinline(start,end,new)
+  let line = getline('.')
+  let before_text = strpart(line,0,a:start)
+  let after_text = strpart(line,a:end)
+  " If this generates a warning it will be attached to an ugly backtrace.
+  " No warning at all is preferable to that.
+  silent call setline('.',before_text.a:new.after_text)
+  call setpos("'[",[0,line('.'),strlen(before_text)+1,0])
+  call setpos("']",[0,line('.'),a:start+strlen(a:new),0])
+endfunction
+
+function! InlineDec2Hex()
+    let [start,end,string;caps] = utils#findinline('\d\+')
+    if string != ""
+      call utils#replaceinline(start,end, printf('%02x', string))
+    endif
+endfunction
