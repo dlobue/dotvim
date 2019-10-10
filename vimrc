@@ -6,7 +6,6 @@ let g:pathogen_disabled = [
             \'typescript-vim',
             \'es.next.syntax.vim',
             \'javascript-libraries-syntax.vim',
-            \'syntastic',
             \'vim-SyntaxRange',
             \]
             " \'vim-javascript',

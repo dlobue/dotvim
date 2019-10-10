@@ -38,10 +38,6 @@
 	path = bundle/csapprox
 	url = git://github.com/godlygeek/csapprox.git
 	ignore = untracked
-[submodule "bundle/syntastic"]
-	path = bundle/syntastic
-	url = git://github.com/scrooloose/syntastic.git
-	ignore = untracked
 [submodule "bundle/tagbar"]
 	path = bundle/tagbar
 	url = git://github.com/majutsushi/tagbar.git
