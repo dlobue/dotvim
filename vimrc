@@ -1,11 +1,7 @@
 set nocompatible
 let g:pathogen_disabled = [
             \'vim-classpath',
-            \'vim-jsx',
-            \'yajs.vim',
             \'typescript-vim',
-            \'es.next.syntax.vim',
-            \'javascript-libraries-syntax.vim',
             \'vim-SyntaxRange',
             \]
             " \'vim-javascript',
