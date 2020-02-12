@@ -26,7 +26,7 @@ if !has('nvim')
     if has('gui_running')
         colorscheme mustang
         set lines=28 columns=122
-    elseif &term =~ 'xterm-256color'
+    elseif &term =~ 'xterm-256color\|alacritty'
         set t_Co=256
         colorscheme lucius-orig
     else
