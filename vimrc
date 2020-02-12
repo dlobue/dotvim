@@ -260,7 +260,7 @@ au Syntax json setlocal foldmethod=syntax
 
 autocmd SwapExists * :let b:swapname = v:swapname
 
-let g:NERDTreeIgnore=['\~$', '\.pyc$']
+let g:NERDTreeIgnore=['\~$', '\.pyc$', '\.pdf', '\.tbz2']
 
 let g:jedi#popup_on_dot = 0
 " previously had show_call_signatures at 0
