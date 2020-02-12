@@ -146,10 +146,6 @@
 	path = bundle/matchit
 	url = git://github.com/vim-scripts/matchit.zip.git
 	ignore = untracked
-[submodule "bundle/typescript-vim"]
-	path = bundle/typescript-vim
-	url = git://github.com/leafgarland/typescript-vim.git
-	ignore = untracked
 [submodule "bundle/tsuquyomi"]
 	path = bundle/tsuquyomi
 	url = git://github.com/Quramy/tsuquyomi.git
