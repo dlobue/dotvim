@@ -1,6 +1,3 @@
-
-
-
 function! Swapmgr_init()
     echom 'swapmgr init'
     augroup swapmgr_init
@@ -72,4 +69,3 @@ function! Swapmgr_on_bufexit()
         set noswf
     endif
 endfunction
-
