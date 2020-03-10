@@ -191,31 +191,31 @@
 	url = git@github.com:jceb/vim-orgmode.git
 [submodule "bundle/vim-SyntaxRange"]
 	path = bundle/vim-SyntaxRange
-	url = git@github.com:inkarkat/vim-SyntaxRange.git\ngit@github.com:inkarkat/vim-SyntaxRange.git
+	url = git@github.com:inkarkat/vim-SyntaxRange.git
 [submodule "bundle/ultisnips"]
 	path = bundle/ultisnips
-	url = git@github.com:SirVer/ultisnips.git\ngit@github.com:SirVer/ultisnips.git
+	url = git@github.com:SirVer/ultisnips.git
 [submodule "bundle/vim-json"]
 	path = bundle/vim-json
-	url = git@github.com:elzr/vim-json.git\ngit@github.com:elzr/vim-json.git
+	url = git@github.com:elzr/vim-json.git
 [submodule "bundle/vim-yaml"]
 	path = bundle/vim-yaml
-	url = git@github.com:stephpy/vim-yaml.git\ngit@github.com:stephpy/vim-yaml.git
+	url = git@github.com:stephpy/vim-yaml.git
 [submodule "bundle/vim-yaml-folds"]
 	path = bundle/vim-yaml-folds
-	url = git@github.com:pedrohdz/vim-yaml-folds.git\ngit@github.com:pedrohdz/vim-yaml-folds.git
+	url = git@github.com:pedrohdz/vim-yaml-folds.git
 [submodule "bundle/coverage-highlight.vim"]
 	path = bundle/coverage-highlight.vim
-	url = git@github.com:mgedmin/coverage-highlight.vim.git\ngit@github.com:mgedmin/coverage-highlight.vim.git
+	url = git@github.com:mgedmin/coverage-highlight.vim.git
 [submodule "bundle/semshi"]
 	path = bundle/semshi
-	url = git@github.com:numirias/semshi.git\ngit@github.com:numirias/semshi.git
+	url = git@github.com:numirias/semshi.git
 [submodule "bundle/SimpylFold"]
 	path = bundle/SimpylFold
-	url = git@github.com:tmhedberg/SimpylFold.git\ngit@github.com:tmhedberg/SimpylFold.git
+	url = git@github.com:tmhedberg/SimpylFold.git
 [submodule "bundle/FastFold"]
 	path = bundle/FastFold
-	url = git@github.com:Konfekt/FastFold.git\ngit@github.com:Konfekt/FastFold.git
+	url = git@github.com:Konfekt/FastFold.git
 [submodule "bundle/pythonsense"]
 	path = bundle/pythonsense
-	url = git@github.com:jeetsukumaran/vim-pythonsense.git\ngit@github.com:jeetsukumaran/vim-pythonsense.git
+	url = git@github.com:jeetsukumaran/vim-pythonsense.git
