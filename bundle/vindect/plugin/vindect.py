@@ -58,6 +58,8 @@ want to keep the autocmd to set cindent/smartindent/etc appropriatly)
 __version__ = "1.0"
 
 import vim, re
+from functools import reduce
+from itertools import repeat
 
 _def_indent, _def_sw, _def_maxlines, _def_verbose = None, None, None, None
 
@@ -86,7 +88,7 @@ def detect(preferred=None, preferredsw=None, force=None, forcesw=None, maxlines=
     """
     b = vim.current.buffer
     if verbose:
-        print 'vindect:',
+        print('vindect:', end=' ')
 
     global _def_indent, _def_sw, _def_maxlines, _def_verbose
 
@@ -155,7 +157,7 @@ def detect(preferred=None, preferredsw=None, force=None, forcesw=None, maxlines=
             #generate a tuple containing:
             # (number matching this sw, is the preferred sw?, the sw)
             return (n, p==v, v)
-        maxpt = max(map(pref, indents, range(0, 513)))
+        maxpt = max(list(map(pref, indents, list(range(0, 513)))))
         preferredsw = maxpt[2]
         if verbose>0:
             total = reduce(lambda x,y: x+y, indents)
@@ -165,14 +167,15 @@ def detect(preferred=None, preferredsw=None, force=None, forcesw=None, maxlines=
                 sw_str = '(0)'
 
             if verbose>1:
-                sw_str = sw_str+' '+`filter(lambda p: p[1]>0, map(None, range(0,513), indents))`
+                #sw_str = sw_str+' '+repr([p for p in map(None, list(range(0,513)), indents) if p[1]>0])
+                sw_str = sw_str+' '+repr([p for p in zip(repeat(None), range(0,513), indents) if p[1]>0])
 
     vim.command('syn match indentError "fooo"') #create a silly thing so that the clear can't fail
     vim.command('syn clear indentError')
 
     if dosyntax and not vim.eval('&syntax'):
         if verbose:
-            print '(syntax not on)'
+            print('(syntax not on)')
         dosyntax=0
 
     settings={
@@ -189,7 +192,7 @@ def detect(preferred=None, preferredsw=None, force=None, forcesw=None, maxlines=
 
     #if verbose>0: print preferred, force and '(forced)' or '(s=%s, t=%s, m=%s(%+i), e=%s)'%(spc,tab,mix,mspc,err)
     if verbose:
-        print preferred, ind_str, 'sw=%i'%preferredsw, sw_str
+        print(preferred, ind_str, 'sw=%i'%preferredsw, sw_str)
     return preferred
 
 # todo:
