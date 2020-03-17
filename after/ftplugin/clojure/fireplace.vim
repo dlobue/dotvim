@@ -34,10 +34,11 @@ endfunction
 
 function! KillClojureRepl(pid)
     if CheckChildAlive(a:pid)
-        py import os, vim
-        py os.killpg(int(vim.eval('a:pid')), 15)
+        py3 import os, vim
+        py3 os.killpg(int(vim.eval('a:pid')), 15)
         "py ctypes.CDLL('libc.so.6').kill(-1 * int(vim.eval('a:pid')), 15)
         "call system('pkill -g '. a:pid)
+        "call system('kill -15 -'. a:pid)
     endif
 endfunction
 
