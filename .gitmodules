@@ -3,7 +3,7 @@
 	url = git://github.com/tpope/vim-pathogen.git
 	ignore = untracked
 [submodule "bundle/fugitive"]
-	path = bundle/fugitive
+	path = pack/git/start/fugitive
 	url = git://github.com/tpope/vim-fugitive.git
 	ignore = untracked
 [submodule "bundle/abolish"]
@@ -103,7 +103,7 @@
 	url = git://github.com/tpope/vim-classpath.git
 	ignore = untracked
 [submodule "bundle/gitv"]
-	path = bundle/gitv
+	path = pack/git/start/gitv
 	url = git://github.com/gregsexton/gitv.git
 	ignore = untracked
 [submodule "bundle/vim-clojure-static"]
