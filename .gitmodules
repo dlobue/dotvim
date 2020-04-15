@@ -214,7 +214,7 @@
 	path = pack/python/start/SimpylFold
 	url = git@github.com:tmhedberg/SimpylFold.git
 [submodule "bundle/FastFold"]
-	path = pack/python/start/FastFold
+	path = pack/utils/start/FastFold
 	url = git@github.com:Konfekt/FastFold.git
 [submodule "bundle/pythonsense"]
 	path = pack/python/start/pythonsense
