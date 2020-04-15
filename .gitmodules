@@ -208,7 +208,7 @@
 	path = bundle/coverage-highlight.vim
 	url = git@github.com:mgedmin/coverage-highlight.vim.git
 [submodule "bundle/semshi"]
-	path = pack/python/start/semshi
+	path = pack/python/opt/semshi
 	url = git@github.com:numirias/semshi.git
 [submodule "bundle/SimpylFold"]
 	path = pack/python/start/SimpylFold
