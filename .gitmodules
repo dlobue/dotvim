@@ -219,3 +219,6 @@
 [submodule "bundle/pythonsense"]
 	path = pack/python/libs/pythonsense
 	url = git@github.com:jeetsukumaran/vim-pythonsense.git
+[submodule "pack/config/libs/vim-hashicorp-tools"]
+	path = pack/config/libs/vim-hashicorp-tools
+	url = git://github.com/hashivim/vim-hashicorp-tools.git\ngit://github.com/hashivim/vim-hashicorp-tools.git
