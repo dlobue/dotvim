@@ -79,7 +79,7 @@
 	url = git://github.com/tpope/vim-eunuch.git
 	ignore = untracked
 [submodule "bundle/vim-javascript"]
-	path = bundle/vim-javascript
+	path = pack/javascript/libs/vim-javascript
 	url = git://github.com/pangloss/vim-javascript.git
 	ignore = untracked
 [submodule "bundle/unimpaired"]
@@ -95,7 +95,7 @@
 	url = git://github.com/thinca/vim-scall.git
 	ignore = untracked
 [submodule "bundle/tern"]
-	path = bundle/tern
+	path = pack/javascript/libs/tern
 	url = git://github.com/marijnh/tern_for_vim.git
 	ignore = untracked
 [submodule "bundle/vim-classpath"]
@@ -147,7 +147,7 @@
 	url = git://github.com/vim-scripts/matchit.zip.git
 	ignore = untracked
 [submodule "bundle/tsuquyomi"]
-	path = bundle/tsuquyomi
+	path = pack/javascript/libs/tsuquyomi
 	url = git://github.com/Quramy/tsuquyomi.git
 	ignore = untracked
 [submodule "bundle/jedi-vim"]
