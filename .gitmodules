@@ -225,3 +225,6 @@
 [submodule "pack/utils/libs/undotree"]
 	path = pack/utils/libs/undotree
 	url = git://github.com/mbbill/undotree.git\ngit://github.com/mbbill/undotree.git
+[submodule "pack/utils/libs/vim-sleuth"]
+	path = pack/utils/libs/vim-sleuth
+	url = git://github.com/tpope/vim-sleuth.git\ngit://github.com/tpope/vim-sleuth.git
