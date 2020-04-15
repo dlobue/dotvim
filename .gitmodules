@@ -55,7 +55,7 @@
 	url = git://github.com/embear/vim-localvimrc.git
 	ignore = untracked
 [submodule "bundle/riv.vim"]
-	path = bundle/riv.vim
+	path = pack/text/libs/riv.vim
 	url = git://github.com/Rykka/riv.vim.git
 	ignore = untracked
 [submodule "bundle/aftersyntaxc"]
@@ -187,7 +187,7 @@
 	path = pack/utils/libs/vim-table-mode
 	url = git@github.com:dhruvasagar/vim-table-mode.git
 [submodule "bundle/vim-orgmode"]
-	path = bundle/vim-orgmode
+	path = pack/text/libs/vim-orgmode
 	url = git@github.com:jceb/vim-orgmode.git
 [submodule "bundle/vim-SyntaxRange"]
 	path = pack/utils/libs/vim-SyntaxRange
