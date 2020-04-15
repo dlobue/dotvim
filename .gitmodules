@@ -15,7 +15,7 @@
 	url = git://github.com/Shougo/vimshell.git
 	ignore = untracked
 [submodule "bundle/rainbow_parentheses"]
-	path = bundle/rainbow_parentheses
+	path = pack/lisps/libs/rainbow_parentheses
 	url = git://github.com/eapache/rainbow_parentheses.vim.git
 	ignore = untracked
 [submodule "bundle/indexedsearch"]
@@ -107,7 +107,7 @@
 	url = git://github.com/gregsexton/gitv.git
 	ignore = untracked
 [submodule "bundle/vim-clojure-static"]
-	path = bundle/vim-clojure-static
+	path = pack/lisps/libs/vim-clojure-static
 	url = git://github.com/guns/vim-clojure-static.git
 	ignore = untracked
 [submodule "bundle/vimproc"]
@@ -115,7 +115,7 @@
 	url = git://github.com/Shougo/vimproc.git
 	ignore = untracked
 [submodule "bundle/vim-fireplace"]
-	path = bundle/vim-fireplace
+	path = pack/lisps/libs/vim-fireplace
 	url = git://github.com/tpope/vim-fireplace.git
 	ignore = untracked
 [submodule "bundle/tabular"]
@@ -131,15 +131,15 @@
 	url = git://github.com/mtth/scratch.vim.git
 	ignore = untracked
 [submodule "bundle/vim-sexp"]
-	path = bundle/vim-sexp
+	path = pack/lisps/libs/vim-sexp
 	url = git://github.com/guns/vim-sexp.git
 	ignore = untracked
 [submodule "bundle/vim-sexp-mappings-for-regular-people"]
-	path = bundle/vim-sexp-mappings-for-regular-people
+	path = pack/lisps/libs/vim-sexp-mappings-for-regular-people
 	url = git://github.com/tpope/vim-sexp-mappings-for-regular-people.git
 	ignore = untracked
 [submodule "bundle/vim-clojure-highlight"]
-	path = bundle/vim-clojure-highlight
+	path = pack/lisps/libs/vim-clojure-highlight
 	url = git://github.com/guns/vim-clojure-highlight.git
 	ignore = untracked
 [submodule "bundle/matchit"]
