@@ -151,7 +151,7 @@
 	url = git://github.com/Quramy/tsuquyomi.git
 	ignore = untracked
 [submodule "bundle/jedi-vim"]
-	path = pack/python/start/jedi-vim
+	path = pack/python/libs/jedi-vim
 	url = git@github.com:davidhalter/jedi-vim.git
 	ignore = untracked
 [submodule "bundle/multiple-search"]
@@ -208,14 +208,14 @@
 	path = pack/utils/libs/coverage-highlight.vim
 	url = git@github.com:mgedmin/coverage-highlight.vim.git
 [submodule "bundle/semshi"]
-	path = pack/python/opt/semshi
+	path = pack/python/libs/semshi
 	url = git@github.com:numirias/semshi.git
 [submodule "bundle/SimpylFold"]
-	path = pack/python/start/SimpylFold
+	path = pack/python/libs/SimpylFold
 	url = git@github.com:tmhedberg/SimpylFold.git
 [submodule "bundle/FastFold"]
 	path = pack/utils/libs/FastFold
 	url = git@github.com:Konfekt/FastFold.git
 [submodule "bundle/pythonsense"]
-	path = pack/python/start/pythonsense
+	path = pack/python/libs/pythonsense
 	url = git@github.com:jeetsukumaran/vim-pythonsense.git
