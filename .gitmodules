@@ -7,11 +7,11 @@
 	url = git://github.com/tpope/vim-fugitive.git
 	ignore = untracked
 [submodule "bundle/abolish"]
-	path = pack/utils/start/abolish
+	path = pack/utils/libs/abolish
 	url = git://github.com/tpope/vim-abolish.git
 	ignore = untracked
 [submodule "bundle/vimshell"]
-	path = pack/utils/start/vimshell
+	path = pack/utils/libs/vimshell
 	url = git://github.com/Shougo/vimshell.git
 	ignore = untracked
 [submodule "bundle/rainbow_parentheses"]
@@ -19,39 +19,39 @@
 	url = git://github.com/eapache/rainbow_parentheses.vim.git
 	ignore = untracked
 [submodule "bundle/indexedsearch"]
-	path = pack/utils/start/indexedsearch
+	path = pack/utils/libs/indexedsearch
 	url = git://github.com/vim-scripts/IndexedSearch.git
 	ignore = untracked
 [submodule "bundle/gundo"]
-	path = bundle/gundo
+	path = pack/utils/libs/gundo
 	url = git://github.com/sjl/gundo.vim.git
 	ignore = untracked
 [submodule "bundle/vim-ref"]
-	path = pack/utils/start/vim-ref
+	path = pack/utils/libs/vim-ref
 	url = git://github.com/thinca/vim-ref.git
 	ignore = untracked
 [submodule "bundle/nerdtree"]
-	path = pack/utils/start/nerdtree
+	path = pack/utils/libs/nerdtree
 	url = git://github.com/scrooloose/nerdtree.git
 	ignore = untracked
 [submodule "bundle/csapprox"]
-	path = bundle/csapprox
+	path = pack/utils/libs/csapprox
 	url = git://github.com/godlygeek/csapprox.git
 	ignore = untracked
 [submodule "bundle/tagbar"]
-	path = pack/utils/start/tagbar
+	path = pack/utils/libs/tagbar
 	url = git://github.com/majutsushi/tagbar.git
 	ignore = untracked
 [submodule "bundle/ctrlp"]
-	path = bundle/ctrlp
+	path = pack/utils/libs/ctrlp
 	url = git://github.com/kien/ctrlp.vim.git
 	ignore = untracked
 [submodule "bundle/speeddating"]
-	path = pack/utils/start/speeddating
+	path = pack/utils/libs/speeddating
 	url = git://github.com/tpope/vim-speeddating.git
 	ignore = untracked
 [submodule "bundle/localvimrc"]
-	path = pack/utils/start/localvimrc
+	path = pack/utils/libs/localvimrc
 	url = git://github.com/embear/vim-localvimrc.git
 	ignore = untracked
 [submodule "bundle/riv.vim"]
@@ -63,11 +63,11 @@
 	url = git://github.com/kergoth/aftersyntaxc.vim.git
 	ignore = untracked
 [submodule "bundle/ctrlr.vim"]
-	path = pack/utils/start/ctrlr.vim
+	path = pack/utils/libs/ctrlr.vim
 	url = git://github.com/goldfeld/ctrlr.vim.git
 	ignore = untracked
 [submodule "bundle/autotag"]
-	path = bundle/autotag
+	path = pack/utils/libs/autotag
 	url = git://github.com/vim-scripts/AutoTag.git
 	ignore = untracked
 [submodule "bundle/golang"]
@@ -75,7 +75,7 @@
 	url = git://github.com/jnwhiteh/vim-golang.git
 	ignore = untracked
 [submodule "bundle/vim-eunuch"]
-	path = bundle/vim-eunuch
+	path = pack/utils/libs/vim-eunuch
 	url = git://github.com/tpope/vim-eunuch.git
 	ignore = untracked
 [submodule "bundle/vim-javascript"]
@@ -83,15 +83,15 @@
 	url = git://github.com/pangloss/vim-javascript.git
 	ignore = untracked
 [submodule "bundle/unimpaired"]
-	path = pack/utils/start/unimpaired
+	path = pack/utils/libs/unimpaired
 	url = git://github.com/tpope/vim-unimpaired.git
 	ignore = untracked
 [submodule "bundle/vim-surround"]
-	path = bundle/vim-surround
+	path = pack/utils/libs/vim-surround
 	url = git://github.com/tpope/vim-surround.git
 	ignore = untracked
 [submodule "bundle/scall"]
-	path = pack/utils/start/scall
+	path = pack/utils/libs/scall
 	url = git://github.com/thinca/vim-scall.git
 	ignore = untracked
 [submodule "bundle/tern"]
@@ -111,7 +111,7 @@
 	url = git://github.com/guns/vim-clojure-static.git
 	ignore = untracked
 [submodule "bundle/vimproc"]
-	path = pack/utils/start/vimproc
+	path = pack/utils/libs/vimproc
 	url = git://github.com/Shougo/vimproc.git
 	ignore = untracked
 [submodule "bundle/vim-fireplace"]
@@ -119,15 +119,15 @@
 	url = git://github.com/tpope/vim-fireplace.git
 	ignore = untracked
 [submodule "bundle/tabular"]
-	path = pack/utils/start/tabular
+	path = pack/utils/libs/tabular
 	url = git://github.com/godlygeek/tabular.git
 	ignore = untracked
 [submodule "bundle/vim-repeat"]
-	path = pack/utils/start/vim-repeat
+	path = pack/utils/libs/vim-repeat
 	url = git://github.com/tpope/vim-repeat.git
 	ignore = untracked
 [submodule "bundle/scratch.vim"]
-	path = bundle/scratch.vim
+	path = pack/utils/libs/scratch.vim
 	url = git://github.com/mtth/scratch.vim.git
 	ignore = untracked
 [submodule "bundle/vim-sexp"]
@@ -143,7 +143,7 @@
 	url = git://github.com/guns/vim-clojure-highlight.git
 	ignore = untracked
 [submodule "bundle/matchit"]
-	path = bundle/matchit
+	path = pack/utils/libs/matchit
 	url = git://github.com/vim-scripts/matchit.zip.git
 	ignore = untracked
 [submodule "bundle/tsuquyomi"]
@@ -155,45 +155,45 @@
 	url = git@github.com:davidhalter/jedi-vim.git
 	ignore = untracked
 [submodule "bundle/multiple-search"]
-	path = pack/utils/start/multiple-search
+	path = pack/utils/libs/multiple-search
 	url = git://github.com/vim-scripts/MultipleSearch.git
 	ignore = untracked
 [submodule "bundle/diffchar"]
-	path = pack/utils/start/diffchar
+	path = pack/utils/libs/diffchar
 	url = git://github.com/rickhowe/diffchar.vim.git
 	ignore = untracked
 [submodule "bundle/scriptease"]
-	path = pack/utils/start/scriptease
+	path = pack/utils/libs/scriptease
 	url = git://github.com/tpope/vim-scriptease.git
 [submodule "bundle/linediff"]
-	path = pack/utils/start/linediff
+	path = pack/utils/libs/linediff
 	url = git://github.com/AndrewRadev/linediff.vim.git
 [submodule "bundle/vim-rsi"]
-	path = bundle/vim-rsi
+	path = pack/utils/libs/vim-rsi
 	url = git://github.com/tpope/vim-rsi.git
 [submodule "bundle/commentary"]
-	path = bundle/commentary
+	path = pack/utils/libs/commentary
 	url = git://github.com/tpope/vim-commentary.git
 [submodule "bundle/narrowregion"]
-	path = pack/utils/start/narrowregion
+	path = pack/utils/libs/narrowregion
 	url = git://github.com/chrisbra/NrrwRgn.git
 [submodule "bundle/utl"]
-	path = pack/utils/start/utl
+	path = pack/utils/libs/utl
 	url = git://github.com/vim-scripts/utl.vim.git
 [submodule "bundle/ale"]
 	path = bundle/ale
 	url = git://github.com/w0rp/ale.git
 [submodule "bundle/vim-table-mode"]
-	path = pack/utils/start/vim-table-mode
+	path = pack/utils/libs/vim-table-mode
 	url = git@github.com:dhruvasagar/vim-table-mode.git
 [submodule "bundle/vim-orgmode"]
 	path = bundle/vim-orgmode
 	url = git@github.com:jceb/vim-orgmode.git
 [submodule "bundle/vim-SyntaxRange"]
-	path = bundle/vim-SyntaxRange
+	path = pack/utils/libs/vim-SyntaxRange
 	url = git@github.com:inkarkat/vim-SyntaxRange.git
 [submodule "bundle/ultisnips"]
-	path = pack/utils/opt/ultisnips
+	path = pack/utils/libs/ultisnips
 	url = git@github.com:SirVer/ultisnips.git
 [submodule "bundle/vim-json"]
 	path = bundle/vim-json
@@ -205,7 +205,7 @@
 	path = bundle/vim-yaml-folds
 	url = git@github.com:pedrohdz/vim-yaml-folds.git
 [submodule "bundle/coverage-highlight.vim"]
-	path = bundle/coverage-highlight.vim
+	path = pack/utils/libs/coverage-highlight.vim
 	url = git@github.com:mgedmin/coverage-highlight.vim.git
 [submodule "bundle/semshi"]
 	path = pack/python/opt/semshi
@@ -214,7 +214,7 @@
 	path = pack/python/start/SimpylFold
 	url = git@github.com:tmhedberg/SimpylFold.git
 [submodule "bundle/FastFold"]
-	path = pack/utils/start/FastFold
+	path = pack/utils/libs/FastFold
 	url = git@github.com:Konfekt/FastFold.git
 [submodule "bundle/pythonsense"]
 	path = pack/python/start/pythonsense
