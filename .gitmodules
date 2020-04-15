@@ -59,7 +59,7 @@
 	url = git://github.com/Rykka/riv.vim.git
 	ignore = untracked
 [submodule "bundle/aftersyntaxc"]
-	path = bundle/aftersyntaxc
+	path = pack/misc/libs/aftersyntaxc
 	url = git://github.com/kergoth/aftersyntaxc.vim.git
 	ignore = untracked
 [submodule "bundle/ctrlr.vim"]
@@ -71,7 +71,7 @@
 	url = git://github.com/vim-scripts/AutoTag.git
 	ignore = untracked
 [submodule "bundle/golang"]
-	path = bundle/golang
+	path = pack/misc/libs/golang
 	url = git://github.com/jnwhiteh/vim-golang.git
 	ignore = untracked
 [submodule "bundle/vim-eunuch"]
@@ -99,7 +99,7 @@
 	url = git://github.com/marijnh/tern_for_vim.git
 	ignore = untracked
 [submodule "bundle/vim-classpath"]
-	path = bundle/vim-classpath
+	path = pack/misc/libs/vim-classpath
 	url = git://github.com/tpope/vim-classpath.git
 	ignore = untracked
 [submodule "bundle/gitv"]
@@ -181,7 +181,7 @@
 	path = pack/utils/libs/utl
 	url = git://github.com/vim-scripts/utl.vim.git
 [submodule "bundle/ale"]
-	path = bundle/ale
+	path = pack/misc/libs/ale
 	url = git://github.com/w0rp/ale.git
 [submodule "bundle/vim-table-mode"]
 	path = pack/utils/libs/vim-table-mode
