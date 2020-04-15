@@ -1,4 +1,3 @@
-
 function! _path_to_parts(path)
     let l:frags = split(a:path, '/')
     let l:tagpaths = []
@@ -14,7 +13,7 @@ function! _path_to_parts(path)
 endfunction
 
 function! BuildTagsFromPath()
-    return join(pathogen#uniq(extend(_path_to_parts(expand('%:p:h')), _path_to_parts(getcwd()))), ',')
+    return join(utils#uniq(extend(_path_to_parts(expand('%:p:h')), _path_to_parts(getcwd()))), ',')
 endfunction
 
 exec 'set tags+=' . BuildTagsFromPath()
