@@ -222,3 +222,6 @@
 [submodule "pack/config/libs/vim-hashicorp-tools"]
 	path = pack/config/libs/vim-hashicorp-tools
 	url = git://github.com/hashivim/vim-hashicorp-tools.git\ngit://github.com/hashivim/vim-hashicorp-tools.git
+[submodule "pack/utils/libs/undotree"]
+	path = pack/utils/libs/undotree
+	url = git://github.com/mbbill/undotree.git\ngit://github.com/mbbill/undotree.git
