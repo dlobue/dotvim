@@ -196,13 +196,13 @@
 	path = pack/utils/libs/ultisnips
 	url = git@github.com:SirVer/ultisnips.git
 [submodule "bundle/vim-json"]
-	path = bundle/vim-json
+	path = pack/config/libs/vim-json
 	url = git@github.com:elzr/vim-json.git
 [submodule "bundle/vim-yaml"]
-	path = bundle/vim-yaml
+	path = pack/config/libs/vim-yaml
 	url = git@github.com:stephpy/vim-yaml.git
 [submodule "bundle/vim-yaml-folds"]
-	path = bundle/vim-yaml-folds
+	path = pack/config/libs/vim-yaml-folds
 	url = git@github.com:pedrohdz/vim-yaml-folds.git
 [submodule "bundle/coverage-highlight.vim"]
 	path = pack/utils/libs/coverage-highlight.vim
