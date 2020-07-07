@@ -201,7 +201,7 @@ let g:generate_tags=0
 
 
 nnoremap TT :TagbarToggle<CR>
-nnoremap FG :GundoToggle<CR>
+nnoremap FG :UndotreeToggle<CR>
 
 let g:tagbar_compact = 1
 let g:tagbar_autofocus = 1
@@ -291,3 +291,6 @@ let python_no_doctest_code_highlight = 1
 let python_no_doctest_highlight = 1
 let python_space_error_highlight = 1
 
+" undotree config
+let g:undotree_ShortIndicators = 1
+let g:undotree_SetFocusWhenToggle = 1
