@@ -1,21 +1,9 @@
 set nocompatible
-let g:pathogen_disabled = [
-            \'vim-classpath',
-            \'vim-SyntaxRange',
-            \]
-            " \'vim-javascript',
-            " \'ale',
-
-if has('nvim')
-    call add(g:pathogen_disabled, 'csapprox')
-endif
-
-exec 'source ' . fnamemodify(resolve(expand('<sfile>:p')), ':h') . '/bundle/pathogen/autoload/pathogen.vim'
-call pathogen#infect()
-" generate helptags
-Helptags
+" load all plugins
+" packloadall
 
 if !has('nvim')
+    packadd csapprox
     let g:rehash256=1
 
     if !has('gui') || v:version < 703
