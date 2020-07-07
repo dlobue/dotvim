@@ -72,6 +72,11 @@ if filereadable(s:wordsfile)
     exec 'set dictionary+=' . s:wordsfile
 endif
 
+" the default for cms is `/*%s*/` which is far less common than commenting to
+" a pound sign. so set cms to a pound before filetype kicks in overrides when
+" the correct comment type is known.
+set commentstring=#%s
+
 
 au BufEnter * if &ft == 'qf' | set scrolloff=1 | endif
 au BufLeave * if &ft == 'qf' | set scrolloff=3 | endif
