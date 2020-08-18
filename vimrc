@@ -147,8 +147,10 @@ inoremap <Leader>ir <C-R>=Random(10,90)<CR>
 nnoremap <Leader>ir "=Random(10,90)<CR>P
 
 " URL encode/decode selection
-vnoremap <leader>en :!python -c 'import sys,urllib.parse;print(urllib.quote(sys.stdin.read().strip()))'<cr>
-vnoremap <leader>de :!python -c 'import sys,urllib.parse;print(urllib.unquote(sys.stdin.read().strip()))'<cr>
+vnoremap <leader>en :!python3 -c 'import sys,urllib.parse;print(urllib.parse.quote(sys.stdin.read().strip()))'<cr>
+vnoremap <leader>de :!python3 -c 'import sys,urllib.parse;print(urllib.parse.unquote(sys.stdin.read().strip()))'<cr>
+" vnoremap <leader>en :!python2 -c 'import sys,urllib;print(urllib.quote(sys.stdin.read().strip()))'<cr>
+" vnoremap <leader>de :!python2 -c 'import sys,urllib;print(urllib.unquote(sys.stdin.read().strip()))'<cr>
 
 
 let g:SuperTabDefaultCompletionType = "context"
