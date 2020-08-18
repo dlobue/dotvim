@@ -3,8 +3,8 @@ set nocompatible
 " packloadall
 
 if !has('nvim')
-    packadd csapprox
-    let g:rehash256=1
+    " packadd csapprox
+    " let g:rehash256=1
 
     if !has('gui') || v:version < 703
         "disable csapprox if we don't have gui
@@ -15,7 +15,7 @@ if !has('nvim')
         colorscheme mustang
         set lines=28 columns=122
     elseif &term =~ 'xterm-256color\|alacritty'
-        set t_Co=256
+        " set t_Co=256
         colorscheme lucius-orig
     else
         colorscheme wargrey
@@ -46,6 +46,7 @@ set clipboard=
 set splitbelow
 set splitright
 
+set termguicolors " use true colors in terminal
 set directory=. " put swapfile in same directory as file
 set pastetoggle=<F12>       " Sane indentation on pastes
 set autoindent " Copy indent from current line when starting a new line.
@@ -287,3 +288,20 @@ let python_space_error_highlight = 1
 " undotree config
 let g:undotree_ShortIndicators = 1
 let g:undotree_SetFocusWhenToggle = 1
+
+let g:rainbow_active = 1
+
+" note: '#00FF7F' was removed as the 3rd color as it was being rendered as
+" identical to the previous color #00FF00 in the terminal
+let g:rainbow_conf = {
+\	'guifgs': ['#AAAAAA', '#00FF00', '#00FFFF', '#836FFF', '#FF00FF', '#9B30FF'],
+\}
+" from good-rainbow
+" \	'guifgs': ['#3EBB7E', '#BB5A3E', '#3E46BB', '#6BBB3E', '#BB3E8F', '#3EB4BB', '#BB9E3E', '#793EBB'],
+" lighttable dupes removed
+" \	'guifgs': ['#AAAAAA', '#00FF00', '#00FF7F', '#00FFFF', '#836FFF', '#FF00FF', '#9B30FF'],
+" lighttable original
+" \	'guifgs': ['#AAAAAA', '#00FF00', '#00FF7F', '#00FFFF', '#836FFF', '#FF00FF', '#9B30FF', '#00FF7F', '#00FFFF', '#836FFF', '#FF00FF', '#9B30FF'],
+
+" \	'guifgs': ['RoyalBlue3', 'SeaGreen3', 'DarkOrchid3', 'firebrick3', 'RoyalBlue3', 'SeaGreen3', 'DarkOrchid3', 'firebrick3', 'RoyalBlue3', 'DarkOrchid3', 'firebrick3', 'RoyalBlue3', 'SeaGreen3', 'DarkOrchid3', 'firebrick3'],
+" \	'ctermfgs': ['red', 'brown', 'blue', 'gray', 'green', 'magenta', 'cyan', 'darkred', 'brown', 'darkblue', 'gray', 'darkgreen', 'darkmagenta', 'darkcyan', 'red'],
