@@ -231,3 +231,6 @@
 [submodule "pack/python/libs/pytest.vim"]
 	path = pack/python/libs/pytest.vim
 	url = git@github.com:alfredodeza/pytest.vim.git\ngit@github.com:alfredodeza/pytest.vim.git
+[submodule "pack/lisps/libs/rainbow"]
+	path = pack/lisps/libs/rainbow
+	url = git@github.com:luochen1990/rainbow.git\ngit@github.com:luochen1990/rainbow.git
