@@ -70,10 +70,6 @@
 	path = pack/utils/libs/autotag
 	url = git://github.com/vim-scripts/AutoTag.git
 	ignore = untracked
-[submodule "bundle/golang"]
-	path = pack/misc/libs/golang
-	url = git://github.com/jnwhiteh/vim-golang.git
-	ignore = untracked
 [submodule "bundle/vim-eunuch"]
 	path = pack/utils/libs/vim-eunuch
 	url = git://github.com/tpope/vim-eunuch.git
