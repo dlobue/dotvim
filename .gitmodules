@@ -221,16 +221,16 @@
 	url = git@github.com:jeetsukumaran/vim-pythonsense.git
 [submodule "pack/config/libs/vim-hashicorp-tools"]
 	path = pack/config/libs/vim-hashicorp-tools
-	url = git://github.com/hashivim/vim-hashicorp-tools.git\ngit://github.com/hashivim/vim-hashicorp-tools.git
+	url = git://github.com/hashivim/vim-hashicorp-tools.git
 [submodule "pack/utils/libs/undotree"]
 	path = pack/utils/libs/undotree
-	url = git://github.com/mbbill/undotree.git\ngit://github.com/mbbill/undotree.git
+	url = git://github.com/mbbill/undotree.git
 [submodule "pack/utils/libs/vim-sleuth"]
 	path = pack/utils/libs/vim-sleuth
-	url = git://github.com/tpope/vim-sleuth.git\ngit://github.com/tpope/vim-sleuth.git
+	url = git://github.com/tpope/vim-sleuth.git
 [submodule "pack/python/libs/pytest.vim"]
 	path = pack/python/libs/pytest.vim
-	url = git@github.com:alfredodeza/pytest.vim.git\ngit@github.com:alfredodeza/pytest.vim.git
+	url = git@github.com:alfredodeza/pytest.vim.git
 [submodule "pack/lisps/libs/rainbow"]
 	path = pack/lisps/libs/rainbow
-	url = git@github.com:luochen1990/rainbow.git\ngit@github.com:luochen1990/rainbow.git
+	url = git@github.com:luochen1990/rainbow.git
