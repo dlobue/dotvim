@@ -230,3 +230,6 @@
 [submodule "pack/lisps/libs/rainbow"]
 	path = pack/lisps/libs/rainbow
 	url = git@github.com:luochen1990/rainbow.git
+[submodule "pack/browser/libs/firenvim"]
+	path = pack/browser/libs/firenvim
+	url = git@github.com:glacambre/firenvim.git
