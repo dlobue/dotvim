@@ -2,7 +2,20 @@ set nocompatible
 " load all plugins
 " packloadall
 
-if !has('nvim')
+if exists('g:started_by_firenvim')
+    if !exists('g:firenvim_config')
+        let g:firenvim_config = {'localSettings': {}}
+    endif
+    let g:firenvim_config['localSettings']['.*'] = { 'takeover': 'never' }
+    " let fc = g:firenvim_config['localSettings']['.*'] = { 'takeover': 'never' }
+    " let fc['.*'] = { 'takeover': 'never' }
+    packadd firenvim
+    " set guifont=Source\ Code\ Pro:h22
+    set guifont=Fira\ Code:h22
+    set background=dark
+    colorscheme lucius
+    LuciusBlack
+elseif !has('nvim')
     " packadd csapprox
     " let g:rehash256=1
 
