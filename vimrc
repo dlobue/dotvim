@@ -91,6 +91,9 @@ endif
 " the correct comment type is known.
 set commentstring=#%s
 
+" Exit Vim if NERDTree is the only window left.
+autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() |
+    \ quit | endif
 
 au BufEnter * if &ft == 'qf' | set scrolloff=1 | endif
 au BufLeave * if &ft == 'qf' | set scrolloff=3 | endif
@@ -191,6 +194,7 @@ let g:ale_set_loclist = 0
 let g:ale_set_quickfix = 1
 let g:ale_enabled = 0
 
+let g:ctrlp_max_files = 0
 let g:ctrlp_custom_ignore = { 'dir':  '\v[\/]\.(git|hg|svn|idea)$|\v[\/]target$|node_modules', 'file': '\v\.(exe|so|dll|class|pyc)$' }
 "let g:ctrlp_custom_ignore = { 'dir':  '\v[\/]\.(git|hg|svn)$|\v[\/]target$', 'file': '\v\.(exe|so|dll|html|class)$' }
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*
