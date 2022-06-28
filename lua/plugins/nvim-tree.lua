@@ -22,6 +22,7 @@ nvim_tree.setup {
   --disable_netrw = false, -> already disabled on `/core/options.lua`
   hijack_netrw = true,
   hijack_unnamed_buffer_when_opening = false,
+  hijack_cursor = true,
   ignore_buffer_on_setup = false,
   open_on_setup = true,
   open_on_setup_file = false,
@@ -29,6 +30,7 @@ nvim_tree.setup {
   sort_by = "name",
   reload_on_bufenter = false,
   respect_buf_cwd = false,
+  prefer_startup_root = false,
   update_cwd = false,
   view = {
     width = 32,
@@ -43,6 +45,20 @@ nvim_tree.setup {
       custom_only = false,
       list = {
         -- user mappings go here
+        {
+          key = "i",
+          action = "split"
+        },
+        {
+          key = "s",
+          action = "vsplit"
+        },
+        {
+          key = "u",
+          action = "dir_up"
+        },
+        -- fold commands
+        -- preview
       },
     },
   },
@@ -50,6 +66,7 @@ nvim_tree.setup {
     add_trailing = false,
     group_empty = false,
     highlight_git = false,
+    -- TODO: configure this
     highlight_opened_files = "none",
     root_folder_modifier = ":~",
     indent_markers = {
@@ -104,6 +121,7 @@ nvim_tree.setup {
   update_focused_file = {
     enable = true,
     update_cwd = false,
+    update_root = false,
     ignore_list = {},
   },
   ignore_ft_on_setup = {},

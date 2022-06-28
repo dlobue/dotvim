@@ -37,11 +37,14 @@ nvim_treesitter.setup {
     enable = true
   },
   textobjects = {
+    -- TODO: swap
+    -- TODO: lsp_interop
     select = {
       enable = true,
       lookahead = true, -- Automatically jump forward to textobj, similar to targets.vim
       keymaps = {
         -- You can use the capture groups defined in textobjects.scm
+        -- TODO: add other textobjects
         ['af'] = '@function.outer',
         ['if'] = '@function.inner',
         ['ac'] = '@class.outer',
@@ -79,7 +82,9 @@ nvim_treesitter.setup {
   },
   matchup = {
     enable = true,
-  }
+  },
+  autopairs = { enable = true },
+  autotag = { enable = true },
 }
 
 vim.opt.foldmethod = 'expr'

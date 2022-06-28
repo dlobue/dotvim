@@ -32,6 +32,7 @@ opt.commentstring='#%s'
 -- Neovim UI
 -----------------------------------------------------------
 opt.number = true           -- Show line number
+opt.cursorline = true
 opt.showmatch = true        -- Highlight matching parenthesis
 -- opt.foldmethod = 'marker'   -- Enable folding (default 'foldmarker')
 opt.foldlevel=1 -- default fold level. 0 for all closed

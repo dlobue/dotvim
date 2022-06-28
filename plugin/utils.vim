@@ -1,3 +1,23 @@
+" Search for selected text, forwards or backwards.
+vnoremap <silent> * :<C-U>
+  \let old_reg=getreg('"')<Bar>let old_regtype=getregtype('"')<CR>
+  \gvy/<C-R><C-R>=substitute(
+  \escape(@", '/\.*$^~['), '\_s\+', '\\_s\\+', 'g')<CR><CR>
+  \gV:call setreg('"', old_reg, old_regtype)<CR>
+vnoremap <silent> # :<C-U>
+  \let old_reg=getreg('"')<Bar>let old_regtype=getregtype('"')<CR>
+  \gvy?<C-R><C-R>=substitute(
+  \escape(@", '?\.*$^~['), '\_s\+', '\\_s\\+', 'g')<CR><CR>
+  \gV:call setreg('"', old_reg, old_regtype)<CR>
+
+" Creates a scratch buffer
+command! Scratch new +setlocal\ buftype=nofile\ bufhidden=hide\ noswapfile
+
+" Custom Silent command that immediately redraws the screen after running a
+" shell command.
+command! -nargs=1 -bar -bang Silent execute ':silent<bang> '.<q-args>  | redraw!
+command! -nargs=1 Grep execute 'Silent! grep! '.<q-args> | cw
+command! -nargs=1 LGrep execute 'Silent! lgrep! '.<q-args> | lw
 
 function! Random(min, max)
     if !exists("g:seeded")

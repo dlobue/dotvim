@@ -11,18 +11,18 @@ if not cmp_status_ok then
   return
 end
 
--- local luasnip_status_ok, luasnip = pcall(require, 'luasnip')
--- if not luasnip_status_ok then
---   return
--- end
+local luasnip_status_ok, luasnip = pcall(require, 'luasnip')
+if not luasnip_status_ok then
+  return
+end
 
 cmp.setup {
   -- Load snippet support
---   snippet = {
---     expand = function(args)
---       luasnip.lsp_expand(args.body)
---     end,
---   },
+  snippet = {
+    expand = function(args)
+      luasnip.lsp_expand(args.body)
+    end,
+  },
 
   -- Completion settings
   completion = {
@@ -67,7 +67,7 @@ cmp.setup {
   -- Load sources, see: https://github.com/topics/nvim-cmp
   sources = {
     { name = 'nvim_lsp' },
-    -- { name = 'luasnip' },
+    { name = 'luasnip' },
     { name = 'path' },
     { name = 'buffer' },
   },

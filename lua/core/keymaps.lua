@@ -14,7 +14,7 @@ end
 -- Neovim shortcuts
 -----------------------------------------------------------
 -- Clear search highlighting with <leader> and c
-map('n', '<leader>c', ':nohl<CR>')
+-- map('n', '<leader>c', ':nohl<CR>')
 
 -- Change split orientation
 map('n', '<leader>tk', '<C-w>t<C-w>K') -- change vertical to horizontal
@@ -52,11 +52,15 @@ map('n', 'FF', ':NvimTreeToggle<CR>')            -- open/close
 -- Tagbar
 -- map('n', '<leader>z', ':TagbarToggle<CR>')          -- open/close
 
--- telescope
+-- Diagnostic keymaps
+vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float)
+vim.keymap.set('n', '[d', vim.diagnostic.goto_prev)
+vim.keymap.set('n', ']d', vim.diagnostic.goto_next)
+vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist)
 
---Add leader shortcuts
-vim.keymap.set('n', '<leader><space>', require('telescope.builtin').buffers)
-vim.keymap.set('n', '<leader>sf', function()
+-- telescope
+vim.keymap.set('n', '<leader>bb', require('telescope.builtin').buffers)
+vim.keymap.set('n', '<leader>b', function()
   require('telescope.builtin').find_files { previewer = false }
 end)
 vim.keymap.set('n', '<leader>sb', require('telescope.builtin').current_buffer_fuzzy_find)
