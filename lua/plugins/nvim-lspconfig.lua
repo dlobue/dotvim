@@ -202,3 +202,12 @@ local luadev = require("lua-dev").setup({
 })
 
 lspconfig.sumneko_lua.setup(luadev)
+
+
+local yamlcompanion = require("yaml-companion").setup({
+  -- Add any options here, or leave empty to use the default settings
+  -- lspconfig = {
+  --   cmd = {"yaml-language-server"}
+  -- },
+})
+lspconfig.yamlls.setup(yamlcompanion)

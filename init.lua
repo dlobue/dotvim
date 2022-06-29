@@ -40,6 +40,10 @@ require('packer').startup(function(use, use_rocks)
   use 'andymass/vim-matchup'
   use {"windwp/nvim-ts-autotag"}                                  -- Auto close tags
   use {"windwp/nvim-autopairs"}                                   -- Autoclose quotes, parentheses etc.
+  use {
+    'stevearc/aerial.nvim',
+    config = function() require('aerial').setup() end
+  }
 
   use {
     "folke/which-key.nvim",
@@ -116,6 +120,18 @@ require('packer').startup(function(use, use_rocks)
     requires = {
       'kyazdani42/nvim-web-devicons', -- optional, for file icon
     }
+  }
+
+  use {
+    "someone-stole-my-name/yaml-companion.nvim",
+    requires = {
+        { "neovim/nvim-lspconfig" },
+        { "nvim-lua/plenary.nvim" },
+        { "nvim-telescope/telescope.nvim" },
+    },
+    config = function()
+      require("telescope").load_extension("yaml_schema")
+    end,
   }
 
   --[[ use {
