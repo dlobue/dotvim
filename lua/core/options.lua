@@ -27,6 +27,7 @@ opt.wildignore:append '*/.git/*,*/.hg/*,*/.svn/*'
 -- a pound sign. so set cms to a pound before filetype kicks in overrides when
 -- the correct comment type is known.
 opt.commentstring='#%s'
+opt.autoread = false -- do not re-read file into vim when change is detected
 
 -----------------------------------------------------------
 -- Neovim UI
