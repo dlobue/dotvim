@@ -27,6 +27,8 @@ require('packer').startup(function(use, use_rocks)
   use 'tpope/vim-eunuch' -- unix helpers
   use 'tpope/vim-unimpaired' -- pairs of handy bracket mappings
   use 'tpope/vim-rsi' -- add readline keybindings to cmd line mode
+  use 'tpope/vim-fugitive'
+  use 'tpope/vim-rhubarb'
   use 'mbbill/undotree'
   use 'AndrewRadev/linediff.vim'
   use "antoinemadec/FixCursorHold.nvim" -- This is needed to fix lsp doc highlight
@@ -50,6 +52,7 @@ require('packer').startup(function(use, use_rocks)
       require("nvim-autopairs").setup {
         check_ts = true,
       }
+      require('plugins/autopairs')
     end
   } -- Autoclose quotes, parentheses etc.
   use 'RRethy/nvim-treesitter-endwise' -- wisely add "end" in ruby, Lua, Vimscript, etc.
