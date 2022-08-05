@@ -79,7 +79,12 @@ opt.pastetoggle='<F12>'       -- Sane indentation on pastes
 opt.hidden = true           -- Enable background buffers
 opt.history = 1000           -- Remember N lines in history
 opt.maxmempattern=10000
-opt.lazyredraw = true       -- Faster scrolling
+if vim.g.neovide then
+  -- neovide bug with lazyredraw that causes the cursor to jump everywhere distractingly
+  opt.lazyredraw = false       -- Faster scrolling
+else
+  opt.lazyredraw = true       -- Faster scrolling
+end
 opt.synmaxcol = 240         -- Max column for syntax highlight
 opt.updatetime = 700        -- ms to wait for trigger an event
 opt.timeoutlen=400
