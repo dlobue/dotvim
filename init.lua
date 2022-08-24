@@ -136,6 +136,7 @@ require('packer').startup(function(use, use_rocks)
 
   use {
     'kyazdani42/nvim-tree.lua',
+    commit = '08ab346f0312433b3f10a4a10f4b69d98138d38f',
     requires = {
       'kyazdani42/nvim-web-devicons', -- optional, for file icon
     }
