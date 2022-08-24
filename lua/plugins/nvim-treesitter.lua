@@ -41,6 +41,14 @@ nvim_treesitter.setup {
   textobjects = {
     -- TODO: swap
     -- TODO: lsp_interop
+    lsp_interop = {
+      enable = true,
+      border = 'none',
+      peek_definition_code = {
+        ["<leader>df"] = "@function.outer",
+        ["<leader>dF"] = "@class.outer",
+      },
+    },
     select = {
       enable = true,
       lookahead = true, -- Automatically jump forward to textobj, similar to targets.vim
