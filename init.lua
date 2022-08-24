@@ -43,6 +43,7 @@ require('packer').startup(function(use, use_rocks)
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
   use 'nvim-treesitter/playground'
   use 'nvim-treesitter/nvim-treesitter-textobjects'
+  use 'nvim-treesitter/nvim-treesitter-context'
   use 'p00f/nvim-ts-rainbow'
   use 'andymass/vim-matchup'
   use { "windwp/nvim-ts-autotag" } -- Auto close tags
