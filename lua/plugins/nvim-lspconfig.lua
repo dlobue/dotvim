@@ -8,14 +8,33 @@
 -- For configuration see the Wiki: https://github.com/neovim/nvim-lspconfig/wiki
 -- Autocompletion settings of "nvim-cmp" are defined in plugins/nvim-cmp.lua
 
-local lsp_status_ok, lsp_installer = pcall(require, 'nvim-lsp-installer')
+local lsp_status_ok, mason = pcall(require, 'mason')
 if not lsp_status_ok then
   return
 end
 
-lsp_installer.setup {
+local lsp_status_ok, mason_lspconfig = pcall(require, 'mason-lspconfig')
+if not lsp_status_ok then
+  return
+end
+
+local lsp_status_ok, neodev = pcall(require, 'neodev')
+if not lsp_status_ok then
+  return
+end
+
+mason.setup()
+mason_lspconfig.setup {
   automatic_installation = true,
 }
+
+neodev.setup({
+  -- add any options here, or leave empty to use the default settings
+  -- lspconfig = {
+  --   cmd = {"lua-language-server"}
+  -- },
+  setup_jsonls = false,
+})
 
 local lsp_status_ok, lspconfig = pcall(require, 'lspconfig')
 if not lsp_status_ok then
@@ -38,8 +57,7 @@ vim.cmd([[
 
 -- Add additional capabilities supported by nvim-cmp
 -- See: https://github.com/neovim/nvim-lspconfig/wiki/Autocompletion
-local capabilities = vim.lsp.protocol.make_client_capabilities()
-capabilities = cmp_nvim_lsp.update_capabilities(capabilities)
+local capabilities = cmp_nvim_lsp.default_capabilities()
 
 capabilities.textDocument.completion.completionItem.documentationFormat = { 'markdown', 'plaintext' }
 capabilities.textDocument.completion.completionItem.snippetSupport = true
@@ -64,7 +82,7 @@ local on_attach = function(client, bufnr)
   local function buf_set_option(...) vim.api.nvim_buf_set_option(bufnr, ...) end
 
   -- Highlighting references
-  if client.resolved_capabilities.document_highlight then
+  if client.server_capabilities.document_highlight then
     -- TODO: switch to lua API
     vim.api.nvim_exec([[
       augroup lsp_document_highlight
@@ -94,6 +112,10 @@ local on_attach = function(client, bufnr)
   vim.keymap.set('n', '<leader>rn', vim.lsp.buf.rename, opts)
   vim.keymap.set('n', 'gr', vim.lsp.buf.references, opts)
   vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, opts)
+
+  vim.keymap.set('n', '<leader>cc', vim.lsp.buf.incoming_calls, opts)
+  vim.keymap.set('n', '<leader>cd', vim.lsp.buf.outgoing_calls, opts)
+
   vim.keymap.set('n', '<leader>so', require('telescope.builtin').lsp_document_symbols, opts)
   vim.api.nvim_buf_create_user_command(bufnr, "Format", vim.lsp.buf.formatting, {})
 
@@ -194,17 +216,29 @@ lspconfig.util.default_config = vim.tbl_extend(
 --   lspconfig[server.name].setup {}
 -- end
 
-local luadev = require("lua-dev").setup({
-  -- add any options here, or leave empty to use the default settings
-  -- lspconfig = {
-  --   cmd = {"lua-language-server"}
-  -- },
-})
 
-lspconfig.sumneko_lua.setup(luadev)
+lspconfig.sumneko_lua.setup({
+  settings = {
+    Lua = {
+      completion = {
+        callSnippet = "Replace"
+      }
+    }
+  }
+})
 
 
 local yamlcompanion = require("yaml-companion").setup({
+  lspconfig = {
+    settings = {
+      yaml = {
+        editor = {
+          -- Enable/disable on type indent and auto formatting array
+          formatOnType = true
+        }
+      }
+    }
+  }
   -- Add any options here, or leave empty to use the default settings
   -- lspconfig = {
   --   cmd = {"yaml-language-server"}
@@ -216,9 +250,67 @@ lspconfig.yamlls.setup(yamlcompanion)
 -- Use a loop to conveniently call 'setup' on multiple servers and
 -- map buffer local keybindings when the language server attaches.
 -- Add your language server below:
-local servers = { 'bashls', 'pylsp' }
+-- TODO: move pylsp config into scalyr-agent-2 local config
+local servers = {
+  bashls = {},
+  -- jdtls = {
+  --   use_lombok_agent = true,
+  -- },
+  pylsp = {
+    settings = {
+      pylsp = {
+        -- configurationSources = {'flake8'},
+        plugins = {
+          autopep8 = {
+            enabled = false
+          },
+          mypy = {
+            enabled = true,
+            overrides = {
+              "--install-types",
+              "--non-interactive",
+              true,
+            }
+          },
+          rope = {
+            enabled = true,
+          },
+          yapf = {
+            enabled = false
+          },
+          pydocstyle = {
+            enabled = false
+          },
+          pyflakes = {
+            enabled = true
+          },
+          mccable = {
+            enabled = true
+          },
+          pycodestyle = {
+            enabled = true,
+            ignore = {'W391'},
+            maxLineLength = 200,
+          },
+          pylint = {
+            enabled = false,
+            executable = "pylint"
+          },
+          flake8 = {
+            enabled = false,
+            maxLineLength = 200,
+          },
+          black = {
+            enabled = true,
+            line_length = 200,
+          },
+        }
+      }
+    }
+  }
+}
 
 -- Call setup
-for _, lsp in ipairs(servers) do
-  lspconfig[lsp].setup {}
+for lsp, cfg in pairs(servers) do
+  lspconfig[lsp].setup(cfg)
 end

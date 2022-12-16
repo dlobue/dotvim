@@ -92,15 +92,10 @@ require('packer').startup(function(use, use_rocks)
   }
 
   use {
-    "williamboman/nvim-lsp-installer",
-    --[[ config = function ()
-      require("nvim-lsp-installer").setup {
-        automatic_installation = true,
-      }
-    end ]]
-  }
-  use { 'neovim/nvim-lspconfig',
-    -- after='nvim-lsp-installer'
+      "williamboman/mason.nvim",
+      "williamboman/mason-lspconfig.nvim",
+      "neovim/nvim-lspconfig",
+      "folke/neodev.nvim"  -- used to be lua-dev.nvim which setup lua lsp for vim
   }
   use { 'j-hui/fidget.nvim',
     config = function()
@@ -113,23 +108,28 @@ require('packer').startup(function(use, use_rocks)
   use 'hrsh7th/cmp-cmdline'
   use 'hrsh7th/nvim-cmp'
   use 'saadparwaiz1/cmp_luasnip'
-  use 'L3MON4D3/LuaSnip' -- Snippets plugin
-  use "rafamadriz/friendly-snippets" -- Snippets
+  use {
+    'L3MON4D3/LuaSnip',
+    config = function()
+      local types = require("luasnip.util.types")
 
-  use { "folke/lua-dev.nvim",
-    -- after = 'nvim-lspconfig',
-    -- config = function()
-    --   local luadev = require("lua-dev").setup({
-    --     -- add any options here, or leave empty to use the default settings
-    --     -- lspconfig = {
-    --     --   cmd = {"lua-language-server"}
-    --     -- },
-    --   })
-    --
-    --   local lspconfig = require('lspconfig')
-    --   lspconfig.sumneko_lua.setup(luadev)
-    -- end,
-  }
+      require'luasnip'.config.setup({
+          ext_opts = {
+              [types.choiceNode] = {
+                  active = {
+                      virt_text = {{"●", "GruvboxOrange"}}
+                  }
+              },
+              [types.insertNode] = {
+                  active = {
+                      virt_text = {{"●", "GruvboxBlue"}}
+                  }
+              }
+          },
+      })
+    end
+  } -- Snippets plugin
+  use "rafamadriz/friendly-snippets" -- Snippets
 
   use { 'nvim-telescope/telescope.nvim', requires = { { 'nvim-lua/plenary.nvim' } } }
   use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
@@ -141,6 +141,9 @@ require('packer').startup(function(use, use_rocks)
       'kyazdani42/nvim-web-devicons', -- optional, for file icon
     }
   }
+  -- use 'mfussenegger/nvim-jdtls'
+  use 'mfussenegger/nvim-dap'
+  use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
 
   use {
     "someone-stole-my-name/yaml-companion.nvim",
