@@ -252,6 +252,7 @@ lspconfig.yamlls.setup(yamlcompanion)
 -- Add your language server below:
 -- TODO: move pylsp config into scalyr-agent-2 local config
 local servers = {
+  ccls = {},
   bashls = {},
   -- jdtls = {
   --   use_lombok_agent = true,

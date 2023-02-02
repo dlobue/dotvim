@@ -2,6 +2,7 @@ local fn = vim.fn
 
 if vim.g.neovide then
   vim.g.neovide_remember_window_size = true
+  vim.opt.guifont = "FiraCode Nerd Font:h10"
 end
 
 local install_path = fn.stdpath('data') .. '/site/pack/packer/start/packer.nvim'
