@@ -28,6 +28,7 @@ opt.wildignore:append '*/.git/*,*/.hg/*,*/.svn/*'
 -- the correct comment type is known.
 opt.commentstring='#%s'
 opt.autoread = false -- do not re-read file into vim when change is detected
+opt.dictionary:append '/usr/share/dict/words'
 
 -----------------------------------------------------------
 -- Neovim UI

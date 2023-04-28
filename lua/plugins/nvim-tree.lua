@@ -29,7 +29,7 @@ nvim_tree.setup {
   open_on_tab = true,
   sort_by = "name",
   reload_on_bufenter = false,
-  respect_buf_cwd = false,
+  respect_buf_cwd = true,
   prefer_startup_root = false,
   update_cwd = false,
   view = {
@@ -115,8 +115,8 @@ nvim_tree.setup {
     special_files = { "Cargo.toml", "Makefile", "README.md", "readme.md" },
   },
   hijack_directories = {
-    enable = true,
-    auto_open = true,
+    enable = false,
+    auto_open = false,
   },
   update_focused_file = {
     enable = true,
