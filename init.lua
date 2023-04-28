@@ -2,7 +2,7 @@ local fn = vim.fn
 
 if vim.g.neovide then
   vim.g.neovide_remember_window_size = true
-  vim.opt.guifont = "FiraCode Nerd Font:h10"
+  -- vim.opt.guifont = "FiraCode Nerd Font:h10"
 end
 
 local install_path = fn.stdpath('data') .. '/site/pack/packer/start/packer.nvim'
@@ -134,6 +134,7 @@ require('packer').startup(function(use, use_rocks)
 
   use { 'nvim-telescope/telescope.nvim', requires = { { 'nvim-lua/plenary.nvim' } } }
   use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
+  use 'nvim-telescope/telescope-ui-select.nvim'
 
   use {
     'kyazdani42/nvim-tree.lua',
