@@ -59,10 +59,10 @@ require('packer').startup(function(use, use_rocks)
   } -- Autoclose quotes, parentheses etc.
   use 'RRethy/nvim-treesitter-endwise' -- wisely add "end" in ruby, Lua, Vimscript, etc.
   use 'AndrewRadev/splitjoin.vim'
-  use {
-    'stevearc/aerial.nvim',
-    config = function() require('aerial').setup() end
-  }
+  -- use {
+  --   'stevearc/aerial.nvim',
+  --   config = function() require('aerial').setup() end
+  -- }
 
   use {
     "folke/which-key.nvim",
@@ -130,6 +130,13 @@ require('packer').startup(function(use, use_rocks)
       })
     end
   } -- Snippets plugin
+  -- use {
+  --   'doxnit/cmp-luasnip-choice',
+  --   config = function()
+  --     require('cmp_luasnip_choice').setup({
+  --     })
+  --   end,
+  -- }
   use "rafamadriz/friendly-snippets" -- Snippets
 
   use { 'nvim-telescope/telescope.nvim', requires = { { 'nvim-lua/plenary.nvim' } } }
@@ -281,3 +288,4 @@ require('plugins/nvim-treesitter')
 require('plugins/nvim-cmp')
 require('plugins/nvim-lspconfig')
 require('plugins/telescope')
+require('plugins/snippets')

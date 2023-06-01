@@ -217,7 +217,7 @@ lspconfig.util.default_config = vim.tbl_extend(
 -- end
 
 
-lspconfig.sumneko_lua.setup({
+lspconfig.lua_ls.setup({
   settings = {
     Lua = {
       completion = {
@@ -253,6 +253,7 @@ lspconfig.yamlls.setup(yamlcompanion)
 -- TODO: move pylsp config into scalyr-agent-2 local config
 local servers = {
   ccls = {},
+  gopls = {},
   bashls = {},
   -- jdtls = {
   --   use_lombok_agent = true,

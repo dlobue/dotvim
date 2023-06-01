@@ -72,3 +72,6 @@ vim.keymap.set('n', '<leader>so', function()
   require('telescope.builtin').tags { only_current_buffer = true }
 end)
 vim.keymap.set('n', '<leader>?', require('telescope.builtin').oldfiles)
+
+-- luasnip
+map('i', '<c-u>', '<cmd>lua require("luasnip.extras.select_choice")()<cr>')
