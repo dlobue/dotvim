@@ -19,7 +19,8 @@ autocmd('BufLeave', {
 })
 
 -- Put swapfile in local dir when editing a file in /etc
-autocmd('BufNewFile,BufReadPre,FileReadPre', {
+-- autocmd('BufNewFile,BufReadPre,FileReadPre', {
+autocmd({'BufNewFile', 'BufReadPre', 'FileReadPre'}, {
   pattern = '/etc/*',
   -- TODO: dynamically find the vimdir
   command = "setlocal directory=~/.vim/swap/"
