@@ -217,7 +217,7 @@ lspconfig.util.default_config = vim.tbl_extend(
 -- end
 
 
-lspconfig.sumneko_lua.setup({
+lspconfig.lua_ls.setup({
   settings = {
     Lua = {
       completion = {
